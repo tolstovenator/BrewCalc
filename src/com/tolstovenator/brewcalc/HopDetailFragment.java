@@ -3,9 +3,14 @@ package com.tolstovenator.brewcalc;
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -13,7 +18,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class HopDetailFragment extends Fragment {
+public class HopDetailFragment extends Fragment implements TextWatcher {
 	
 	/**
      * The fragment argument representing the item ID that this fragment
@@ -26,6 +31,8 @@ public class HopDetailFragment extends Fragment {
      */
     private String selectedItem;
     private HopRepository hopRepository;
+    private Menu menu;
+    private boolean changes = false;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -37,7 +44,7 @@ public class HopDetailFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setHasOptionsMenu(true);
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
@@ -45,15 +52,26 @@ public class HopDetailFragment extends Fragment {
             selectedItem = getArguments().getString(ARG_ITEM_ID);
         }
         hopRepository = ((IngredientListActivity)getActivity()).getHopRepository();
+        
+        
     }
+    
+    
+    
 
     @Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		inflater.inflate(R.menu.hops_edit_menu, menu);
+		this.menu = menu;
+	}
+
+	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_hop_detail, container, false);
         if (selectedItem != null) {
         	Hop hop = hopRepository.getHopByName(selectedItem);
-        	((EditText)rootView.findViewById(R.id.hop_name)).setText(hop.getName());
+        	initField(rootView,  R.id.hop_name, hop.getName());
         	((EditText)rootView.findViewById(R.id.origin)).setText(hop.getOrigin());
         	((EditText)rootView.findViewById(R.id.hopsNote)).setText(hop.getDescription());
         	((EditText)rootView.findViewById(R.id.alpha_text)).setText(Double.toString(hop.getAlpha()));
@@ -91,6 +109,35 @@ public class HopDetailFragment extends Fragment {
         }
         return rootView;
     }
+	
+	private void initField(View view, int fieldId, String text) {
+		EditText editView = (EditText)view.findViewById(fieldId);
+		editView.setText(text);
+		editView.addTextChangedListener(this);
+		
+	}
+
+	@Override
+	public void afterTextChanged(Editable s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeTextChanged(CharSequence s, int start, int count,
+			int after) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTextChanged(CharSequence s, int start, int before, int count) {
+		if (!changes) {
+			changes = true;
+			menu.findItem(R.id.save_menu).setEnabled(true);
+		}
+		
+	}
     
     
 
