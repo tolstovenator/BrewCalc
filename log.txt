@@ -1,0 +1,1 @@
+04-20 07:33:58.133: E/AndroidRuntime(928): java.lang.RuntimeException: Your content must have a ListView whose id attribute is 'android.R.id.list'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BrewCalc</string>
+    <string name="title_ingredient_detail">Ingredient Detail</string>
+    <string name="hops">Hops</string>
+    <string name="sugars">Sugars</string>
+    <string name="yeast">Yeast</string>
+    <string name="water">Water</string>
+    <string name="title_ingredients">Ingredients</string>
+    <string name="title_calcs">Calculators</string>
+    <string name="title_recipies">Recipies</string>
+    <string name="hop_name">Name</string>
+    <string name="alpha_name">Alpha</string>
+    <string name="beta_name">Beta</string>
+    <string name="bittering">Bittering</string>
+    <string name="aroma">Aroma</string>
+    <string name="dual">Dual purpose</string>
+    <string name="whole">Whole</string>
+    <string name="plug">Plug</string>
+    <string name="pellet">Pellet</string>
+    <string name="origin">Origin</string>
+    <string name="storage_factor">Storage Factor (percentage loss in 6 month at 20C)</string>
+    <string name="humulene">Humulene</string>
+    <string name="cohumulone">Cohumulone</string>
+    <string name="myrcene">Myrcene</string>
+    <string name="caryophyllene">Caryophyllene</string>
+    <string name="notes">Notes</string>
+    
+    
+</resources>
