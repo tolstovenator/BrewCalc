@@ -29,6 +29,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".IngredientListActivity" />
         </activity>
+        <service android:name="com.tolstovenator.brewcalc.repository.IngredientService"
+            ></service>
     </application>
 
 </manifest>

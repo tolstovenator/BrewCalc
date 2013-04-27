@@ -2,12 +2,16 @@ package com.tolstovenator.brewcalc;
 
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
+import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 import android.app.ActionBar;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -43,7 +47,8 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	private boolean mTwoPane;
 	private boolean clickViewActvated;
 	private boolean detailedView;
-	private HopRepository hopRepository;
+	private IngredientService ingredientService;
+	boolean mBound = false;
 	private IngredientDetailFragment fragment;
 	private IngredientListFragment listFragment;
 
@@ -68,8 +73,25 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 			//		.setActivateOnItemClick(true);
 		}
 		createCommonMenu();
-		hopRepository = new HopRepository(getAssets());
 	}
+	
+	@Override
+    protected void onStart() {
+        super.onStart();
+        // Bind to LocalService
+        Intent intent = new Intent(this, IngredientService.class);
+        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Unbind from the service
+        if (mBound) {
+            unbindService(mConnection);
+            mBound = false;
+        }
+    }
 	
 	
 
@@ -182,7 +204,28 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	}
 
 	public HopRepository getHopRepository() {
-		return hopRepository;
+		if (!mBound)
+			throw new RuntimeException("Ingredient service is not bound");
+		return ingredientService.getHopRepository();
 		
 	}
+	
+	/** Defines callbacks for service binding, passed to bindService() */
+    private ServiceConnection mConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName className,
+                IBinder service) {
+            // We've bound to LocalService, cast the IBinder and get LocalService instance
+        	IngredientService.LocalBinder binder = (IngredientService.LocalBinder) service;
+            ingredientService = binder.getService();
+            mBound = true;
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBound = false;
+        }
+    };
+	
 }
