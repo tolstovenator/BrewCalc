@@ -2,14 +2,15 @@ package com.tolstovenator.brewcalc.repository;
 
 public class Hop {
 
-	private String name;
+	private String name = "";
 	
 	private double alpha;
 	private double beta;
 	private HopForm hopForm;
 	private HopUsage hopUsage;
 	private int storageFactor;
-	private String origin;
+	private String origin = "";
+	private String description = "";
 	private double humulene;
 	private double cohumulone;
 	private double caryophyllene;
@@ -116,6 +117,16 @@ public class Hop {
 
 	public void setMyrcene(double myrcene) {
 		this.myrcene = myrcene;
+	}
+	
+	
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	@Override

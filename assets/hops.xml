@@ -1,411 +1,1578 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <hops>
-<hop>
-<name>Admiral</name>
-<alpha>14.7500000</alpha>
-</hop>
-<hop>
-<name>Ahtanum</name>
-<alpha>6.0000000</alpha>
-</hop>
-<hop>
-<name>Amarillo Gold</name>
-<alpha>8.5000000</alpha>
-</hop>
-<hop>
-<name>Apollo</name>
-<alpha>17.0000000</alpha>
-</hop>
-<hop>
-<name>Aquila</name>
-<alpha>6.5000000</alpha>
-</hop>
-<hop>
-<name>Atlas</name>
-<alpha>9.0000000</alpha>
-</hop>
-<hop>
-<name>Aurora</name>
-<alpha>8.2500000</alpha>
-</hop>
-<hop>
-<name>Banner</name>
-<alpha>10.0000000</alpha>
-</hop>
-<hop>
-<name>Bobek</name>
-<alpha>5.2500000</alpha>
-</hop>
-<hop>
-<name>Bramling Cross</name>
-<alpha>6.0000000</alpha>
-</hop>
-<hop>
-<name>Bravo</name>
-<alpha>15.5000000</alpha>
-</hop>
-<hop>
-<name>Brewer's Gold</name>
-<alpha>8.0000000</alpha>
-</hop>
-<hop>
-<name>Bullion</name>
-<alpha>8.0000000</alpha>
-</hop>
-<hop>
-<name>Cascade</name>
-<alpha>5.5000000</alpha>
-</hop>
-<hop>
-<name>Celeia</name>
-<alpha>4.5000000</alpha>
-</hop>
-<hop>
-<name>Centennial</name>
-<alpha>10.0000000</alpha>
-</hop>
-<hop>
-<name>Challenger</name>
-<alpha>7.5000000</alpha>
-</hop>
-<hop>
-<name>Chelan</name>
-<alpha>13.2500000</alpha>
-</hop>
-<hop>
-<name>Chinook</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Citra</name>
-<alpha>12.0000000</alpha>
-</hop>
-<hop>
-<name>Cluster</name>
-<alpha>7.0000000</alpha>
-</hop>
-<hop>
-<name>Columbia</name>
-<alpha>5.5000000</alpha>
-</hop>
-<hop>
-<name>Columbus (Tomahawk)</name>
-<alpha>14.0000000</alpha>
-</hop>
-<hop>
-<name>Comet</name>
-<alpha>9.5000000</alpha>
-</hop>
-<hop>
-<name>Crystal</name>
-<alpha>3.5000000</alpha>
-</hop>
-<hop>
-<name>Eroica</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Feux Coeur Francais</name>
-<alpha>14.0000000</alpha>
-</hop>
-<hop>
-<name>First Gold</name>
-<alpha>7.5000000</alpha>
-</hop>
-<hop>
-<name>Fuggles</name>
-<alpha>4.5000000</alpha>
-</hop>
-<hop>
-<name>Galaxy</name>
-<alpha>14.0000000</alpha>
-</hop>
-<hop>
-<name>Galena</name>
-<alpha>12.5000000</alpha>
-</hop>
-<hop>
-<name>Glacier</name>
-<alpha>5.6000000</alpha>
-</hop>
-<hop>
-<name>Goldings, B.C.</name>
-<alpha>5.0000000</alpha>
-</hop>
-<hop>
-<name>Goldings, East Kent</name>
-<alpha>5.0000000</alpha>
-</hop>
-<hop>
-<name>Green Bullet</name>
-<alpha>13.5000000</alpha>
-</hop>
-<hop>
-<name>Greenburg</name>
-<alpha>5.2000000</alpha>
-</hop>
-<hop>
-<name>Hallertauer</name>
-<alpha>4.8000000</alpha>
-</hop>
-<hop>
-<name>Hallertauer Hersbrucker</name>
-<alpha>4.0000000</alpha>
-</hop>
-<hop>
-<name>Hallertauer Mittelfrueh</name>
-<alpha>4.0000000</alpha>
-</hop>
-<hop>
-<name>Hallertauer, New Zealand</name>
-<alpha>8.5000000</alpha>
-</hop>
-<hop>
-<name>Herald</name>
-<alpha>12.0000000</alpha>
-</hop>
-<hop>
-<name>Horizon</name>
-<alpha>12.0000000</alpha>
-</hop>
-<hop>
-<name>Liberty</name>
-<alpha>4.3000000</alpha>
-</hop>
-<hop>
-<name>Lublin</name>
-<alpha>5.0000000</alpha>
-</hop>
-<hop>
-<name>Magnum</name>
-<alpha>14.0000000</alpha>
-</hop>
-<hop>
-<name>Marynka</name>
-<alpha>10.5000000</alpha>
-</hop>
-<hop>
-<name>Millenium</name>
-<alpha>14.2500000</alpha>
-</hop>
-<hop>
-<name>Motueka</name>
-<alpha>7.0000000</alpha>
-</hop>
-<hop>
-<name>Mt. Hood</name>
-<alpha>6.0000000</alpha>
-</hop>
-<hop>
-<name>Nelson Sauvin</name>
-<alpha>12.0000000</alpha>
-</hop>
-<hop>
-<name>Newport</name>
-<alpha>13.5000000</alpha>
-</hop>
-<hop>
-<name>Northdown</name>
-<alpha>8.5000000</alpha>
-</hop>
-<hop>
-<name>Northern Brewer</name>
-<alpha>8.5000000</alpha>
-</hop>
-<hop>
-<name>Nugget</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Olympic</name>
-<alpha>11.5000000</alpha>
-</hop>
-<hop>
-<name>Opal</name>
-<alpha>6.5000000</alpha>
-</hop>
-<hop>
-<name>Orion</name>
-<alpha>7.2500000</alpha>
-</hop>
-<hop>
-<name>Pacific Gem</name>
-<alpha>15.0000000</alpha>
-</hop>
-<hop>
-<name>Pacific Jade</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Pacifica</name>
-<alpha>5.5000000</alpha>
-</hop>
-<hop>
-<name>Palisade</name>
-<alpha>7.5000000</alpha>
-</hop>
-<hop>
-<name>Perle</name>
-<alpha>8.0000000</alpha>
-</hop>
-<hop>
-<name>Phoenix</name>
-<alpha>8.0000000</alpha>
-</hop>
-<hop>
-<name>Pilgrim</name>
-<alpha>11.5000000</alpha>
-</hop>
-<hop>
-<name>Pilot</name>
-<alpha>11.5000000</alpha>
-</hop>
-<hop>
-<name>Pioneer</name>
-<alpha>9.0000000</alpha>
-</hop>
-<hop>
-<name>Premiant</name>
-<alpha>7.5000000</alpha>
-</hop>
-<hop>
-<name>Pride of Ringwood</name>
-<alpha>9.0000000</alpha>
-</hop>
-<hop>
-<name>Progress</name>
-<alpha>6.2500000</alpha>
-</hop>
-<hop>
-<name>Riwaka</name>
-<alpha>5.2500000</alpha>
-</hop>
-<hop>
-<name>Saaz</name>
-<alpha>4.0000000</alpha>
-</hop>
-<hop>
-<name>Santiam</name>
-<alpha>6.0000000</alpha>
-</hop>
-<hop>
-<name>Saphir</name>
-<alpha>3.5000000</alpha>
-</hop>
-<hop>
-<name>Satus</name>
-<alpha>13.2500000</alpha>
-</hop>
-<hop>
-<name>Select Spalt</name>
-<alpha>4.7500000</alpha>
-</hop>
-<hop>
-<name>Simcoe</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Sladek</name>
-<alpha>5.0000000</alpha>
-</hop>
-<hop>
-<name>Sorachi Ace</name>
-<alpha>12.0000000</alpha>
-</hop>
-<hop>
-<name>Southern Cross</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Spalter</name>
-<alpha>4.5000000</alpha>
-</hop>
-<hop>
-<name>Sterling</name>
-<alpha>7.5000000</alpha>
-</hop>
-<hop>
-<name>Sticklebract</name>
-<alpha>13.5000000</alpha>
-</hop>
-<hop>
-<name>Strisslespalt</name>
-<alpha>4.0000000</alpha>
-</hop>
-<hop>
-<name>Styrian Goldings</name>
-<alpha>5.4000000</alpha>
-</hop>
-<hop>
-<name>Summit</name>
-<alpha>17.0000000</alpha>
-</hop>
-<hop>
-<name>Sun</name>
-<alpha>14.0000000</alpha>
-</hop>
-<hop>
-<name>Super Alpha</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Super Galena</name>
-<alpha>14.5000000</alpha>
-</hop>
-<hop>
-<name>Super Pride</name>
-<alpha>14.2500000</alpha>
-</hop>
-<hop>
-<name>Target</name>
-<alpha>11.0000000</alpha>
-</hop>
-<hop>
-<name>Tettnang</name>
-<alpha>4.5000000</alpha>
-</hop>
-<hop>
-<name>Tillicum</name>
-<alpha>13.2500000</alpha>
-</hop>
-<hop>
-<name>Tomahawk</name>
-<alpha>15.5000000</alpha>
-</hop>
-<hop>
-<name>Topaz</name>
-<alpha>17.0000000</alpha>
-</hop>
-<hop>
-<name>Tradition</name>
-<alpha>6.0000000</alpha>
-</hop>
-<hop>
-<name>Ultra</name>
-<alpha>3.0000000</alpha>
-</hop>
-<hop>
-<name>Vanguard</name>
-<alpha>5.5000000</alpha>
-</hop>
-<hop>
-<name>Victoria</name>
-<alpha>13.0000000</alpha>
-</hop>
-<hop>
-<name>Warrior</name>
-<alpha>15.0000000</alpha>
-</hop>
-<hop>
-<name>Whitbread Golding Variety (WGV)</name>
-<alpha>6.0000000</alpha>
-</hop>
-<hop>
-<name>Willamette</name>
-<alpha>5.5000000</alpha>
-</hop>
-<hop>
-<name>Zeus</name>
-<alpha>14.0000000</alpha>
-</hop>
+   <hop>
+      <name>Admiral</name>
+      <origin>United Kingdom</origin>
+      <alpha>14.7500000</alpha>
+      <beta>5.6000000</beta>
+      <type>0</type>
+      <notes>Bittering hops derived from Wye Challenger.  Good high-alpha bittering hops.
+Used for: Ales
+Aroma: Primarily for bittering
+Substitutes: Target, Northdown, Challenger</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Ahtanum</name>
+      <origin>U.S.</origin>
+      <alpha>6.0000000</alpha>
+      <beta>5.2500000</beta>
+      <type>1</type>
+      <notes>Distinctive aromatic hops with moderate bittering power from Washington.
+Used for: American ales and lagers
+Aroma: Distinctive floral and citrus aromas
+Substitutes: Amarillo, Cascade</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Amarillo Gold</name>
+      <origin>U.S.</origin>
+      <alpha>8.5000000</alpha>
+      <beta>6.0000000</beta>
+      <type>1</type>
+      <notes>Unknown origin, but character similar to Cascade.  Used for both bitterness and aroma.
+Used for: IPAs, Ales
+Aroma: Citrus, flowery
+Substitutes: Cascade, Centennial</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Apollo</name>
+      <origin>U.S.</origin>
+      <alpha>17.0000000</alpha>
+      <beta>6.7500000</beta>
+      <type>0</type>
+      <notes>Super high alpha variety from the Hopsteiner breeding program released in 2006.  High alpha and low cohumulone makes it a great bittering hop.  
+Adds a strong grapefruit/hop note if added late in boil.  
+Substitutes: Nugget, Columbus, Tomahawk, Zeus</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Aquila</name>
+      <origin>U.S.</origin>
+      <alpha>6.5000000</alpha>
+      <beta>3.0000000</beta>
+      <type>1</type>
+      <notes>Aroma hops developed in 1988.  Limited use due to high cohumolone.
+Used for: Aroma hops
+Substitutes: Cluster
+No longer commercially grown.</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Atlas</name>
+      <origin>Slovenia</origin>
+      <alpha>9.0000000</alpha>
+      <beta>3.7000000</beta>
+      <type>0</type>
+      <notes>A cross between Brewers Gold and Slovenian wild hops.  Primarily a bittering hop with pleasant bitterness and aroma.  
+Used for: Bittering ales, lagers  
+Substitutes: Brewers Gold</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Aurora</name>
+      <origin>Slovenia</origin>
+      <alpha>8.2500000</alpha>
+      <beta>3.5000000</beta>
+      <type>2</type>
+      <notes>Also called Super Styrian.  This is a hybrid between Northern Brewer and TG.  It has a pleasant hoppy aroma similar to Styrian Goldings but lighter.  
+Used for: Often mixed with other hops in lagers.  
+Substitutes: Styrian Goldings</notes>
+      <hsi>23.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Banner</name>
+      <origin>U.S.</origin>
+      <alpha>10.0000000</alpha>
+      <beta>4.0000000</beta>
+      <type>0</type>
+      <notes>Bittering hops developed in 1988.  Use largely discontinued due to poor storage.
+Used for: U.S. style ales
+Substitutes: Cluster</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Bobek</name>
+      <origin>Slovenia</origin>
+      <alpha>5.2500000</alpha>
+      <beta>5.0000000</beta>
+      <type>2</type>
+      <notes>Also called Styrian Golding B - a cross between Northern Brewer and a TG seedling.  Pleasant hop aroma and flavor.  
+Used for: Moderate English ales and lagers/Pilsners 
+Substitutes: Northern Brewer</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Bramling Cross</name>
+      <origin>United Kingdom</origin>
+      <alpha>6.0000000</alpha>
+      <beta>3.0000000</beta>
+      <type>1</type>
+      <notes>Developed in 1927 from commercial Goldings and wild hop variety.
+Used for: ESB, Bitters, Pale Ale
+Aroma: Mild, fruity, currant aroma.
+Substitutes: East Kent Goldings, Progress, Whitbred</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Bravo</name>
+      <origin>U.S.</origin>
+      <alpha>15.5000000</alpha>
+      <beta>3.5000000</beta>
+      <type>0</type>
+      <notes>A second generation super high alpha hops from the Hopsteiner breeding program released in 2006.  Good bittering hop.
+Aroma: Fruity and floral aroma.
+Substitutes: Columbus, Zeus, Tomahawk</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Brewer's Gold</name>
+      <origin>United Kingdom</origin>
+      <alpha>8.0000000</alpha>
+      <beta>3.7000000</beta>
+      <type>0</type>
+      <notes>Traditional bittering hops for English ales and heavy German lagers.
+Aroma: Sharp bittering hop
+Substitutes: Northern Brewer, Galena, Chinook, Eroica
+Example: Pete's Wicked Ale</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Bullion</name>
+      <origin>United Kingdom</origin>
+      <alpha>8.0000000</alpha>
+      <beta>4.5000000</beta>
+      <type>0</type>
+      <notes>Used in strong dark English ales, some heavy German lagers.
+Aroma: Strong, pungent and bitter in flavor.  Blackcurrant flavor.
+Substitutes: Chinook, Eroica, Brewer's Gold</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Cascade</name>
+      <origin>U.S.</origin>
+      <alpha>5.5000000</alpha>
+      <beta>6.0000000</beta>
+      <type>2</type>
+      <notes>A hops with Northern Brewers Heritage
+Used for: American ales and lagers
+Aroma: Strong spicy, floral, grapefruit character
+Substitutes: Centennial
+Examples: Sierra Nevada Pale Ale, Anchor Liberty Ale</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Celeia</name>
+      <origin>Slovenia</origin>
+      <alpha>4.5000000</alpha>
+      <beta>2.6000000</beta>
+      <type>2</type>
+      <notes>A dual purpose hops that is a hybrid between Savinjski Golding, Aurora and Slovenian wild hops.  Similar in aroma to Saaz.  
+Used for: Light lagers, Pilsners, Belgian ales.
+Substitutes: Saaz, Styrian Goldings</notes>
+      <hsi>23.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Centennial</name>
+      <origin>U.S.</origin>
+      <alpha>10.0000000</alpha>
+      <beta>4.0000000</beta>
+      <type>0</type>
+      <notes>Used for: General purpose bittering, aroma in American ales and Wheats
+Aroma: Floral, citrus aroma, spicy, clean bittering flavor
+Substitutes: Galena, Eroica, Nugget, Bullion
+Examples: Sierra Nevada Celebration Ale, Sierra Nevada Bigfoot</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Challenger</name>
+      <origin>United Kingdom</origin>
+      <alpha>7.5000000</alpha>
+      <beta>4.0000000</beta>
+      <type>1</type>
+      <notes>Variant of Northern Brewers heritage
+Used for: Both aroma and bittering for ales and lagers
+Aroma: Fruity in flavor, spicy aroma, blends well
+Substitutes: N/A</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Chelan</name>
+      <origin>U.S.</origin>
+      <alpha>13.2500000</alpha>
+      <beta>9.2500000</beta>
+      <type>0</type>
+      <notes>High alpha variety from the Haas breeding program released in 2004.  It is a variant of Galena and very similar in profile to Galena.
+Aroma: Pleasant citrus notes  
+Substitutes: Galena</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Chinook</name>
+      <origin>U.S.</origin>
+      <alpha>13.0000000</alpha>
+      <beta>3.6000000</beta>
+      <type>0</type>
+      <notes>Strong versatile bittering hop
+Used for: Ales, porters, stouts
+Aroma: Heavy and spicy aroma
+Substitutes: Galena, Eroica, Nugget, Bullion
+Examples: Sierra Nevada Stout, Sierra Nevada Celebration Ale</notes>
+      <hsi>42.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Citra</name>
+      <origin>U.S.</origin>
+      <alpha>12.0000000</alpha>
+      <beta>4.0000000</beta>
+      <type>2</type>
+      <notes>Special aroma hops released in 2007.  Imparts high alpha/oil content but low cohumulone.
+Aroma: Adds interesting citrus and tropical fruit character to the beer.  
+Substitutes: Unknown</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Cluster</name>
+      <origin>U.S.</origin>
+      <alpha>7.0000000</alpha>
+      <beta>4.8000000</beta>
+      <type>0</type>
+      <notes>Used for: General purpose bittering hop
+Aroma: Floral, slightly spicy. Sharp aroma and sharp flavor
+Substitutes: Eroica, Galena</notes>
+      <hsi>16.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Columbia</name>
+      <origin>United Kingdom</origin>
+      <alpha>5.5000000</alpha>
+      <beta>3.0000000</beta>
+      <type>0</type>
+      <notes>Sibling of Williamette hops.
+Used for: All English Ales
+Aroma: Close to Fuggles
+Substitutes: Fuggles, Williamette</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Columbus (Tomahawk)</name>
+      <origin>U.S.</origin>
+      <alpha>14.0000000</alpha>
+      <beta>5.0000000</beta>
+      <type>0</type>
+      <notes>Engineered Centennial Substitute - High alpha bittering hops.
+Used for: Bittering, flavor, aroma - IPA, American Pale Ale, Stout, Lager
+Aroma: Pungent, spicy. Strongly aromatic, but clean tasting bitterness
+Substitutes: Centennial</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Comet</name>
+      <origin>U.S.</origin>
+      <alpha>9.5000000</alpha>
+      <beta>4.0000000</beta>
+      <type>0</type>
+      <notes>Very bitter hops - use sparingly with other hops
+Used for: Bittering only
+Substitutes: N/A</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Crystal</name>
+      <origin>U.S.</origin>
+      <alpha>3.5000000</alpha>
+      <beta>5.2000000</beta>
+      <type>1</type>
+      <notes>Used for: Aroma and finishing hops for Lagers
+Aroma: Clean, mild, pleasant and slightly spicy
+Substitutes: Hallertauer, Mount Liberty</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Eroica</name>
+      <origin>U.S.</origin>
+      <alpha>13.0000000</alpha>
+      <beta>4.8000000</beta>
+      <type>0</type>
+      <notes>Used for: General purpose bittering for ales, porters, stouts
+Aroma: Clean bittering hop, very bitter
+Substitutes: Galena, Northern Brewer, Chinook
+Examples: Blackhook Porter, Ballard Bitter</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Feux Coeur Francais</name>
+      <origin>Australia</origin>
+      <alpha>14.0000000</alpha>
+      <beta>6.0000000</beta>
+      <type>0</type>
+      <notes>Rare, high alpha hops from Australia with genetic roots in the Burgundy region of France.  It was adopted to the Victoria region of Australia and introduced in 2010.</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>First Gold</name>
+      <origin>United Kingdom</origin>
+      <alpha>7.5000000</alpha>
+      <beta>3.5000000</beta>
+      <type>2</type>
+      <notes>Dwarf hop with English Golding character
+Used for: Ales, ESB
+Aroma: Similar to other Golding varieties, spicy
+Substitutes: East Kent Goldings, Crystal</notes>
+      <hsi>12.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Fuggles</name>
+      <origin>United Kingdom</origin>
+      <alpha>4.5000000</alpha>
+      <beta>2.0000000</beta>
+      <type>1</type>
+      <notes>Used for: General purpose bittering/aroma for English Ales, Dark Lagers
+Aroma: Mild, soft, grassy, floral aroma
+Substitute: East Kent Goldings, Williamette
+Examples: Samuel Smith's Pale Ale, Old Peculiar, Thomas Hardy's Ale</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Galaxy</name>
+      <origin>Australia</origin>
+      <alpha>14.0000000</alpha>
+      <beta>5.9000000</beta>
+      <type>0</type>
+      <notes>A high alpha, dual purpose seedless hops with a unique hop aroma.  It can be used either for bittering or as a late hop addition to provide a flavor of citrus and passionfruit to the finished beer.
+Aroma: Intense, pleasant, unique.</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Galena</name>
+      <origin>U.S.</origin>
+      <alpha>12.5000000</alpha>
+      <beta>8.0000000</beta>
+      <type>0</type>
+      <notes>Used for: General bittering hops for all beers
+Aroma: Strong, clean, balanced bittering
+Substitutes: Eroica, Northern Brewer, Cluster, Chinook
+Examples: Catamount Porter</notes>
+      <hsi>21.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Glacier</name>
+      <origin>U.S.</origin>
+      <alpha>5.6000000</alpha>
+      <beta>7.6000000</beta>
+      <type>1</type>
+      <notes>Genetic mix of at least 8 hops including Elsasser, Brewers Gold, N Brewer, Bullion, Early Green, and others...released in 2000.
+Used for: Aroma
+Aroma: Excellent, hoppy
+Substitutes: N/A</notes>
+      <hsi>28.5000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Goldings, B.C.</name>
+      <origin>Canada</origin>
+      <alpha>5.0000000</alpha>
+      <beta>3.2000000</beta>
+      <type>1</type>
+      <notes>Used for: Bittering and finishing British ales, bitters, porters and stouts.
+Aroma: Spicy, floral, rounded mild aroma.
+Substitutes: East Kent Goldings, Fuggles</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Goldings, East Kent</name>
+      <origin>United Kingdom</origin>
+      <alpha>5.0000000</alpha>
+      <beta>3.5000000</beta>
+      <type>1</type>
+      <notes>Used for: General purpose hops for bittering/finishing all British Ales
+Aroma: Floral, aromatic, earthy, slightly sweet spicy flavor
+Substitutes: Fuggles, BC Goldings
+Examples: Bass Pale Ale, Fullers ESB, Samual Smith's Pale Ale</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Green Bullet</name>
+      <origin>New Zealand</origin>
+      <alpha>13.5000000</alpha>
+      <beta>7.0000000</beta>
+      <type>0</type>
+      <notes>Bittering hops from New Zealand developed in 1972
+Used for: Australian-style ales and lagers.
+Aroma: Floral, raisin aroma.
+Substitutes: Styrian Goldings</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Greenburg</name>
+      <origin>U.S.</origin>
+      <alpha>5.2000000</alpha>
+      <beta>7.2000000</beta>
+      <type>1</type>
+      <notes>American hop variety from southern Idaho.  Fruity flavor with a touch of wood flavor.  Popular with microbreweries.</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Hallertauer</name>
+      <origin>Germany</origin>
+      <alpha>4.8000000</alpha>
+      <beta>4.0000000</beta>
+      <type>1</type>
+      <notes>Used for: German Ales, German/US/Canadian Lagers, Wheat Beers
+Aroma: Pleasant, mild spicy flavor, clean, neutral flavor
+Substitutes: Crystal, Liberty, Hallertauer Mittelfrueh</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Hallertauer Hersbrucker</name>
+      <origin>Germany</origin>
+      <alpha>4.0000000</alpha>
+      <beta>6.0000000</beta>
+      <type>1</type>
+      <notes>Used for: German style lagers and wheat beers
+Aroma: Noble, pleasant, clean flavor
+Substitutes: Mt. Hood, Liberty, Hallertauer, Mittelfrueh
+Examples: Wheathook Wheaten Ale</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Hallertauer Mittelfrueh</name>
+      <origin>Germany</origin>
+      <alpha>4.0000000</alpha>
+      <beta>4.6000000</beta>
+      <type>1</type>
+      <notes>Used for: Continental Lagers, German Ales/Lagers, US Lagers
+Aroma: Pleasant, assertive, mild herbal aroma
+Substitutes: Hallertauer, Mt. Hood, Liberty, Crystal
+Examples: Sam Adams Boston Lager, Sam Adams Boston Lightship</notes>
+      <hsi>45.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Hallertauer, New Zealand</name>
+      <origin>New Zealand</origin>
+      <alpha>8.5000000</alpha>
+      <beta>3.0000000</beta>
+      <type>2</type>
+      <notes>Hallertauer variant with classic aroma and ability to retain clean taste. Bred from German Hallertauer Mittelfrueh
+Used for: Australian Ales
+Substitutes: Hallertauer Mittelfrueh</notes>
+      <hsi>45.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Herald</name>
+      <origin>United Kingdom</origin>
+      <alpha>12.0000000</alpha>
+      <beta>5.2000000</beta>
+      <type>0</type>
+      <notes>Dwarf variety bred at Wye College (mid 1990s)
+Used for: Bittering of ales
+Aroma: Strong, acceptable
+Substitutes: High alpha English bittering hops</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Horizon</name>
+      <origin>U.S.</origin>
+      <alpha>12.0000000</alpha>
+      <beta>7.5000000</beta>
+      <type>0</type>
+      <notes>Good dual purpose hops derived from Nugget hops in Oregon (1970)
+Used for: All purpose Ales, Lagers
+Aroma: Pleasant, hoppy
+Substitutes: Magnum or other high alpha hops</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Liberty</name>
+      <origin>U.S.</origin>
+      <alpha>4.3000000</alpha>
+      <beta>3.5000000</beta>
+      <type>1</type>
+      <notes>Used for: German style lagers
+Aroma: Fine, mild, slightly spicy flavor
+Substitutes: Hallertau, Mt Hood, Crystal
+Examples: Pete's Wicked Lager</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Lublin</name>
+      <origin>Poland</origin>
+      <alpha>5.0000000</alpha>
+      <beta>3.0000000</beta>
+      <type>0</type>
+      <notes>Version of Saaz grown in Poland - also called "Lubelski"
+Used for: Bohemian lagers and Pilsners
+Aroma: Noble, mild flavor similar to Saaz
+Substitutes: Saaz, Tettnanger</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Magnum</name>
+      <origin>Germany</origin>
+      <alpha>14.0000000</alpha>
+      <beta>6.5000000</beta>
+      <type>0</type>
+      <notes>German Hallertauer hybrid, widely used in Germany
+Used for: German ales and lagers
+Aroma: Good aroma and stable spicy flavor
+Substitutes: N/A</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Marynka</name>
+      <origin>Poland</origin>
+      <alpha>10.5000000</alpha>
+      <beta>11.4000000</beta>
+      <type>0</type>
+      <notes>Bittering hops with high aroma.  Primarily for use in Pilsner, lagers, ales or wheats.  Comparable to English Goldings or Chinook.  
+Used for: Lager, ales
+Substitutes: Chinook, English Golding</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Millenium</name>
+      <origin>U.S.</origin>
+      <alpha>14.2500000</alpha>
+      <beta>5.7000000</beta>
+      <type>0</type>
+      <notes>Originally developed as part of the Haas breeding program in the US, Millenium entered production in 2000.  It is a very high alpha hops used for bittering.
+Aroma: Mild, herbal
+Substitutes: Columbus, Tomahawk, Zeus and Nugget</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Motueka</name>
+      <origin>New Zealand</origin>
+      <alpha>7.0000000</alpha>
+      <beta>5.2500000</beta>
+      <type>1</type>
+      <notes>Flexible hop developed from Saaz.  Has notable character and aroma, balanced bitterness, and unique flavor.  
+Used for: Lagers, Belgian Ales and Bohemian Pilsner.  
+Substitutes: Saaz</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Mt. Hood</name>
+      <origin>U.S.</origin>
+      <alpha>6.0000000</alpha>
+      <beta>6.3000000</beta>
+      <type>1</type>
+      <notes>Used for: European Lagers, finishing
+Aroma: Mild with a clean aroma, neutral flavor. Somewhat pungent.
+Substitutes: Hallertauer, Liberty, Crystal</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Nelson Sauvin</name>
+      <origin>New Zealand</origin>
+      <alpha>12.0000000</alpha>
+      <beta>7.0000000</beta>
+      <type>0</type>
+      <notes>Triploid variety bred from "Smoothcone" released in 2000.  Oil profile said to taste like "fresh crushed gooseberries" similar to Sauvignon Blanc, giving it its name.  Very fruity, citrusy - use in moderation.  
+Used for: Pale ale, Super Premiums.  
+Substitutes: None</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Newport</name>
+      <origin>U.S.</origin>
+      <alpha>13.5000000</alpha>
+      <beta>6.0000000</beta>
+      <type>0</type>
+      <notes>High alpha hops released in 2002 as a potential replacement for Galena.  Note that these hops have a large alpha range of 9.8%-17% so check the package!  Fairly pungent.
+Used for: Primarily used for bittering in ales, stouts, barley wine.  
+Substitutes: Galena</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Northdown</name>
+      <origin>United Kingdom</origin>
+      <alpha>8.5000000</alpha>
+      <beta>5.5000000</beta>
+      <type>2</type>
+      <notes>Variation of Northern Brewers hops grown in England.
+Used for: Bittering in English ales
+Aroma: Good bittering, flavor and aroma
+Substitutes: Northern Brewer</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Northern Brewer</name>
+      <origin>Germany</origin>
+      <alpha>8.5000000</alpha>
+      <beta>4.0000000</beta>
+      <type>2</type>
+      <notes>Also called Hallertauer Northern Brewers
+Used for: Bittering and finishing both ales and lagers of all kinds
+Aroma: Fine, dry, clean bittering hop.  Unique flavor.
+Substitutes: Hallertauer Mittelfrueh, Hallertauer
+Examples: Anchor Steam, Old Peculiar,</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Nugget</name>
+      <origin>U.S.</origin>
+      <alpha>13.0000000</alpha>
+      <beta>5.0000000</beta>
+      <type>0</type>
+      <notes>Used for: Bittering hops for ales
+Aroma: Strong bittering, heavy, herbal aroma, spicy
+Substitutes: Chinook
+Examples: Sierra Nevada Porter</notes>
+      <hsi>24.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Olympic</name>
+      <origin>U.S.</origin>
+      <alpha>11.5000000</alpha>
+      <beta>5.5000000</beta>
+      <type>0</type>
+      <notes>Olympic is a high alpha hops released by Washington Agricultural Expt Station in 1983.  Heritage is from Brewers Gold and Fuggles.
+Aroma: Spicy, citrus aroma
+Substitutes: Brewers Gold</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Opal</name>
+      <origin>Germany</origin>
+      <alpha>6.5000000</alpha>
+      <beta>4.5000000</beta>
+      <type>1</type>
+      <notes>New variety from the hop research center in Hull.
+Used for: Aroma hops in continental styles
+Aroma: High aroma hops with hints of spice and subtle citrus.
+Substitutes: Unknown</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Orion</name>
+      <origin>Germany</origin>
+      <alpha>7.2500000</alpha>
+      <beta>3.7000000</beta>
+      <type>2</type>
+      <notes>Cross between Perle and an experimental variety
+Used for: Bittering and aroma
+Aroma: Pleasant, hoppy
+Substitutes: Perle</notes>
+      <hsi>17.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pacific Gem</name>
+      <origin>New Zealand</origin>
+      <alpha>15.0000000</alpha>
+      <beta>8.2000000</beta>
+      <type>0</type>
+      <notes>High alpha smoothcone cross developed at DSIR in 1987.
+Used for: Bittering - produces a cask-oak woody flavor.
+Aroma: Pleasant - some blackberry aroma.
+Substitutes: Bullion</notes>
+      <hsi>10.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pacific Jade</name>
+      <origin>New Zealand</origin>
+      <alpha>13.0000000</alpha>
+      <beta>7.5000000</beta>
+      <type>0</type>
+      <notes>High alpha bittering hops that delivers a bold herbal infusion of fresh citrus with some black pepper flavor.  Citrus aroma and flavor tempers ales and may be used as a finishing hops. 
+Used for: Ales, lagers 
+Substitutes: N/A</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pacifica</name>
+      <origin>New Zealand</origin>
+      <alpha>5.5000000</alpha>
+      <beta>6.0000000</beta>
+      <type>1</type>
+      <notes>Aroma hop developed from Hallertauer Mittelfrueh in New Zealand (1994).  Blend of old and new world taste including Orange marmalade and citrus aroma notes when used in late addition.  Soft finish if used in bittering.  
+Substitutes: Chinook, Hallertauer Mittelfrueh</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Palisade</name>
+      <origin>U.S.</origin>
+      <alpha>7.5000000</alpha>
+      <beta>7.0000000</beta>
+      <type>2</type>
+      <notes>Also called YCR-4, Palisade is an aroma variety bread by Yakima Chief Ranches.  It has both aromatic and moderate bittering properties.  
+Substitutes: Willamette</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Perle</name>
+      <origin>Germany</origin>
+      <alpha>8.0000000</alpha>
+      <beta>4.7500000</beta>
+      <type>0</type>
+      <notes>Used for: General purpose bittering for US and German ales, lagers
+Aroma: Slightly spicy, pleasant aroma, minty
+Substitutes: Chinook, Galena, Northern Brewer
+Examples: Sierra Nevada Pale Ale, Pale Bock</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Phoenix</name>
+      <origin>United Kingdom</origin>
+      <alpha>8.0000000</alpha>
+      <beta>4.6000000</beta>
+      <type>0</type>
+      <notes>Seedling derived from Wye Yoeman.
+Used for: Ales
+Aroma: Similar to Wye Challenger hops
+Substitutes: Challenger, East Kent Golding, Northdown</notes>
+      <hsi>10.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pilgrim</name>
+      <origin>United Kingdom</origin>
+      <alpha>11.5000000</alpha>
+      <beta>4.7000000</beta>
+      <type>0</type>
+      <notes>New variety from Wye College in 2001.  High Selinene content.
+Used for: Bittering
+Substitutes: N/A</notes>
+      <hsi>18.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pilot</name>
+      <origin>United Kingdom</origin>
+      <alpha>11.5000000</alpha>
+      <beta>3.0000000</beta>
+      <type>0</type>
+      <notes>A very new hops introduced in 2002 by Charles Faram &amp; Co Ltd.  Mild herbal flavor with lemon hints and fresh mowed grass flavor.  
+Used for: Primarily for bittering in APAs.  
+Rare.</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pioneer</name>
+      <origin>United Kingdom</origin>
+      <alpha>9.0000000</alpha>
+      <beta>3.7500000</beta>
+      <type>2</type>
+      <notes>Bred from Wye Omega at Wye College in the UK
+Used for: ESB, English Ales
+Aroma: Mild English hop aroma
+Substitutes: East Kent Goldings</notes>
+      <hsi>17.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Premiant</name>
+      <origin>Czech Republic</origin>
+      <alpha>7.5000000</alpha>
+      <beta>4.5000000</beta>
+      <type>2</type>
+      <notes>A cross between Czech aroma and bittering varieties.  Dual purpose though its aroma is not as strong as some other Czech hops.  Use in beers where a moderate hoppy aroma is needed.  
+Used for: Moderate ales, lagers 
+Substitutes: Saaz</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Pride of Ringwood</name>
+      <origin>Australia</origin>
+      <alpha>9.0000000</alpha>
+      <beta>5.7500000</beta>
+      <type>0</type>
+      <notes>Used for: General purpose bittering hops for Australian beers
+Aroma: Moderate citric aroma, clean bittering flavor
+Substitutes: Cluster, Galena</notes>
+      <hsi>45.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Progress</name>
+      <origin>United Kingdom</origin>
+      <alpha>6.2500000</alpha>
+      <beta>2.1000000</beta>
+      <type>1</type>
+      <notes>Used for: Bittering and aroma in English Ales
+Aroma: Similar to Fuggles, aromatic, slightly sweet
+Substitutes: Fuggles</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Riwaka</name>
+      <origin>New Zealand</origin>
+      <alpha>5.2500000</alpha>
+      <beta>4.5000000</beta>
+      <type>1</type>
+      <notes>Formerly called B-Saaz, this was developed from old line Saazer hops in New Zealand.  
+Used for: New world pale ale, regional pilsners
+Aroma: Strong, hoppy. Some grapefruit and citrus character.</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Saaz</name>
+      <origin>Czech Republic</origin>
+      <alpha>4.0000000</alpha>
+      <beta>3.5000000</beta>
+      <type>1</type>
+      <notes>Used for: Pilsners and Bohemian style lagers
+Aroma: Delicate, mild, clean, somewhat floral -- Noble hops
+Substitutes: Tettnanger, Lublin
+Examples: Pulsner Urquell</notes>
+      <hsi>42.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Santiam</name>
+      <origin>U.S.</origin>
+      <alpha>6.0000000</alpha>
+      <beta>7.0000000</beta>
+      <type>1</type>
+      <notes>Triploid aroma selection derived from Tettnang and Hallertauer (1997)
+Used for: Lager, U.S. Pale Ale, Pilsner
+Substitutes: German Tettnang, Spalt, Spalt Select</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Saphir</name>
+      <origin>Germany</origin>
+      <alpha>3.5000000</alpha>
+      <beta>4.6000000</beta>
+      <type>1</type>
+      <notes>A new noble breed as an alternative to Hallertau Mittelfrueh in an attempt to make it more disease resistant and commercially viable.  Similar in character to Hallertau varieties.  
+Used for: Pilsners, lagers, Belgian whites.  
+Substitutes: Hallertau Mittelfrueh</notes>
+      <hsi>45.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Satus</name>
+      <origin>U.S.</origin>
+      <alpha>13.2500000</alpha>
+      <beta>8.7500000</beta>
+      <type>0</type>
+      <notes>High alpha bittering hops from Yakima that is similar to Galena.  Of recent origin.  
+Substitutes: Galena</notes>
+      <hsi>33.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Select Spalt</name>
+      <origin>Germany</origin>
+      <alpha>4.7500000</alpha>
+      <beta>3.5000000</beta>
+      <type>1</type>
+      <notes>Bred from Hallertauer Mittelfrueh and Spalt in Germany.  Spalt character.
+Used for: Lager, Pilsner, Noble aroma hop substitute
+Aroma: Very fine, spalt aroma
+Substitutes: Spalter, Saaz, Tettnang</notes>
+      <hsi>17.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Simcoe</name>
+      <origin>U.S.</origin>
+      <alpha>13.0000000</alpha>
+      <beta>4.5000000</beta>
+      <type>0</type>
+      <notes>High alpha bittering hops with good aroma characteristics.
+Used for: IPAs
+Aroma: Citrus and pine-like aroma
+Substitutes: N/A</notes>
+      <hsi>18.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Sladek</name>
+      <origin>Czech Republic</origin>
+      <alpha>5.0000000</alpha>
+      <beta>7.5000000</beta>
+      <type>1</type>
+      <notes>Hybrid variety of Saaz origin with noble hoppy taste and aroma.  Generally recommended for middle-hopping about 20 min before end of boil.  Not a replacement for Saaz, but complimentary in Lagers.  
+Used for: Lager 
+Substitutes: Saaz</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Sorachi Ace</name>
+      <origin>Japan</origin>
+      <alpha>12.0000000</alpha>
+      <beta>6.0000000</beta>
+      <type>0</type>
+      <notes>Developed by Sapporo Breweries and used in their beers - has a Brewer's gold and Saaz heritage.  Reported to be lemony in flavor and aroma.  
+Used for: Saison, IPA or other beer where lemon/citrus is desirable.  
+Substitutes: Admiral, Cascade</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Southern Cross</name>
+      <origin>New Zealand</origin>
+      <alpha>13.0000000</alpha>
+      <beta>6.2000000</beta>
+      <type>2</type>
+      <notes>Dual purpose with "European" flavor - from DSIR in 1994
+Used for: European flavor bittering/aroma
+Aroma: Spicy, lemony, slight pine and wood flavors
+Substitutes: N/A</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Spalter</name>
+      <origin>Germany</origin>
+      <alpha>4.5000000</alpha>
+      <beta>4.0000000</beta>
+      <type>1</type>
+      <notes>Used for: Traditional German bittering and aroma hops, Altbiers, Lagers
+Aroma: Mild, pleasant, slight spice
+Substitutes: Saaz, Tettnang
+Examples: Dusseldorf Altbiers</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Sterling</name>
+      <origin>U.S.</origin>
+      <alpha>7.5000000</alpha>
+      <beta>5.0000000</beta>
+      <type>2</type>
+      <notes>Flavor is a cross between Saaz and Mt Hood
+Used for: Lagers, Ales, Pilsners
+Aroma: Herbal, spicy, some floral and citrus hints
+Substitutes: Saaz, Polish Lublin</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Sticklebract</name>
+      <origin>New Zealand</origin>
+      <alpha>13.5000000</alpha>
+      <beta>8.0000000</beta>
+      <type>2</type>
+      <notes>High alpha hops from DSIR research first released in 1972.  Some of the same qualities as Northern Brewer
+Used for: Dual purpose
+Aroma: Pine-like with a hint of citrus
+Substitutes: Northern Brewer</notes>
+      <hsi>17.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Strisslespalt</name>
+      <origin>France</origin>
+      <alpha>4.0000000</alpha>
+      <beta>3.8000000</beta>
+      <type>1</type>
+      <notes>Aroma hops used widely in the Alsace area of France.
+Used for: Pilsner, lager, wheat
+Aroma: Medium intensity, pleasant, hoppy
+Substitutes: Mt Hood, Crystal, Hallertauer Hersbruck</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Styrian Goldings</name>
+      <origin>Slovenia</origin>
+      <alpha>5.4000000</alpha>
+      <beta>2.9000000</beta>
+      <type>1</type>
+      <notes>A seedless version of Fuggles grown in Slovenia
+Used for: Bittering, finishing for a wide variety of European Beers. Popular in Europe and the United Kingdom
+Aroma: Mild, soft, grassy, floral aroma. Similar to Fuggles.
+Substitutes: Fuggles, Williamette</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Summit</name>
+      <origin>U.S.</origin>
+      <alpha>17.0000000</alpha>
+      <beta>5.0000000</beta>
+      <type>0</type>
+      <notes>High alpha variety bred by American Dwarf Hop Assoc.  Can be grown commercially on a low trellis.  
+Aroma: Strong citrus, grapefruit notes.
+Substitutes: Warrior, Millenium, Columbus, Tomahawk, Zeus</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Sun</name>
+      <origin>U.S.</origin>
+      <alpha>14.0000000</alpha>
+      <beta>5.5000000</beta>
+      <type>0</type>
+      <notes>A very high alpha bittering hops from Yakima Valley, Washington
+Used for: Bittering (intense)
+Aroma: Pleasant, hoppy
+Substitutes: Other very high alpha US hops</notes>
+      <hsi>25.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Super Alpha</name>
+      <origin>New Zealand</origin>
+      <alpha>13.0000000</alpha>
+      <beta>8.0000000</beta>
+      <type>0</type>
+      <notes>High alpha hops released in 1976 by DSIR. European in character - clean crisp flavor and resin aroma.
+Used for: European Styles, General purpose bittering
+Aroma: Pleasant, resin like aroma
+Substitutes: N/A</notes>
+      <hsi>15.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Super Galena</name>
+      <origin>U.S.</origin>
+      <alpha>14.5000000</alpha>
+      <beta>9.0000000</beta>
+      <type>0</type>
+      <notes>Super high alpha hops from Hopsteiner breeding program released in 2006.  High alpha and beta content - comparable to Galena in bitterness and aroma profile.  
+Used for: Primarily for bitterness.  
+Substitutes: Galena</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Super Pride</name>
+      <origin>Australia</origin>
+      <alpha>14.2500000</alpha>
+      <beta>6.7000000</beta>
+      <type>0</type>
+      <notes>A high alpha variation of the Pride of Ringwood hop variety.  Features mild aromas, higher alpha content and low cohumulone levels.  
+Used for: Primarily for bittering.  
+Substitutes: Pride of Ringwood</notes>
+      <hsi>45.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Target</name>
+      <origin>United Kingdom</origin>
+      <alpha>11.0000000</alpha>
+      <beta>5.0000000</beta>
+      <type>0</type>
+      <notes>Used for: English ales and lagers
+Aroma: Robust aroma and flavor
+Substitutes: East Kent Goldings</notes>
+      <hsi>50.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Tettnang</name>
+      <origin>Germany</origin>
+      <alpha>4.5000000</alpha>
+      <beta>3.5000000</beta>
+      <type>1</type>
+      <notes>Used for: German ales, lagers and wheat beer
+Aroma: Noble, mild, fine, slightly spicy
+Substitutes: Saaz, Spalt
+Examples: Sam Adams Octoberfest, Anderson Valley ESB</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Tillicum</name>
+      <origin>U.S.</origin>
+      <alpha>13.2500000</alpha>
+      <beta>9.9000000</beta>
+      <type>0</type>
+      <notes>High alpha and high beta hops developed though Haas breeding program and released in 1995.  Daughter variety of Galena and related to Chelan - so similar to both. 
+Substitutes: Galena, Chelan</notes>
+      <hsi>20.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Tomahawk</name>
+      <origin>U.S.</origin>
+      <alpha>15.5000000</alpha>
+      <beta>4.5000000</beta>
+      <type>0</type>
+      <notes>Part of the Columbus/Tomahak/Zeus (CTZ) group of super high alpha hops.  Together these make up 1/4 of US hop acreage.  
+Used for: High alpha hops used primarily for commercial bittering.  
+Substitutes: Tomahawk, Zeus, Nugget, Galena, Chinook</notes>
+      <hsi>48.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Topaz</name>
+      <origin>Australia</origin>
+      <alpha>17.0000000</alpha>
+      <beta>6.5000000</beta>
+      <type>0</type>
+      <notes>Very high alpha hop variety from Australia.  Used for commercial production primarily for its high alpha acid content and high bitterness.</notes>
+      <hsi>30.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Tradition</name>
+      <origin>Germany</origin>
+      <alpha>6.0000000</alpha>
+      <beta>4.5000000</beta>
+      <type>0</type>
+      <notes>Close descendant of Hallertauer Mittelfrueh bred for high yield.
+Used for: Lager, Pilsner, Bock, some Weizens
+Aroma: Fine - similar to Hallertauer Mittelfrueh
+Substitutes: Hallertauer Mittelfrueh, Liberty, Ultra</notes>
+      <hsi>10.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Ultra</name>
+      <origin>U.S.</origin>
+      <alpha>3.0000000</alpha>
+      <beta>3.7500000</beta>
+      <type>1</type>
+      <notes>Triploid seedling of the German Hallertauer Variety
+Used for: Lager, Pilsner, wheat, finishing hops in ales
+Aroma: Good to outstanding - some Saaz like qualities
+Substitutes: Liberty, Hallertauer, Tradition, Saaz</notes>
+      <hsi>27.5000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Vanguard</name>
+      <origin>U.S.</origin>
+      <alpha>5.5000000</alpha>
+      <beta>6.0000000</beta>
+      <type>1</type>
+      <notes>Diploid seedling made in 1982, released in 1997. Hallertau Mitterfrueh parentage.
+Used for: European lagers, ales
+Aroma: Strong aromatic notes
+Substitutes: Hallertauer Mittelfrueh</notes>
+      <hsi>18.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Victoria</name>
+      <origin>Australia</origin>
+      <alpha>13.0000000</alpha>
+      <beta>6.2500000</beta>
+      <type>0</type>
+      <notes>Hi alpha hops grown in Victoria, Australia.  It was created in 1976 and entered commercial production in the 1990s.
+Used for: Primarily for bittering due to high alpha content.</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Warrior</name>
+      <origin>U.S.</origin>
+      <alpha>15.0000000</alpha>
+      <beta>4.7500000</beta>
+      <type>2</type>
+      <notes>High alpha hops from Yakima Chief Ranches. Also called YCR-5.  Mild aroma and low cohumulone content - primarily for bittering.
+Used for: Ales, stouts
+Aroma: Neutral, clean, mild
+Substitutes: Nugget, Columbus, Magnum</notes>
+      <hsi>24.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Whitbread Golding Variety (WGV)</name>
+      <origin>United Kingdom</origin>
+      <alpha>6.0000000</alpha>
+      <beta>2.5000000</beta>
+      <type>1</type>
+      <notes>Derived in England in 1911 from Bates Brewer. Some Golding characteristics, but lacking the full Goldings aroma.
+Used for: Ales
+Aroma: Pleasant, hoppy, slightly intense
+Substitutes: East Kent Goldings, Progress</notes>
+      <hsi>35.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Willamette</name>
+      <origin>U.S.</origin>
+      <alpha>5.5000000</alpha>
+      <beta>3.5000000</beta>
+      <type>1</type>
+      <notes>Used for: Finishing American and British Ales
+Aroma: Mild, grassy, floral, slightly spicy
+Substitutes: Fuggles, East Kent Goldings
+Examples: Sierra Nevada Porter, Ballard Bitter</notes>
+      <hsi>40.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
+   <hop>
+      <name>Zeus</name>
+      <origin>U.S.</origin>
+      <alpha>14.0000000</alpha>
+      <beta>5.0000000</beta>
+      <type>0</type>
+      <notes>Super high alpha bittering hops developed in the Yakima Valley, WA
+Used for: Bittering, intense aroma
+Aroma: Aromatic, pleasant
+Substitutes: Other high alpha hops</notes>
+      <hsi>45.0000000</hsi>
+      <humulene>0</humulene>
+      <cohumulone>0</cohumulone>
+      <myrcene>0</myrcene>
+      <caryophyllene>0</caryophyllene>
+   </hop>
 </hops>

@@ -11,6 +11,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.tolstovenator.brewcalc.repository.Hop.HopForm;
+import com.tolstovenator.brewcalc.repository.Hop.HopUsage;
+
 import android.content.res.AssetManager;
 
 public class HopRepository {
@@ -31,6 +34,17 @@ public class HopRepository {
 					Hop hop = new Hop();
 					hop.setName(hopElement.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeValue());
 					hop.setAlpha(Double.valueOf(hopElement.getElementsByTagName("alpha").item(0).getChildNodes().item(0).getNodeValue()));
+					hop.setBeta(Double.valueOf(hopElement.getElementsByTagName("beta").item(0).getChildNodes().item(0).getNodeValue()));
+					hop.setHumulene(Double.valueOf(hopElement.getElementsByTagName("humulene").item(0).getChildNodes().item(0).getNodeValue()));
+					hop.setCohumulone(Double.valueOf(hopElement.getElementsByTagName("cohumulone").item(0).getChildNodes().item(0).getNodeValue()));
+					hop.setStorageFactor(Double.valueOf(hopElement.getElementsByTagName("hsi").item(0).getChildNodes().item(0).getNodeValue()).intValue());
+					hop.setCaryophyllene(Double.valueOf(hopElement.getElementsByTagName("caryophyllene").item(0).getChildNodes().item(0).getNodeValue()));
+					hop.setMyrcene(Double.valueOf(hopElement.getElementsByTagName("myrcene").item(0).getChildNodes().item(0).getNodeValue()));
+					hop.setHopForm(HopForm.PELLET);
+					hop.setHopUsage(HopUsage.values()[Integer.valueOf(hopElement.getElementsByTagName("type").item(0).getChildNodes().item(0).getNodeValue())]);
+					hop.setOrigin(hopElement.getElementsByTagName("origin").item(0).getChildNodes().item(0).getNodeValue());
+					hop.setDescription(hopElement.getElementsByTagName("notes").item(0).getChildNodes().item(0).getNodeValue());
+					
 					hops.put(hop.getName(), hop);
 				}
 			}
