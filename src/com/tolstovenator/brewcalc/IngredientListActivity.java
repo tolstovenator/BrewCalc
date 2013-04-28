@@ -147,6 +147,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	        case android.R.id.home:
 	            if (mTwoPane) {
 	            	detailedView = false;
+	            	hopDetailFragment = null;
 	            	listFragment = new IngredientListFragment();
 	    			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 	    			fragmentTransaction.replace(R.id.ingredient_list_container, listFragment);
@@ -174,27 +175,31 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 		if (mTwoPane) {
 			Bundle arguments = new Bundle();
 			arguments.putString(HopDetailFragment.ARG_ITEM_ID, hop.getName());
-			HopDetailFragment hopDetailFragment = new HopDetailFragment();
-			hopDetailFragment.setArguments(arguments);
-			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-			fragmentTransaction.replace(R.id.ingredient_detail_container, hopDetailFragment);
-			if (!detailedView) {
-				arguments = new Bundle();
-				arguments.putInt(IngredientDetailFragment.ARG_ITEM_ID, IngredientType.HOPS.ordinal());
-				arguments.putString(IngredientDetailFragment.SELECTION_ID, hop.getName());
-				if (this.fragment != null) {
-					ListView currentView = this.fragment.getListView();
-					int position = currentView.getFirstVisiblePosition();
-					int scroll = currentView.getChildAt(0).getTop();
-					arguments.putInt(IngredientDetailFragment.SCROLL_Y, scroll);
-					arguments.putInt(IngredientDetailFragment.SCROLL_POSITION, position);
+			if (hopDetailFragment == null) {
+				hopDetailFragment = new HopDetailFragment();
+				hopDetailFragment.setArguments(arguments);
+				FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+				fragmentTransaction.replace(R.id.ingredient_detail_container, hopDetailFragment);
+				if (!detailedView) {
+					arguments = new Bundle();
+					arguments.putInt(IngredientDetailFragment.ARG_ITEM_ID, IngredientType.HOPS.ordinal());
+					arguments.putString(IngredientDetailFragment.SELECTION_ID, hop.getName());
+					if (this.fragment != null) {
+						ListView currentView = this.fragment.getListView();
+						int position = currentView.getFirstVisiblePosition();
+						int scroll = currentView.getChildAt(0).getTop();
+						arguments.putInt(IngredientDetailFragment.SCROLL_Y, scroll);
+						arguments.putInt(IngredientDetailFragment.SCROLL_POSITION, position);
+					}
+					fragment = new IngredientDetailFragment();
+					fragment.setArguments(arguments);
+					fragmentTransaction.replace(R.id.ingredient_list_container, fragment);
+					detailedView = true;
 				}
-				fragment = new IngredientDetailFragment();
-				fragment.setArguments(arguments);
-				fragmentTransaction.replace(R.id.ingredient_list_container, fragment);
-				detailedView = true;
+				fragmentTransaction.commit();
+			} else {
+				hopDetailFragment.setHop(hop);
 			}
-			fragmentTransaction.commit();
 			ActionBar actionBar = getActionBar();
 			actionBar.setDisplayHomeAsUpEnabled(true);
 		} else {
@@ -227,5 +232,6 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
             mBound = false;
         }
     };
+	private HopDetailFragment hopDetailFragment;
 	
 }

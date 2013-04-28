@@ -6,8 +6,8 @@ public class Hop {
 	
 	private double alpha;
 	private double beta;
-	private HopForm hopForm;
-	private HopUsage hopUsage;
+	private HopForm hopForm = HopForm.PELLET;
+	private HopUsage hopUsage = HopUsage.BITTER;
 	private int storageFactor;
 	private String origin = "";
 	private String description = "";

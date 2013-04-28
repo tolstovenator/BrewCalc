@@ -11,10 +11,10 @@ Used for: Ales
 Aroma: Primarily for bittering
 Substitutes: Target, Northdown, Challenger</notes>
       <hsi>15.0000000</hsi>
-      <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
-      <myrcene>0</myrcene>
-      <caryophyllene>0</caryophyllene>
+      <humulene>30</humulene>
+      <cohumulone>41</cohumulone>
+      <myrcene>43.5</myrcene>
+      <caryophyllene>7</caryophyllene>
    </hop>
    <hop>
       <name>Ahtanum</name>
@@ -27,10 +27,10 @@ Used for: American ales and lagers
 Aroma: Distinctive floral and citrus aromas
 Substitutes: Amarillo, Cascade</notes>
       <hsi>30.0000000</hsi>
-      <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
-      <myrcene>0</myrcene>
-      <caryophyllene>0</caryophyllene>
+      <humulene>18</humulene>
+      <cohumulone>32.5</cohumulone>
+      <myrcene>52.5</myrcene>
+      <caryophyllene>10</caryophyllene>
    </hop>
    <hop>
       <name>Amarillo Gold</name>
@@ -43,10 +43,10 @@ Used for: IPAs, Ales
 Aroma: Citrus, flowery
 Substitutes: Cascade, Centennial</notes>
       <hsi>20.0000000</hsi>
-      <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
-      <myrcene>0</myrcene>
-      <caryophyllene>0</caryophyllene>
+      <humulene>10.5</humulene>
+      <cohumulone>22.5</cohumulone>
+      <myrcene>69</myrcene>
+      <caryophyllene>3</caryophyllene>
    </hop>
    <hop>
       <name>Apollo</name>
@@ -58,10 +58,10 @@ Substitutes: Cascade, Centennial</notes>
 Adds a strong grapefruit/hop note if added late in boil.  
 Substitutes: Nugget, Columbus, Tomahawk, Zeus</notes>
       <hsi>15.0000000</hsi>
-      <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
-      <myrcene>0</myrcene>
-      <caryophyllene>0</caryophyllene>
+      <humulene>27.5</humulene>
+      <cohumulone>26</cohumulone>
+      <myrcene>40</myrcene>
+      <caryophyllene>17.5</caryophyllene>
    </hop>
    <hop>
       <name>Aquila</name>
@@ -75,7 +75,7 @@ Substitutes: Cluster
 No longer commercially grown.</notes>
       <hsi>35.0000000</hsi>
       <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
+      <cohumulone>46</cohumulone>
       <myrcene>0</myrcene>
       <caryophyllene>0</caryophyllene>
    </hop>
@@ -90,7 +90,7 @@ Used for: Bittering ales, lagers
 Substitutes: Brewers Gold</notes>
       <hsi>15.0000000</hsi>
       <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
+      <cohumulone>36</cohumulone>
       <myrcene>0</myrcene>
       <caryophyllene>0</caryophyllene>
    </hop>
@@ -104,8 +104,8 @@ Substitutes: Brewers Gold</notes>
 Used for: Often mixed with other hops in lagers.  
 Substitutes: Styrian Goldings</notes>
       <hsi>23.0000000</hsi>
-      <humulene>0</humulene>
-      <cohumulone>0</cohumulone>
+      <humulene>23.5</humulene>
+      <cohumulone>25.5</cohumulone>
       <myrcene>0</myrcene>
       <caryophyllene>0</caryophyllene>
    </hop>

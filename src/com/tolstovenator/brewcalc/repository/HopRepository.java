@@ -1,6 +1,7 @@
 package com.tolstovenator.brewcalc.repository;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -20,11 +21,11 @@ public class HopRepository {
 	
 	private Map<String, Hop> hops = new TreeMap<String, Hop>();
 	
-	public HopRepository(AssetManager assetManager) {
+	public HopRepository(InputStream inputStream) {
 		try {
 			DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-			Document doc = docBuilder.parse (assetManager.open("hops.xml"));
+			Document doc = docBuilder.parse (inputStream);
 			Element root = doc.getDocumentElement();
 			NodeList list = root.getChildNodes();
 			for (int i = 0; i < list.getLength() ; i ++) {
@@ -54,12 +55,27 @@ public class HopRepository {
 		}
 	}
 	
+	public HopRepository() {
+		//empty repository
+	}
+	
 	public ArrayList<Hop> getHops() {
 		return new ArrayList<Hop>(hops.values()); 
 	}
 	
 	public Hop getHopByName(String name) {
 		return hops.get(name);
+	}
+
+	public void add(Hop changedHop) {
+		hops.put(changedHop.getName(), changedHop);
+		//todo: pesrist
+		
+	}
+
+	public void update(String selectedItem, Hop changedHop) {
+		hops.remove(selectedItem);
+		add(changedHop);
 	}
 	
 }

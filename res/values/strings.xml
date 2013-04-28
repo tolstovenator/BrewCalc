@@ -27,6 +27,9 @@
     <string name="caryophyllene">Caryophyllene</string>
     <string name="notes">Notes</string>
     <string name="save">Save</string>
+    <string name="add_menu">add</string>
+    <string name="hop_already_exists">Hop %1$s already exists</string>
+    <string name="error_dialog_title">Error</string>
     
     
 </resources>
