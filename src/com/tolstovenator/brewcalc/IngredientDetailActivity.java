@@ -1,7 +1,15 @@
 package com.tolstovenator.brewcalc;
 
+import com.tolstovenator.brewcalc.repository.Hop;
+import com.tolstovenator.brewcalc.repository.HopRepository;
+import com.tolstovenator.brewcalc.repository.IngredientService;
+
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
@@ -15,7 +23,11 @@ import android.view.MenuItem;
  * This activity is mostly just a 'shell' activity containing nothing more than
  * a {@link IngredientDetailFragment}.
  */
-public class IngredientDetailActivity extends FragmentActivity {
+public class IngredientDetailActivity extends FragmentActivity implements IngredientDetailFragment.DetailSelectionCallback,
+			RepositoryActivity {
+	
+	private IngredientService ingredientService;
+	boolean mBound = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +46,8 @@ public class IngredientDetailActivity extends FragmentActivity {
 		//
 		// http://developer.android.com/guide/components/fragments.html
 		//
+		Intent intent = new Intent(this, IngredientService.class);
+        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
 		if (savedInstanceState == null) {
 			// Create the detail fragment and add it to the activity
 			// using a fragment transaction.
@@ -49,6 +63,16 @@ public class IngredientDetailActivity extends FragmentActivity {
 		}
 	}
 
+	    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Unbind from the service
+        if (mBound) {
+            unbindService(mConnection);
+            mBound = false;
+        }
+    }
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -66,4 +90,36 @@ public class IngredientDetailActivity extends FragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	@Override
+	public void onHopSelected(Hop hop) {
+		Intent detailIntent = new Intent(this,
+				HopDetailsActivity.class);
+		detailIntent.putExtra(HopDetailFragment.ARG_ITEM_ID, hop.getName());
+		startActivity(detailIntent);
+	}
+
+	@Override
+	public HopRepository getHopRepository() {
+		// TODO Auto-generated method stub
+		return ingredientService.getHopRepository();
+	}
+	
+	private ServiceConnection mConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName className,
+                IBinder service) {
+            // We've bound to LocalService, cast the IBinder and get LocalService instance
+        	IngredientService.LocalBinder binder = (IngredientService.LocalBinder) service;
+            ingredientService = binder.getService();
+            mBound = true;
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBound = false;
+        }
+    };
+	
 }

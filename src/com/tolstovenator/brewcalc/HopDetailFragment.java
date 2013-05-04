@@ -1,12 +1,19 @@
 package com.tolstovenator.brewcalc;
 
 import com.tolstovenator.brewcalc.repository.Hop;
+import com.tolstovenator.brewcalc.repository.IngredientService;
+import com.tolstovenator.brewcalc.repository.Hop.HopForm;
+import com.tolstovenator.brewcalc.repository.Hop.HopUsage;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.ui.error.ErrorDialog;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -22,6 +29,10 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 public class HopDetailFragment extends Fragment implements TextWatcher, OnCheckedChangeListener {
+	
+	private IngredientService ingredientService;
+	boolean mBound = false;
+	
 	
 	/**
      * The fragment argument representing the item ID that this fragment
@@ -87,13 +98,17 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
             // to load content from a content provider.
             selectedItem = getArguments().getString(ARG_ITEM_ID);
         }
-        hopRepository = ((IngredientListActivity)getActivity()).getHopRepository();
+        Intent intent = new Intent(getActivity(), IngredientService.class);
+        getActivity().bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
     }
     
     @Override
 	public void onDestroy() {
 		super.onDestroy();
-		hopRepository = null;
+		if (mBound) {
+            getActivity().unbindService(mConnection);
+            mBound = false;
+        }
 	}
 
 	@Override
@@ -142,10 +157,6 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-		if (selectedItem != null) {
-			Hop hop = hopRepository.getHopByName(selectedItem);
-			resetForm(hop);
-		}
 	}
 	
 	
@@ -189,9 +200,13 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
 
 	private void resetSaveMenu() {
 		changes = false;
-		MenuItem menuItem = menu.findItem(R.id.save_menu);
-		menuItem.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-		menuItem.setEnabled(false);
+		
+		
+		if (menu != null) {
+			MenuItem menuItem = menu.findItem(R.id.save_menu);
+			menuItem.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+			menuItem.setEnabled(false);
+		}
 	}
 
 	private void resetForm(Hop hop) {
@@ -282,7 +297,24 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
 				changedHop.setName(hop_name.getText().toString().trim());
 				changedHop.setOrigin(origin.getText().toString().trim());
 				changedHop.setDescription(hopsNote.getText().toString().trim());
-				//TODO: selected form and type
+				HopForm hopForm;
+				if (whole.isChecked()) {
+					hopForm = HopForm.WHOLE;
+				} else if (plug.isChecked()) {
+					hopForm = HopForm.PLUG;
+				} else {
+					hopForm = HopForm.PELLET;
+				}
+				changedHop.setHopForm(hopForm);
+				HopUsage hopUsage;
+				if (bittering.isChecked()) {
+					hopUsage = HopUsage.BITTER;
+				} else if (aroma.isChecked()) {
+					hopUsage = HopUsage.AROMA;
+				} else {
+					hopUsage = HopUsage.DUAL;
+				}
+				changedHop.setHopUsage(hopUsage);
 				if (selectedItem == null || selectedItem.isEmpty()) {
 					hopRepository.add(changedHop);
 				} else {
@@ -316,5 +348,29 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
     	dialog.setMessage(message);
     	dialog.show(getFragmentManager(), "hops");
     }
+    
+    private ServiceConnection mConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName className,
+                IBinder service) {
+            // We've bound to LocalService, cast the IBinder and get LocalService instance
+        	IngredientService.LocalBinder binder = (IngredientService.LocalBinder) service;
+            ingredientService = binder.getService();
+            mBound = true;
+            hopRepository = ingredientService.getHopRepository();
+            if (selectedItem != null) {
+            	Hop hop = hopRepository.getHopByName(selectedItem);
+            	setHop(hop);
+            }
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBound = false;
+            ingredientService = null;
+            hopRepository = null;
+        }
+    };
 
 }

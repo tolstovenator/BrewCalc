@@ -29,6 +29,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".IngredientListActivity" />
         </activity>
+        <activity
+            android:name="com.tolstovenator.brewcalc.HopDetailsActivity"
+            android:label="@string/title_ingredient_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IngredientDetailActivity" />
+        </activity>
         <service android:name="com.tolstovenator.brewcalc.repository.IngredientService"
             ></service>
     </application>

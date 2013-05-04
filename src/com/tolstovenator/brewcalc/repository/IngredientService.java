@@ -14,7 +14,7 @@ import android.os.IBinder;
 
 public class IngredientService extends Service{
 	
-	private static final String HOPS_XML = "hops.xml";
+	public static final String HOPS_XML = "hops.xml";
 
 	private final IBinder mBinder = new LocalBinder();
 	
@@ -37,15 +37,16 @@ public class IngredientService extends Service{
 			try {
 				System.out.println(getFilesDir());
 				localFile = openFileInput(HOPS_XML);
-				hopRepository = new HopRepository(localFile);
+				hopRepository = new HopRepository(localFile, this);
 			} catch (FileNotFoundException e) {
 				try {
 					localFile = copyFileToLocal();
-					hopRepository = new HopRepository(localFile);
+					hopRepository = new HopRepository(localFile, this);
 				} catch (Exception e2) {
-					hopRepository = new HopRepository();
+					hopRepository = new HopRepository(this);
 				}
 			}
+			
 			
 		}
         return mBinder;

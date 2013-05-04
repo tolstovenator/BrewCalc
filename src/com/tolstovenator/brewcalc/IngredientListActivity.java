@@ -38,7 +38,7 @@ import android.widget.ListView;
  * selections.
  */
 public class IngredientListActivity extends AbstractActionBarActivity implements
-		IngredientListFragment.Callbacks, IngredientDetailFragment.DetailSelectionCallback {
+		IngredientListFragment.Callbacks, IngredientDetailFragment.DetailSelectionCallback, RepositoryActivity {
 
 	/**
 	 * Whether or not the activity is in two-pane mode, i.e. running on a tablet

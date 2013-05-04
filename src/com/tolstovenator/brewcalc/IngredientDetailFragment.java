@@ -1,7 +1,12 @@
 package com.tolstovenator.brewcalc;
 
 import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
@@ -13,6 +18,7 @@ import android.widget.TextView;
 
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
+import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 /**
@@ -21,6 +27,11 @@ import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
  * tablets) or a {@link IngredientDetailActivity} on handsets.
  */
 public class IngredientDetailFragment extends ListFragment {
+	
+	
+	private IngredientService ingredientService;
+	boolean mBound = false;
+	
 	/**
 	 * The fragment argument representing the item ID that this fragment
 	 * represents.
@@ -68,8 +79,32 @@ public class IngredientDetailFragment extends ListFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Activity parent = getActivity();
-		hopRepository = ((IngredientListActivity)parent).getHopRepository();
+		
+		Intent intent = new Intent(getActivity(), IngredientService.class);
+        getActivity().bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+		
+		if (getArguments().containsKey(SCROLL_Y)) {
+			scrollY = getArguments().getInt(SCROLL_Y);
+		}
+		if (getArguments().containsKey(SCROLL_POSITION)) {
+			scrollPosition = getArguments().getInt(SCROLL_POSITION);
+		}
+	}
+	
+	
 
+	@Override
+	public void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		if (mBound) {
+            getActivity().unbindService(mConnection);
+            mBound = false;
+        }
+	}
+
+	private void initView() {
+		hopRepository = ingredientService.getHopRepository();
 		if (getArguments().containsKey(ARG_ITEM_ID)) {
 			// Load the dummy content specified by the fragment
 			// arguments. In a real-world scenario, use a Loader
@@ -88,16 +123,9 @@ public class IngredientDetailFragment extends ListFragment {
 				default:
 		
 			}
-			
 		}
 		if (getArguments().containsKey(SELECTION_ID)) {
 			mActivatedPosition = hopRepository.getHops().indexOf(hopRepository.getHopByName(getArguments().getString(SELECTION_ID)));
-		}
-		if (getArguments().containsKey(SCROLL_Y)) {
-			scrollY = getArguments().getInt(SCROLL_Y);
-		}
-		if (getArguments().containsKey(SCROLL_POSITION)) {
-			scrollPosition = getArguments().getInt(SCROLL_POSITION);
 		}
 	}
 	
@@ -169,4 +197,25 @@ public class IngredientDetailFragment extends ListFragment {
 	public interface DetailSelectionCallback {
 		public void onHopSelected(Hop hop);
 	}
+	
+	private ServiceConnection mConnection = new ServiceConnection() {
+
+        @Override
+        public void onServiceConnected(ComponentName className,
+                IBinder service) {
+            // We've bound to LocalService, cast the IBinder and get LocalService instance
+        	IngredientService.LocalBinder binder = (IngredientService.LocalBinder) service;
+            ingredientService = binder.getService();
+            mBound = true;
+            initView();
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBound = false;
+            ingredientService = null;
+            hopRepository = null;
+        }
+    };
+	
 }
