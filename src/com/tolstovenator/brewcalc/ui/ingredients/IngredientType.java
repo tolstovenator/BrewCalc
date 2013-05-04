@@ -4,21 +4,27 @@ import com.tolstovenator.brewcalc.R;
 
 public enum IngredientType {
 	
-	HOPS(R.string.hops),
-	SUGARS(R.string.sugars),
-	YEAST(R.string.yeast),
-	WATER(R.string.water);
+	HOPS(R.string.hops, R.drawable.ic_launcher),
+	SUGARS(R.string.sugars, R.drawable.ic_launcher),
+	YEAST(R.string.yeast, R.drawable.ic_launcher),
+	WATER(R.string.water, R.drawable.ic_launcher);
 	
 	
-	IngredientType(int nameId) {
+	IngredientType(int nameId, int imageId) {
 		this.nameId = nameId;
+		this.imageId = imageId;
 	}
 	
 	public int getNameId() {
 		return nameId;
 	}
 	
+	public int getImageId() {
+		return imageId;
+	}
+	
 	int nameId;
+	int imageId;
 	
 
 }

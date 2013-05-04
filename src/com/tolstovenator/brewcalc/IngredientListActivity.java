@@ -69,8 +69,8 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 			fragmentTransaction.commit();
 			// In two-pane mode, list items should be given the
 			// 'activated' state when touched.
-			//listFragment
-			//		.setActivateOnItemClick(true);
+//			listFragment
+//					.setActivateOnItemClick(true);
 		}
 		createCommonMenu();
 	}
@@ -95,17 +95,17 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	
 	
 
-	@Override
-	public View onCreateView(View parent, String name, Context context,
-			AttributeSet attrs) {
-		// TODO Auto-generated method stub
-		View view = super.onCreateView(parent, name, context, attrs);
-		if (mTwoPane && !clickViewActvated) {
-			clickViewActvated = true;
-			listFragment.setActivateOnItemClick(true);
-		}
-		return view;
-	}
+//	@Override
+//	public View onCreateView(View parent, String name, Context context,
+//			AttributeSet attrs) {
+//		// TODO Auto-generated method stub
+//		View view = super.onCreateView(parent, name, context, attrs);
+////		if (mTwoPane && !clickViewActvated) {
+////			clickViewActvated = true;
+////			listFragment.setActivateOnItemClick(true);
+////		}
+//		return view;
+//	}
 
 
 
@@ -126,6 +126,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.ingredient_detail_container, fragment)
 					.commit();
+			
 
 		} else {
 			// In single-pane mode, simply start the detail activity
