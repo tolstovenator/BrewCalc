@@ -36,6 +36,8 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
 
 		// Show the Up button in the action bar.
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getActionBar().setTitle(getIntent().getStringExtra(
+							IngredientDetailFragment.ARG_ITEM_ID));
 
 		// savedInstanceState is non-null when there is fragment state
 		// saved from previous configurations of this activity

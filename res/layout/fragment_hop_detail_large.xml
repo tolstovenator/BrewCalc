@@ -31,17 +31,14 @@
 
         <EditText
             android:id="@+id/alpha_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/alpha_name"
             android:inputType="numberDecimal" >
         </EditText>
-	</LinearLayout>        
-	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+
         <TextView
             android:id="@+id/beta_name"
             android:layout_width="wrap_content"
@@ -51,68 +48,65 @@
 
         <EditText
             android:id="@+id/beta_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/beta_name"
             android:inputType="numberDecimal" />
     </LinearLayout>
-	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-	    <RadioGroup
-	        android:id="@+id/hopTypeGroup"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:orientation="vertical" >
-	
-	        <RadioButton
-	            android:id="@+id/bittering"
-	            android:layout_width="144dp"
-	            android:layout_height="wrap_content"
-	            android:checked="true"
-	            android:text="@string/bittering" />
-	
-	        <RadioButton
-	            android:id="@+id/aroma"
-	            android:layout_width="144dp"
-	            android:layout_height="wrap_content"
-	            android:text="@string/aroma" />
-	
-	        <RadioButton
-	            android:id="@+id/dual"
-	            android:layout_width="144dp"
-	            android:layout_height="wrap_content"
-	            android:text="@string/dual" />
-	    </RadioGroup>
-	    
-	    <RadioGroup
-	        android:id="@+id/hopFormGroup"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:orientation="vertical" >
-	
-	        <RadioButton
-	            android:id="@+id/whole"
-	            android:layout_width="144dp"
-	            android:layout_height="wrap_content"
-	            android:checked="true"
-	            android:text="@string/whole" />
-	
-	        <RadioButton
-	            android:id="@+id/plug"
-	            android:layout_width="144dp"
-	            android:layout_height="wrap_content"
-	            android:text="@string/plug" />
-	
-	        <RadioButton
-	            android:id="@+id/pellet"
-	            android:layout_width="144dp"
-	            android:layout_height="wrap_content"
-	            android:text="@string/pellet" />
-	    </RadioGroup>
-	</LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/hopTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/bittering"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/bittering" />
+
+        <RadioButton
+            android:id="@+id/aroma"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/aroma" />
+
+        <RadioButton
+            android:id="@+id/dual"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dual" />
+    </RadioGroup>
+    
+    <RadioGroup
+        android:id="@+id/hopFormGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/whole"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/whole" />
+
+        <RadioButton
+            android:id="@+id/plug"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plug" />
+
+        <RadioButton
+            android:id="@+id/pellet"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pellet" />
+    </RadioGroup>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -147,17 +141,13 @@
 
         <EditText
             android:id="@+id/humulene_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/humulene"
             android:inputType="numberDecimal" >
         </EditText>
-     </LinearLayout>   
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/cohumulone_name"
@@ -168,7 +158,7 @@
 
         <EditText
             android:id="@+id/cohumulone_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -188,17 +178,14 @@
 
         <EditText
             android:id="@+id/myrcene_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/myrcene"
             android:inputType="numberDecimal" >
         </EditText>
-    </LinearLayout>
-	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+
         <TextView
             android:id="@+id/caryophyllene_name"
             android:layout_width="wrap_content"
@@ -208,7 +195,7 @@
 
         <EditText
             android:id="@+id/caryophyllene_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"

@@ -1,8 +1,7 @@
 package com.tolstovenator.brewcalc;
 
-import com.tolstovenator.brewcalc.repository.IngredientService;
+import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -17,7 +16,8 @@ public class HopDetailsActivity extends FragmentActivity {
 
 		// Show the Up button in the action bar.
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-
+		getActionBar().setTitle(getIntent().getStringExtra(
+							HopDetailFragment.ARG_ITEM_ID));
 		if (savedInstanceState == null) {
 			// Create the detail fragment and add it to the activity
 			// using a fragment transaction.
@@ -44,8 +44,10 @@ public class HopDetailsActivity extends FragmentActivity {
 			//
 			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
 			//
-			NavUtils.navigateUpTo(this, new Intent(this,
-					IngredientDetailActivity.class));
+			Intent up = new Intent(this,
+					IngredientDetailActivity.class);
+			up.putExtra(IngredientDetailFragment.ARG_ITEM_ID, getString(IngredientType.HOPS.getNameId()));
+			NavUtils.navigateUpTo(this, up);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

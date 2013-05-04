@@ -326,6 +326,9 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
 			
 		} else if (item.getItemId() == R.id.add_menu) {
 			//TODO: check if edit is in progress
+			if (getActivity() instanceof HopDetailsActivity) {
+				getActivity().getActionBar().setTitle(R.string.add_hop);
+			}
 			setHop(new Hop());
 		}
 		return true;

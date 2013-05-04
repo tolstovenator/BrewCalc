@@ -20,7 +20,8 @@
     <string name="plug">Plug</string>
     <string name="pellet">Pellet</string>
     <string name="origin">Origin</string>
-    <string name="storage_factor">Storage Factor (percentage loss in 6 month at 20C)</string>
+    <string name="storage_factor">HSI</string>
+    <string name="storage_factor_large">Storage Factor (percentage loss in 6 month at 20C)</string>
     <string name="humulene">Humulene</string>
     <string name="cohumulone">Cohumulone</string>
     <string name="myrcene">Myrcene</string>
@@ -30,6 +31,6 @@
     <string name="add_menu">add</string>
     <string name="hop_already_exists">Hop %1$s already exists</string>
     <string name="error_dialog_title">Error</string>
-    
+    <string name="add_hop">Add Hop</string>
     
 </resources>

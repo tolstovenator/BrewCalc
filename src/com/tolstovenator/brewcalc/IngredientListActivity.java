@@ -132,7 +132,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 			// for the selected item ID.
 			Intent detailIntent = new Intent(this,
 					IngredientDetailActivity.class);
-			detailIntent.putExtra(IngredientDetailFragment.ARG_ITEM_ID, id.ordinal());
+			detailIntent.putExtra(IngredientDetailFragment.ARG_ITEM_ID, getString(IngredientType.values()[id.ordinal()].getNameId()));
 			startActivity(detailIntent);
 		}
 	}

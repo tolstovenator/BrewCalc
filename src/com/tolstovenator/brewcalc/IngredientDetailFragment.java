@@ -127,6 +127,12 @@ public class IngredientDetailFragment extends ListFragment {
 		if (getArguments().containsKey(SELECTION_ID)) {
 			mActivatedPosition = hopRepository.getHops().indexOf(hopRepository.getHopByName(getArguments().getString(SELECTION_ID)));
 		}
+		if (mActivatedPosition != ListView.INVALID_POSITION) {
+			setActivatedPosition(mActivatedPosition);
+		}
+		if (scrollY != -1) {
+			getListView().setSelectionFromTop(scrollPosition, scrollY);
+		}
 	}
 	
 	
@@ -172,6 +178,7 @@ public class IngredientDetailFragment extends ListFragment {
 			// Serialize and persist the activated item position.
 			outState.putInt(STATE_ACTIVATED_POSITION, mActivatedPosition);
 		}
+		//outState.putInt(key, value)
 	}
 	
 	@Override
