@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
+import com.tolstovenator.brewcalc.ui.HopListAdapter;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 /**
@@ -113,9 +114,8 @@ public class IngredientDetailFragment extends ListFragment {
 			switch (ingredientType) {
 			case HOPS:
 				
-				setListAdapter(new ArrayAdapter<Hop>(getActivity(),
-						android.R.layout.simple_list_item_activated_1,
-						android.R.id.text1, hopRepository.getHops()));
+				setListAdapter(new HopListAdapter(getActivity(),
+						hopRepository.getHops()));
 				break;
 			case SUGARS:
 			case YEAST:

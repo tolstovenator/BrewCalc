@@ -4,7 +4,7 @@ import com.tolstovenator.brewcalc.R;
 
 public enum IngredientType {
 	
-	HOPS(R.string.hops, R.drawable.ic_launcher),
+	HOPS(R.string.hops, R.drawable.hop_cone),
 	SUGARS(R.string.sugars, R.drawable.ic_launcher),
 	YEAST(R.string.yeast, R.drawable.ic_launcher),
 	WATER(R.string.water, R.drawable.ic_launcher);
