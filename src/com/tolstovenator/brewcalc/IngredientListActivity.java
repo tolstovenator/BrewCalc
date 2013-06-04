@@ -1,8 +1,10 @@
 package com.tolstovenator.brewcalc;
 
+import com.tolstovenator.brewcalc.preferences.SettingsActivity;
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
+import com.tolstovenator.brewcalc.repository.Sugar;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 import android.app.ActionBar;
@@ -16,6 +18,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.util.AttributeSet;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -67,10 +71,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 			fragmentTransaction.replace(R.id.ingredient_list_container, listFragment);
 			fragmentTransaction.commit();
-			// In two-pane mode, list items should be given the
-			// 'activated' state when touched.
-//			listFragment
-//					.setActivateOnItemClick(true);
+
 		}
 		createCommonMenu();
 	}
@@ -94,20 +95,6 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
     }
 	
 	
-
-//	@Override
-//	public View onCreateView(View parent, String name, Context context,
-//			AttributeSet attrs) {
-//		// TODO Auto-generated method stub
-//		View view = super.onCreateView(parent, name, context, attrs);
-////		if (mTwoPane && !clickViewActvated) {
-////			clickViewActvated = true;
-////			listFragment.setActivateOnItemClick(true);
-////		}
-//		return view;
-//	}
-
-
 
 	/**
 	 * Callback method from {@link IngredientListFragment.Callbacks} indicating
@@ -164,12 +151,22 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	    			clickViewActvated = false;
 	            	return true;
 	            }
+	        case R.id.settings_menu:
+	        	Intent settingsIntent = new Intent(this, SettingsActivity.class);
+	        	startActivity(settingsIntent);
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
 
+	
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.settings_menu, menu);
+		return true;
+	}
 
 	@Override
 	public void onHopSelected(Hop hop) {
@@ -234,5 +231,44 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
         }
     };
 	private HopDetailFragment hopDetailFragment;
+	private SugarDetailFragment sugarDetailFragment;
+
+	@Override
+	public void onSugarSelected(Sugar sugar) {
+		if (mTwoPane) {
+			Bundle arguments = new Bundle();
+			arguments.putString(SugarDetailFragment.ARG_ITEM_ID, sugar.getSugarKey().toString());
+			if (sugarDetailFragment == null) {
+				sugarDetailFragment = new SugarDetailFragment();
+				sugarDetailFragment.setArguments(arguments);
+				FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+				fragmentTransaction.replace(R.id.ingredient_detail_container, sugarDetailFragment);
+				if (!detailedView) {
+					arguments = new Bundle();
+					arguments.putInt(IngredientDetailFragment.ARG_ITEM_ID, IngredientType.SUGARS.ordinal());
+					arguments.putString(IngredientDetailFragment.SELECTION_ID, sugar.getSugarKey().toString());
+					if (this.fragment != null) {
+						ListView currentView = this.fragment.getListView();
+						int position = currentView.getFirstVisiblePosition();
+						int scroll = currentView.getChildAt(0).getTop();
+						arguments.putInt(IngredientDetailFragment.SCROLL_Y, scroll);
+						arguments.putInt(IngredientDetailFragment.SCROLL_POSITION, position);
+					}
+					fragment = new IngredientDetailFragment();
+					fragment.setArguments(arguments);
+					fragmentTransaction.replace(R.id.ingredient_list_container, fragment);
+					detailedView = true;
+				}
+				fragmentTransaction.commit();
+			} else {
+				sugarDetailFragment.setSugar(sugar);
+			}
+			ActionBar actionBar = getActionBar();
+			actionBar.setDisplayHomeAsUpEnabled(true);
+		} else {
+			//TODO: implement
+		}
+		
+	}
 	
 }

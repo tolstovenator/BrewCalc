@@ -3,6 +3,7 @@ package com.tolstovenator.brewcalc;
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
+import com.tolstovenator.brewcalc.repository.Sugar;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -123,5 +124,11 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
             mBound = false;
         }
     };
+
+	@Override
+	public void onSugarSelected(Sugar sugar) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

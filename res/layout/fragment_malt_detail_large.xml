@@ -1,0 +1,349 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/malt_details_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/sugarName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sugarName" />
+    <EditText
+        android:id="@+id/origin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/origin" />
+
+    <EditText
+        android:id="@+id/supplier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/supplier" />
+    
+    <RadioGroup
+        android:id="@+id/sugarTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/grain"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/grain" />
+
+        <RadioButton
+            android:id="@+id/extract"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/extract" />
+
+        <RadioButton
+            android:id="@+id/sugar"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sugar" />
+        
+         <RadioButton
+            android:id="@+id/adjunct"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/adjunct" />
+    </RadioGroup>
+    
+    <CheckBox
+            android:id="@+id/mustMash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mustMash" />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/gravityPotentialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gravityPotentialName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/gravityPotentialText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/gravityPotentialName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/colourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colourName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/colourText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/colourName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/moistureName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moistureName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/moistureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/moistureName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/coarseFineDiffName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coarseFineDiffName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/coarseFineDiffText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/coarseFineDiffName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fineDryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fineDryName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/fineDryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/fineDryName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/coarseDryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coarseDryName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/coarseDryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/coarseDryName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fineAsIsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fineAsIsName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/fineAsIsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/fineAsIsName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/coarseAsIsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coarseAsIsName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/coarseAsIsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/coarseAsIsName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/maxInBatchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maxInBatchName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/maxInBatchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/maxInBatchName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/diastaticName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diastaticName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/diastaticText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/diastaticName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/proteinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proteinName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/proteinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/proteinName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/nitrogenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nitrogenName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/nitrogenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/nitrogenName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/hopsIbuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hopsIbuName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <EditText
+            android:id="@+id/hopsIbuText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hopsIbuName"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/pHName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pHName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/pHText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/pHName"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    
+    
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        >
+    </EditText>
+
+</LinearLayout>

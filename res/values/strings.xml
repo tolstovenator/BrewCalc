@@ -32,5 +32,43 @@
     <string name="hop_already_exists">Hop %1$s already exists</string>
     <string name="error_dialog_title">Error</string>
     <string name="add_hop">Add Hop</string>
-    
+    <string name="brewhouse_efficiency">Brewhouse Efficiency</string>
+    <string name="pref_default_efficiency">Default Efficiency</string>
+    <string name="extract_potential">Extract Potential</string>
+    <string-array name="pref_extract_potential">
+        <item >SG</item>
+        <item >Points</item>
+        <item >Plato</item>
+        <item >IOB / HWE</item>
+        <item >% Yield Fine Grind Dry Basis</item>
+    </string-array>
+    <string-array name="pref_extract_potential_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4settings_menusettings_menusettings_menu</item>
+    </string-array>
+    <string name="settings_menu">Settings</string>
+    <string name="sugar">Sugar</string>
+    <string name="grain">Grain</string>
+    <string name="adjunct">Adjunct</string>
+    <string name="extract">Extract</string>
+    <string name="sugarName">Name</string>
+    <string name="supplier">Supplier</string>
+    <string name="mustMash">Must Mash</string>
+    <string name="gravityPotentialName">Gravity Potential</string>
+    <string name="colourName">Colour (SRM)</string>
+    <string name="moistureName">Moisture (%)</string>
+    <string name="coarseFineDiffName">Coarse/Fine Diff</string>
+    <string name="fineDryName">Yield Fine Dry</string>
+    <string name="fineAsIsName">Yield Fine As Is</string>
+    <string name="coarseDryName">Yield Coarse Dry</string>
+    <string name="coarseAsIsName">Yield Coase As Is</string>
+    <string name="maxInBatchName">Max In Batch (%)</string>
+    <string name="diastaticName">Diastatic Power (%)</string>
+    <string name="proteinName">Protein (%)</string>
+    <string name="nitrogenName">Nitrogen (%)</string>
+    <string name="hopsIbuName">Hops IBU</string>
+    <string name="pHName">pH</string>
 </resources>

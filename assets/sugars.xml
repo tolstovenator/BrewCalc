@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sugars>
+<sugar>
+<name>Amber Dry Extract</name>
+<origin>US</origin>
+<supplier/>
+<description>Amber colored dry malt extract, for general purpose use.
+Use in any medium to dark colored beer.
+Examples: Ales, Marzens, Amber Ale, India Pale Ale</description>
+<sugarType>4</sugarType>
+<mustMash>0</mustMash>
+<colour>12.5000000</colour>
+<fgDry>95.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>100.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Amber Liquid Extract</name>
+<origin>US</origin>
+<supplier/>
+<description>Unhopped amber color liquid extract.
+Use as a base malt for any Ale.
+Examples: Amber ale, India Pale Ale, Munich style, Marzen, Bock</description>
+<sugarType>1</sugarType>
+<mustMash>0</mustMash>
+<colour>12.5000000</colour>
+<fgDry>78.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>100.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Barley Hulls</name>
+<origin>US</origin>
+<supplier/>
+<description>Hulls are introduced to improve the speed of lautering when making high gravity or high adjunct beers.
+Hulls are neutral in flavor, body and color, and are inert
+Good for wheat beers, Wits, and others that have high protein mashes.</description>
+<sugarType>3</sugarType>
+<mustMash>0</mustMash>
+<colour>0.0000000</colour>
+<fgDry>0.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>5.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Barley, Torrefied</name>
+<origin>US</origin>
+<supplier/>
+<description>Raw barley that has been "popped" open to open kernels
+Used in place of raw barley for faster conversion and higher yields.
+High in haze producing protein</description>
+<sugarType>0</sugarType>
+<mustMash>1</mustMash>
+<colour>1.7000000</colour>
+<fgDry>79.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>40.0000000</maxInBatch>
+<protein>16.0000000</protein>
+<diastaticPower>0.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Black (Patent) Malt</name>
+<origin>US</origin>
+<supplier/>
+<description>Dark color and dry roasted flavor characteristic of Stouts and Porters
+Use for: Coloring in small amounts, or flavoring of Stouts and Porters in larger amounts.</description>
+<sugarType>0</sugarType>
+<mustMash>0</mustMash>
+<colour>500.0000000</colour>
+<fgDry>55.0000000</fgDry>
+<moisture>6.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>10.0000000</maxInBatch>
+<protein>13.2000000</protein>
+<diastaticPower>0.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Black Barley (Stout)</name>
+<origin>US</origin>
+<supplier/>
+<description>Unmalted barley roasted at high temperature to create a dry, coffee like flavor.
+Imparts a sharp acrid flavor characteristic of dry stouts.
+Gives "dryness" to a stout or porter -- much more so than regular Roasted Barley</description>
+<sugarType>0</sugarType>
+<mustMash>0</mustMash>
+<colour>500.0000000</colour>
+<fgDry>55.0000000</fgDry>
+<moisture>5.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>10.0000000</maxInBatch>
+<protein>13.2000000</protein>
+<diastaticPower>0.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Brown Sugar, Dark</name>
+<origin>US</origin>
+<supplier/>
+<description>Imparts a rich sweet flavor. Used in Scottish ales, holiday ales and some old ales.</description>
+<sugarType>2</sugarType>
+<mustMash>0</mustMash>
+<colour>50.0000000</colour>
+<fgDry>100.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>10.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Brown Sugar, Light</name>
+<origin>US</origin>
+<supplier/>
+<description>Imparts a rich sweet flavor. Used in Scottish ales, holiday ales and some old ales.</description>
+<sugarType>2</sugarType>
+<mustMash>0</mustMash>
+<colour>8.0000000</colour>
+<fgDry>100.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>10.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Candi Sugar, Amber</name>
+<origin>Belgium</origin>
+<supplier/>
+<description>Crystalized Candi Sugar (Sucrose) used in many Belgian Tripels, Dubbels, and holiday ales. Adds head retention and sweet aroma to beer. Darker variants also add color.</description>
+<sugarType>2</sugarType>
+<mustMash>0</mustMash>
+<colour>75.0000000</colour>
+<fgDry>78.3000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>20.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Candi Sugar, Clear</name>
+<origin>Belgium</origin>
+<supplier/>
+<description>Crystalized Candi Sugar (Sucrose) used in many Belgian Tripels, Dubbels, and holiday ales. Adds head retention and sweet aroma to beer. Darker variants also add color.</description>
+<sugarType>2</sugarType>
+<mustMash>0</mustMash>
+<colour>0.5000000</colour>
+<fgDry>78.3000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>20.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Candi Sugar, Dark</name>
+<origin>Belgium</origin>
+<supplier/>
+<description>Crystalized Candi Sugar (Sucrose) used in many Belgian Tripels, Dubbels, and holiday ales. Adds head retention and sweet aroma to beer. Darker variants also add color.</description>
+<sugarType>2</sugarType>
+<mustMash>0</mustMash>
+<colour>275.0000000</colour>
+<fgDry>78.3000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>20.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Cane (Beet) Sugar</name>
+<origin>US</origin>
+<supplier/>
+<description>Common household baking sugar.
+Lightens flavor and body of beer.
+Can contribute a cider-like flavor to the beer if not cold-fermented or used in large quantities.</description>
+<sugarType>2</sugarType>
+<mustMash>0</mustMash>
+<colour>0.0000000</colour>
+<fgDry>100.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>7.0000000</maxInBatch>
+<protein>11.7000000</protein>
+<diastaticPower>120.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Cara-Pils/Dextrine</name>
+<origin>US</origin>
+<supplier/>
+<description>Significantly increases foam/head retention and body of the beer.
+Also sold under the names "Dextrine" and "Cara-Foam"</description>
+<sugarType>0</sugarType>
+<mustMash>0</mustMash>
+<colour>2.0000000</colour>
+<fgDry>72.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>20.0000000</maxInBatch>
+<protein>13.2000000</protein>
+<diastaticPower>0.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Caraamber</name>
+<origin>US</origin>
+<supplier/>
+<description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+<sugarType>0</sugarType>
+<mustMash>0</mustMash>
+<colour>30.0000000</colour>
+<fgDry>75.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+<maxInBatch>20.0000000</maxInBatch>
+<protein>13.2000000</protein>
+<diastaticPower>0.0000000</diastaticPower>
+<tsn>0</tsn>
+<hop>0.0000000</hop>
+</sugar>
+<sugar>
+<name>Caraaroma</name>
+<origin>Germany</origin>
+<supplier>Wyermann</supplier>
+<description>Very dark crystal malt - similar to a crystal 120 or Caramunich 120 malt. Adds strong caramel flavor, red color, and malty aroma.</description>
+<sugarType>0</sugarType>
+<mustMash>0</mustMash>
+<colour>130.0000000</colour>
+<fgDry>75.0000000</fgDry>
+<moisture>4.0000000</moisture>
+<coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Carafa I</name>
+    <origin>Germany</origin>
+    <supplier>Weyermann</supplier>
+    <description>Used to intensify aroma and color in dark, Munich beers and stouts.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>337.0000000</colour>
+    <fgDry>70.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Carafa II</name>
+    <origin>Germany</origin>
+    <supplier>Weyermann</supplier>
+    <description>Used to intensify aroma and color in dark, Munich beers and stouts.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>412.0000000</colour>
+    <fgDry>70.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Carafa III</name>
+    <origin>Germany</origin>
+    <supplier>Weyermann</supplier>
+    <description>Dark color and aroma - used in some German beers</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>525.0000000</colour>
+    <fgDry>70.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Carafoam</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Significantly increases foam/head retention and body of the beer.
+Also sold under the names "Dextrine" and "Cara-Pils (TM)"</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>72.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel Wheat Malt</name>
+    <origin>Germany</origin>
+    <supplier>Wyermann</supplier>
+    <description>Caramel wheat malt - emphasizes wheat malt aroma and adds color to the beer.  Popular for Dunkelweizens.  Also known as Carawheat -- which is a registered trademark of Wyermann Malting.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>46.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>10.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt - 10L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>10.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt - 20L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>20.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt - 30L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>30.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt - 40L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>40.0000000</colour>
+    <fgDry>74.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt - 60L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>60.0000000</colour>
+    <fgDry>74.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt - 80L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>80.0000000</colour>
+    <fgDry>74.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramel/Crystal Malt -120L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.  Very Dark</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>120.0000000</colour>
+    <fgDry>72.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>10.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caramunich Malt</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Caramel, copper colored malt.  Used in Belgian ales and German bocks.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>56.0000000</colour>
+    <fgDry>71.7000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Carared</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, color and improves head retention.
+Also called "Crystal" malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>20.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Caravienne Malt</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Light Belgian crystal malt.  Used in light Trappist and Abbey style Belgian ales.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>22.0000000</colour>
+    <fgDry>73.9000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Chocolate Malt</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Dark malt that gives a rich red or brown color and nutty flavor.
+Use for: Brown ales, porters, some stouts
+Maintains some malty flavor, not as dark as roasted malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>350.0000000</colour>
+    <fgDry>60.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Chocolate Malt</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Dark malt that gives a rich red or brown color and nutty flavor.
+Use for: Brown ales, porters, some stouts
+Maintains some malty flavor, not as dark as roasted malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>450.0000000</colour>
+    <fgDry>73.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>10.5000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Chocolate Rye Malt</name>
+    <origin>Germany</origin>
+    <supplier>Weyermann</supplier>
+    <description>Primarily used for color and aroma in top-fermented specialty beers.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>250.0000000</colour>
+    <fgDry>67.5000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Chocolate Wheat Malt</name>
+    <origin>Germany</origin>
+    <supplier>Weyermann</supplier>
+    <description>Intensifies aroma and color in top-fermented beers such as dark wheat beers.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>400.0000000</colour>
+    <fgDry>71.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Corn Sugar (Dextrose)</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Widely used for bottling at rate of approx 2/3 cup per 5 gallons of beer</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>0.0000000</colour>
+    <fgDry>100.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Corn Syrup</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Syrup derived from corn with many of the same properties as corn sugar.  May be used to enhance gravity without adding much body or flavor.  Limit percentage in batch to avoid wine/cider flavors.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>78.3000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Dark Dry Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Dark dry extract for general purpose use.
+Use as base or to increase gravity of any dark ale or lager.</description>
+    <sugarType>4</sugarType>
+    <mustMash>0</mustMash>
+    <colour>17.5000000</colour>
+    <fgDry>95.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Dark Liquid Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Unhopped dark liquid extract.
+Use as a base malt for any dark beer.
+Examples: Porter, Brown ale, Bock, Oktoberfest, Stouts</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>17.5000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Dememera Sugar</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Dark, unrefined brown sugar that contains molasses and other dark impurities.  Great for brown ales and porters.  Adds slight sweetness and smooth character.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>100.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Extra Light Dry Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Very light color dry malt extract for general purpose use.
+Use as base or to increase gravity of any ale or lager.</description>
+    <sugarType>4</sugarType>
+    <mustMash>0</mustMash>
+    <colour>3.0000000</colour>
+    <fgDry>95.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Grits</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Imparts a corn or grain taste.  Mash required. Used to increase gravity of American lagers.</description>
+    <sugarType>3</sugarType>
+    <mustMash>0</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Honey</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Can be used to lighten flavor and body when substituted for malt.
+Generally limit to 30% when used as an adjunct. Pasturize and add to primary during fermentation. Use up to 100% for meads.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Invert Sugar</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Used to increase starting gravity and also as an adjunct for some Belgian and English ales.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>0.0000000</colour>
+    <fgDry>100.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Light Dry Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Pale dry malt extract for general purpose use.
+Use as base or to increase gravity of any full bodied ale or lager.</description>
+    <sugarType>4</sugarType>
+    <mustMash>0</mustMash>
+    <colour>8.0000000</colour>
+    <fgDry>95.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Lyle's Golden Syrup</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Liquid Invert Sugar.  Used to increase alcohol and lighten the beer without alterning flavor.  Used in Belgian ales and some English ales.</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>0.0000000</colour>
+    <fgDry>78.3000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Maple Syrup</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>If added during the boil it will add a dry, woodsy flavor. If added at bottling, the smooth maple flavor comes through.  Used for maple ales, porters, browns.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>35.0000000</colour>
+    <fgDry>65.2000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Milk Sugar (Lactose)</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Not fully fermentable, so it adds lasting sweetness. Lactose can be added to lend  sweetness to Sweet Stouts and Porters.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>0.0000000</colour>
+    <fgDry>76.1000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Molasses</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Imparts a strong, sweet flavor.  Used primarily in stouts and porters.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>80.0000000</colour>
+    <fgDry>78.3000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pale Liquid Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Unhopped pale liquid extract.
+Use as a base malt for any ale or lager.</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>8.0000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Peat Smoked Malt</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Robust smoky malt that provides a smoky flavor.  Used in scottish ales and wee heavy ales.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.8000000</colour>
+    <fgDry>74.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pilsner Liquid Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Unhopped pale liquid extract.
+Use as a base malt for any ale or lager.</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>3.5000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Rice Extract Syrup</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Used like other rice adjuncts in American and Japenes lagers to provide a dry, clean taste and light body.  Adds gravity without changing body or flavor substantially.  Use in place of corn sugar in small quantities.</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>7.0000000</colour>
+    <fgDry>69.6000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Rice Hulls</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Hulls are introduced to improve the speed of lautering when making high gravity or high adjunct beers.
+Hulls are neutral in flavor, body and color, and are inert
+Good for wheat beers, Wits, and others that have high protein mashes.</description>
+    <sugarType>3</sugarType>
+    <mustMash>0</mustMash>
+    <colour>0.0000000</colour>
+    <fgDry>0.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>5.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Roasted Barley</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Roasted at high temperature to create a burnt, grainy, coffee like flavor.
+Imparts a red to deep brown color to beer, and very strong roasted flavor.
+Use 2-4% in Brown ales to add a nutty flavor, or 3-10% in Porters and Stouts for coffee flavor.</description>
+    <sugarType>0</sugarType>
+    <mustMash>0</mustMash>
+    <colour>300.0000000</colour>
+    <fgDry>55.0000000</fgDry>
+    <moisture>5.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Rye Malt</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds a dry, crisp character to the beer.  
+Yields a deep red color, and a distinctive rye flavor
+Must limit to 10-15% fo the mash as it tends to produce "stuck" mashes.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>4.7000000</colour>
+    <fgDry>63.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>10.3000000</protein>
+    <diastaticPower>75.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Rye, Flaked</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Imparts a dry, crisp rye flavor to rye beers.  Can be easier to mash than raw rye.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>78.3000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Smoked Malt</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Malt that has been smoked over an open fire.
+Creates a distinctive "smoked" flavor and aroma.
+Used primarily for German Rauchbier but can also be added to Brown Ales and Porters.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>9.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.5000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Special B Malt</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Extreme caramel aroma and flavored malt.  Used in dark Belgian Abbey and Trappist ales.  Unique flavor and aroma.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>180.0000000</colour>
+    <fgDry>65.2000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Sugar, Table (Sucrose)</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>White table sugar, or sucrose primarily is used to increase alcohol. Using too much will add a cider flavor to beer.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>100.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Treacle</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>UK mixture of molasses, invert sugar and golden (corn) syrup.  Imparts an intense sweet flavor and dark color.  Used in dark English ales.  Also called "Black Treacle" or the brand name "Lyle's Black Treacle Syrup."</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>100.0000000</colour>
+    <fgDry>78.3000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Turbinado</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Light, raw brown sugar.  May be used in British pale ales or high gravity Belgian ales.  Limit percentage used to avoid undesirable flavors.  Similar to Demerara sugar.</description>
+    <sugarType>2</sugarType>
+    <mustMash>0</mustMash>
+    <colour>10.0000000</colour>
+    <fgDry>95.7000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat Dry Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Wheat based dry extract for use in all wheat beers.
+Use as base or to increase gravity of any wheat beer.
+Examples: Weizen, weiss, wheat ales and lagers</description>
+    <sugarType>4</sugarType>
+    <mustMash>0</mustMash>
+    <colour>8.0000000</colour>
+    <fgDry>95.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat Liquid Extract</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Unhopped Wheat liquid malt extract.
+Contains approx 60% Wheat, 40% Barley
+Use for Bavarian wheats, weizens, weiss and dunkel weizen styles.</description>
+    <sugarType>1</sugarType>
+    <mustMash>0</mustMash>
+    <colour>8.0000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Munich Malt</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Malty-sweet flavor characteristic and adds a reddish amber color to the beer.
+Does not contribute signficantly to body or head retention.
+Use for: Bock, Porter, Marzen, Oktoberfest beers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>9.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>5.0000000</moisture>
+    <coarseFineDiff>1.3000000</coarseFineDiff>
+    <maxInBatch>80.0000000</maxInBatch>
+    <protein>11.5000000</protein>
+    <diastaticPower>72.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Munich Malt - 10L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Malty-sweet flavor characteristic and adds a slight orange color to the beer.
+Does not contribute signficantly to body or head retention.
+Use for: Bock, Porter, Marzen, Oktoberfest beers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>10.0000000</colour>
+    <fgDry>77.0000000</fgDry>
+    <moisture>5.0000000</moisture>
+    <coarseFineDiff>2.8000000</coarseFineDiff>
+    <maxInBatch>80.0000000</maxInBatch>
+    <protein>13.5000000</protein>
+    <diastaticPower>50.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Munich Malt - 20L</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Malty-sweet flavor characteristic and adds a orange to deep orange color to the beer.
+Does not contribute signficantly to body or head retention.
+Use for: Bock, Porter, Marzen, Oktoberfest beers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>20.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>5.0000000</moisture>
+    <coarseFineDiff>2.8000000</coarseFineDiff>
+    <maxInBatch>80.0000000</maxInBatch>
+    <protein>13.5000000</protein>
+    <diastaticPower>25.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Barley, Flaked</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds significant body to Porters and Stouts.  High haze producing protein prevents use in light beers.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.7000000</colour>
+    <fgDry>70.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>13.5000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Barley, Raw</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Raw, unmalted barley can be used to add body to your beer.  Use in homebrew requires very fine milling combined with a decoction or multi-stage mash.  Performs best when used in small quantities with well modified grains.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>60.9000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Oats, Flaked</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Adds body, mouth feel and head retention to the beer
+Used in oatmeal stouts and porters
+Adds substantial protein haze to light beers
+Protein rest recommended unless flakes are pregelatinized</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>30.0000000</maxInBatch>
+    <protein>9.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Oats, Malted</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Malted oats.  Adds body, mouth feel and head retention to the beer  Creates chill haze in lighter beers, so is primarily used in dark ones.
+</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>9.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Amber Malt</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Roasted specialty malt used in some English browns, milds and old ales to add color and a biscuit taste.  Intense flavor - so limit use. Low diastatic power so must be mashed with well modified malts.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>22.0000000</colour>
+    <fgDry>75.0000000</fgDry>
+    <moisture>2.8000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>10.0000000</protein>
+    <diastaticPower>20.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Biscuit Malt</name>
+    <origin>Belgian</origin>
+    <supplier/>
+    <description>Use for English ales, brown ales and porters.
+Adds a biscuit like flavor and aroma.
+Can be used as a substitute for toasted malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>23.0000000</colour>
+    <fgDry>79.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>10.5000000</protein>
+    <diastaticPower>6.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Brumalt</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Dark German malt developed to add malt flavor of Alt, Marzen and Oktoberfest beers. Helps create authentic maltiness without having to do a decoction mash.  Rarely available for homebrewers.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>23.0000000</colour>
+    <fgDry>71.7000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>7.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Honey Malt</name>
+    <origin>Canada</origin>
+    <supplier>Gambrinus</supplier>
+    <description>Intensely sweet - adds a sweet malty flavor sometimes associated with honey.  Also called Brumalt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>25.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>3.8000000</moisture>
+    <coarseFineDiff>2.0000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>10.5000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Melanoiden Malt</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Aromatic malt from Banberg, Germany.  Promotes a full flavor and rounds off beer color. Promotes deep red color and malty flavor.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>20.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>3.5000000</moisture>
+    <coarseFineDiff>1.3000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>11.0000000</protein>
+    <diastaticPower>10.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Toasted Malt</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Toasted malt can be made at home by toasting pale malted barley for 10-15 minutes at 350 F.  Similar to Biscuit or Victory malt - this malt adds reddish/orange color and improved body without sweetness.  Toasted flavor.  Mashing required to avoid haze.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>27.0000000</colour>
+    <fgDry>71.7000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Victory Malt</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Toasted malt that adds a "Biscuit" or toasted flavor to English ales.
+Use for: Nut brown ales, porters</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>25.0000000</colour>
+    <fgDry>73.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>15.0000000</maxInBatch>
+    <protein>13.2000000</protein>
+    <diastaticPower>50.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Brown Malt</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Imparts a dry, biscuit flavor. Used in nut brown ales, porters and some Belgian ales.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>65.0000000</colour>
+    <fgDry>70.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>0.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Special Roast</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Use for English ales, nut brown ales and porters.
+Adds a toasted, biscuit like flavor and aroma</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>50.0000000</colour>
+    <fgDry>72.0000000</fgDry>
+    <moisture>2.5000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>10.5000000</protein>
+    <diastaticPower>6.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Aromatic Malt</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Provides a very strong malt flavor and aroma to your beer.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>26.0000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>11.8000000</protein>
+    <diastaticPower>29.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Acid Malt</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Acid malt contains acids from natural lactic acids.  Used by German brewers to adjust malt PH without chemicals to adhere to German purity laws.  Also enhances the head retention. </description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>3.0000000</colour>
+    <fgDry>58.7000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>6.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Mild Malt</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Also called "English Mild" - a light specialty malt used in Brown Ales</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>4.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>10.6000000</protein>
+    <diastaticPower>53.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pale Malt (2 Row) Bel</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Base malt for all beer styles
+Higher potential yield than US, English equivalent pale ale malts</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>3.0000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>10.5000000</protein>
+    <diastaticPower>60.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pale Malt (2 Row) UK</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Base malt for all English beer styles
+Lower diastatic power than American 2 Row Pale Malt</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>3.0000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>10.1000000</protein>
+    <diastaticPower>45.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pale Malt (2 Row) US</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Base malt for all beer styles</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>79.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>12.3000000</protein>
+    <diastaticPower>140.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pale Malt (6 Row) US</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Base malt for all beer styles</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>76.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>13.0000000</protein>
+    <diastaticPower>150.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pale Malt, Maris Otter</name>
+    <origin>United Kingdom</origin>
+    <supplier>Maris Otter</supplier>
+    <description>Premium base malt from the UK.  Popular for many English styles of beer including ales, pale ales and bitters.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>3.0000000</colour>
+    <fgDry>82.5000000</fgDry>
+    <moisture>3.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.7000000</protein>
+    <diastaticPower>120.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Vienna Malt</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Kiln dried malt darker than Pale Malt, but not as dark as Munich Malt
+Imparts a golden to orange color to the beer.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>3.5000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>90.0000000</maxInBatch>
+    <protein>11.0000000</protein>
+    <diastaticPower>50.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Lager Malt</name>
+    <origin/>
+    <supplier/>
+    <description>Very light lager malt used to make Pilsners, Lagers and other light beers.  May be used as a base malt.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>82.5000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.0000000</protein>
+    <diastaticPower>100.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pilsner (2 Row) Bel</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Belgian base malt for Continental lagers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>79.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>10.5000000</protein>
+    <diastaticPower>105.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pilsner (2 Row) Ger</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>German base for Pilsners and Bohemian Lagers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>81.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>11.0000000</protein>
+    <diastaticPower>110.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Pilsner (2 Row) UK</name>
+    <origin>United Kingdom</origin>
+    <supplier/>
+    <description>Pilsner base malt</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>78.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>100.0000000</maxInBatch>
+    <protein>10.0000000</protein>
+    <diastaticPower>60.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Rice, Flaked</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Used to add fermentables without increasing body or flavor.
+Produces a milder, less grainy tasting beer.
+Examples: American lagers, Bohemian lagers, Pilsners</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.0000000</colour>
+    <fgDry>70.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>25.0000000</maxInBatch>
+    <protein>10.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Corn, Flaked</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Generally a neutral flavor, used to reduce maltiness of beer
+Produces beer with a milder, less malty flavor
+Uses: Primarily for light Bohemian and Pilsner lagers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.3000000</colour>
+    <fgDry>80.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>40.0000000</maxInBatch>
+    <protein>10.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat Malt, Bel</name>
+    <origin>Belgium</origin>
+    <supplier/>
+    <description>Malted wheat for use in Wheat beers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>81.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>60.0000000</maxInBatch>
+    <protein>11.5000000</protein>
+    <diastaticPower>74.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat Malt, Dark</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Dark malted wheat base for use in dark wheat styles such as Dunkleweizen.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>9.0000000</colour>
+    <fgDry>84.0000000</fgDry>
+    <moisture>3.5000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>20.0000000</maxInBatch>
+    <protein>11.5000000</protein>
+    <diastaticPower>10.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat Malt, Ger</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Malted wheat base for use in all wheat styles</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.0000000</colour>
+    <fgDry>84.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>60.0000000</maxInBatch>
+    <protein>12.5000000</protein>
+    <diastaticPower>95.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat, Flaked</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Flaked wheat adds to increased body and foam retention
+Used in place of raw or torrified wheat for faster conversion and better yield.
+May be used in small amounts to improve head retention and body
+Examples: Belgian White beer, Wit</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.6000000</colour>
+    <fgDry>77.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>40.0000000</maxInBatch>
+    <protein>16.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat, Roasted</name>
+    <origin>Germany</origin>
+    <supplier/>
+    <description>Also called Chocolate Wheat Malt.  Kilned raw wheat - adds a deep, dark brown color to dunkelweizens and other dark beer styles. Roasted, woody, charcoal or burnt toast flavor depending on degree of roasting.</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>425.0000000</colour>
+    <fgDry>54.3000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>10.0000000</maxInBatch>
+    <protein>13.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>Wheat, Torrified</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>Unmodified wheat that has been "popped" to open the kernels
+Used primarily in place of raw wheat when making Belgian White and Wit
+Faster conversion and higher yield than raw wheat
+Protein rest recommended when mashing</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>1.7000000</colour>
+    <fgDry>79.0000000</fgDry>
+    <moisture>9.0000000</moisture>
+    <coarseFineDiff>1.5000000</coarseFineDiff>
+    <maxInBatch>40.0000000</maxInBatch>
+    <protein>16.0000000</protein>
+    <diastaticPower>0.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+  <sugar>
+    <name>White Wheat Malt</name>
+    <origin>US</origin>
+    <supplier/>
+    <description>White wheat gives a malty flavor not available from raw wheat.
+Used in Weiss, Wit and White beers</description>
+    <sugarType>0</sugarType>
+    <mustMash>1</mustMash>
+    <colour>2.4000000</colour>
+    <fgDry>86.0000000</fgDry>
+    <moisture>4.0000000</moisture>
+    <coarseFineDiff>2.2000000</coarseFineDiff>
+    <maxInBatch>60.0000000</maxInBatch>
+    <protein>14.5000000</protein>
+    <diastaticPower>130.0000000</diastaticPower>
+    <tsn>0</tsn>
+    <hop>0.0000000</hop>
+  </sugar>
+</sugars>

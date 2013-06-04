@@ -19,7 +19,11 @@ import android.widget.TextView;
 import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
+import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Sugar.SugarKey;
+import com.tolstovenator.brewcalc.repository.SugarRepository;
 import com.tolstovenator.brewcalc.ui.HopListAdapter;
+import com.tolstovenator.brewcalc.ui.SugarListAdapter;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 /**
@@ -58,6 +62,10 @@ public class IngredientDetailFragment extends ListFragment {
 		@Override
 		public void onHopSelected(Hop hop) {
 		}
+
+		@Override
+		public void onSugarSelected(Sugar sugar) {
+		}
 	};
 
 	public static final String SCROLL_Y = "SCROLL_Y";
@@ -68,6 +76,7 @@ public class IngredientDetailFragment extends ListFragment {
 	private DetailSelectionCallback callback = dummyCallback;
 
 	private HopRepository hopRepository;
+	private SugarRepository sugarRepository;
 	
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
@@ -106,6 +115,7 @@ public class IngredientDetailFragment extends ListFragment {
 
 	private void initView() {
 		hopRepository = ingredientService.getHopRepository();
+		sugarRepository = ingredientService.getSugarRepository();
 		if (getArguments().containsKey(ARG_ITEM_ID)) {
 			// Load the dummy content specified by the fragment
 			// arguments. In a real-world scenario, use a Loader
@@ -118,15 +128,28 @@ public class IngredientDetailFragment extends ListFragment {
 						hopRepository.getHops()));
 				break;
 			case SUGARS:
+				setListAdapter(new SugarListAdapter(getActivity(), sugarRepository.getSugars()));
+					
 			case YEAST:
 			case WATER:
 				default:
 		
 			}
+			if (getArguments().containsKey(SELECTION_ID)) {
+				switch (ingredientType) {
+				case HOPS:
+					mActivatedPosition = hopRepository.getHops().indexOf(hopRepository.getHopByName(getArguments().getString(SELECTION_ID)));
+					break;
+				case SUGARS:
+					mActivatedPosition = sugarRepository.getSugars().indexOf(sugarRepository.getSugarByName(SugarKey.fromString(getArguments().getString(SELECTION_ID))));
+					break;
+				default:
+					break;
+				}
+				
+			}
 		}
-		if (getArguments().containsKey(SELECTION_ID)) {
-			mActivatedPosition = hopRepository.getHops().indexOf(hopRepository.getHopByName(getArguments().getString(SELECTION_ID)));
-		}
+		
 		if (mActivatedPosition != ListView.INVALID_POSITION) {
 			setActivatedPosition(mActivatedPosition);
 		}
@@ -188,7 +211,18 @@ public class IngredientDetailFragment extends ListFragment {
 
 		// Notify the active callbacks interface (the activity, if the
 		// fragment is attached to one) that an item has been selected.
-		callback.onHopSelected(hopRepository.getHops().get(position));
+		if (ingredientType != null) {
+			switch (ingredientType) {
+			case HOPS:
+				callback.onHopSelected(hopRepository.getHops().get(position));
+				break;
+			case SUGARS:
+				callback.onSugarSelected(sugarRepository.getSugars().get(position));
+			default:
+				break;
+			}
+			
+		}
 	}
 	
 	private void setActivatedPosition(int position) {
@@ -203,6 +237,8 @@ public class IngredientDetailFragment extends ListFragment {
 	
 	public interface DetailSelectionCallback {
 		public void onHopSelected(Hop hop);
+
+		public void onSugarSelected(Sugar sugar);
 	}
 	
 	private ServiceConnection mConnection = new ServiceConnection() {
