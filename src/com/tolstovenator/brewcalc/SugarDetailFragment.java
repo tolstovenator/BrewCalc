@@ -259,7 +259,7 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
             mBound = true;
             sugarRepository = ingredientService.getSugarRepository();
             if (selectedItem != null) {
-            	Sugar sugar = sugarRepository.getSugarByName(selectedItem);
+            	Sugar sugar = sugarRepository.getValueByKey(selectedItem);
             	setSugar(sugar);
             }
         }
@@ -340,7 +340,7 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.save_menu) {
 			if (selectedItem.getName() == null || selectedItem.getName().isEmpty()) {
-				sugarRepository.add(editSugar);
+				sugarRepository.add(editSugar.getSugarKey(), editSugar);
 			} else {
 				sugarRepository.update(selectedItem, editSugar);
 			}
@@ -375,21 +375,29 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 
 	@Override
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
-		if (checkedId == R.id.sugar) {
-			editSugar.setSugarType(SugarType.SUGAR);
-		} else if (checkedId == R.id.grain) {
-			editSugar.setSugarType(SugarType.GRAIN);
+		if (!resetForm) {
+			if (checkedId == R.id.sugar) {
+				editSugar.setSugarType(SugarType.SUGAR);
+			} else if (checkedId == R.id.grain) {
+				editSugar.setSugarType(SugarType.GRAIN);
+			} else if (checkedId == R.id.adjunct) {
+				editSugar.setSugarType(SugarType.ADJUNCT);
+			} else if (checkedId == R.id.extract) {
+				editSugar.setSugarType(SugarType.EXTRACT);
+			}
+			
+			resetForm(editSugar);
+			markChanged();
 		}
-		
-		resetForm(editSugar);
-		markChanged();
 	}
 
 	@Override
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-		editSugar.setMustMash(isChecked);
-		resetForm(editSugar);
-		markChanged();
+		if (!resetForm) {
+			editSugar.setMustMash(isChecked);
+			resetForm(editSugar);
+			markChanged();
+		}
 	}
 
 }

@@ -5,6 +5,7 @@ import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Yeast;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 import android.app.ActionBar;
@@ -120,7 +121,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 			// for the selected item ID.
 			Intent detailIntent = new Intent(this,
 					IngredientDetailActivity.class);
-			detailIntent.putExtra(IngredientDetailFragment.ARG_ITEM_ID, getString(IngredientType.values()[id.ordinal()].getNameId()));
+			detailIntent.putExtra(IngredientDetailFragment.ARG_ITEM_ID, id.ordinal());
 			startActivity(detailIntent);
 		}
 	}
@@ -136,6 +137,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	            if (mTwoPane) {
 	            	detailedView = false;
 	            	hopDetailFragment = null;
+	            	sugarDetailFragment = null;
 	            	listFragment = new IngredientListFragment();
 	    			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 	    			fragmentTransaction.replace(R.id.ingredient_list_container, listFragment);
@@ -171,6 +173,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	@Override
 	public void onHopSelected(Hop hop) {
 		if (mTwoPane) {
+			sugarDetailFragment = null;
 			Bundle arguments = new Bundle();
 			arguments.putString(HopDetailFragment.ARG_ITEM_ID, hop.getName());
 			if (hopDetailFragment == null) {
@@ -236,6 +239,7 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	@Override
 	public void onSugarSelected(Sugar sugar) {
 		if (mTwoPane) {
+			hopDetailFragment = null;
 			Bundle arguments = new Bundle();
 			arguments.putString(SugarDetailFragment.ARG_ITEM_ID, sugar.getSugarKey().toString());
 			if (sugarDetailFragment == null) {
@@ -270,5 +274,12 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 		}
 		
 	}
+
+	@Override
+	public void onYeastSelected(Yeast yeast) {
+		// TODO Auto-generated method stub
+	}
+	
+	
 	
 }

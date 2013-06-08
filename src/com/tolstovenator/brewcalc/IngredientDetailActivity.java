@@ -4,6 +4,8 @@ import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Yeast;
+import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -37,8 +39,7 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
 
 		// Show the Up button in the action bar.
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setTitle(getIntent().getStringExtra(
-							IngredientDetailFragment.ARG_ITEM_ID));
+		getActionBar().setTitle(getString(IngredientType.values()[getIntent().getIntExtra(IngredientDetailFragment.ARG_ITEM_ID, 0)].getNameId()));
 
 		// savedInstanceState is non-null when there is fragment state
 		// saved from previous configurations of this activity
@@ -55,10 +56,9 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
 			// Create the detail fragment and add it to the activity
 			// using a fragment transaction.
 			Bundle arguments = new Bundle();
-			arguments.putString(
-					IngredientDetailFragment.ARG_ITEM_ID,
-					getIntent().getStringExtra(
-							IngredientDetailFragment.ARG_ITEM_ID));
+			arguments.putInt(IngredientDetailFragment.ARG_ITEM_ID,
+					getIntent().getIntExtra(
+							IngredientDetailFragment.ARG_ITEM_ID, 0));
 			IngredientDetailFragment fragment = new IngredientDetailFragment();
 			fragment.setArguments(arguments);
 			getSupportFragmentManager().beginTransaction()
@@ -104,7 +104,6 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
 
 	@Override
 	public HopRepository getHopRepository() {
-		// TODO Auto-generated method stub
 		return ingredientService.getHopRepository();
 	}
 	
@@ -127,7 +126,18 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
 
 	@Override
 	public void onSugarSelected(Sugar sugar) {
-		// TODO Auto-generated method stub
+		Intent detailIntent = new Intent(this,
+				SugarDetailActivity.class);
+		detailIntent.putExtra(SugarDetailFragment.ARG_ITEM_ID, sugar.getSugarKey().toString());
+		startActivity(detailIntent);
+	}
+
+	@Override
+	public void onYeastSelected(Yeast yeast) {
+		Intent detailIntent = new Intent(this,
+				SugarDetailActivity.class);
+		detailIntent.putExtra(SugarDetailFragment.ARG_ITEM_ID, yeast.getYeastKey().toString());
+		startActivity(detailIntent);
 		
 	}
 	

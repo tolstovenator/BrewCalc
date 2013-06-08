@@ -20,10 +20,14 @@ import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Yeast;
+import com.tolstovenator.brewcalc.repository.Yeast.YeastKey;
+import com.tolstovenator.brewcalc.repository.YeastRepository;
 import com.tolstovenator.brewcalc.repository.Sugar.SugarKey;
 import com.tolstovenator.brewcalc.repository.SugarRepository;
 import com.tolstovenator.brewcalc.ui.HopListAdapter;
 import com.tolstovenator.brewcalc.ui.SugarListAdapter;
+import com.tolstovenator.brewcalc.ui.YeastListAdapter;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
 /**
@@ -66,6 +70,12 @@ public class IngredientDetailFragment extends ListFragment {
 		@Override
 		public void onSugarSelected(Sugar sugar) {
 		}
+
+		@Override
+		public void onYeastSelected(Yeast yeast) {
+			
+		}
+		
 	};
 
 	public static final String SCROLL_Y = "SCROLL_Y";
@@ -77,6 +87,7 @@ public class IngredientDetailFragment extends ListFragment {
 
 	private HopRepository hopRepository;
 	private SugarRepository sugarRepository;
+	private YeastRepository yeastRepository;
 	
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
@@ -105,7 +116,6 @@ public class IngredientDetailFragment extends ListFragment {
 
 	@Override
 	public void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		if (mBound) {
             getActivity().unbindService(mConnection);
@@ -116,6 +126,7 @@ public class IngredientDetailFragment extends ListFragment {
 	private void initView() {
 		hopRepository = ingredientService.getHopRepository();
 		sugarRepository = ingredientService.getSugarRepository();
+		yeastRepository = ingredientService.getYeastRepository();
 		if (getArguments().containsKey(ARG_ITEM_ID)) {
 			// Load the dummy content specified by the fragment
 			// arguments. In a real-world scenario, use a Loader
@@ -125,12 +136,14 @@ public class IngredientDetailFragment extends ListFragment {
 			case HOPS:
 				
 				setListAdapter(new HopListAdapter(getActivity(),
-						hopRepository.getHops()));
+						hopRepository.getValues()));
 				break;
 			case SUGARS:
-				setListAdapter(new SugarListAdapter(getActivity(), sugarRepository.getSugars()));
-					
+				setListAdapter(new SugarListAdapter(getActivity(), sugarRepository.getValues()));
+				break;	
 			case YEAST:
+				setListAdapter(new YeastListAdapter(getActivity(), yeastRepository.getValues()));
+				break;
 			case WATER:
 				default:
 		
@@ -138,10 +151,13 @@ public class IngredientDetailFragment extends ListFragment {
 			if (getArguments().containsKey(SELECTION_ID)) {
 				switch (ingredientType) {
 				case HOPS:
-					mActivatedPosition = hopRepository.getHops().indexOf(hopRepository.getHopByName(getArguments().getString(SELECTION_ID)));
+					mActivatedPosition = hopRepository.getValues().indexOf(hopRepository.getValueByKey(getArguments().getString(SELECTION_ID)));
 					break;
 				case SUGARS:
-					mActivatedPosition = sugarRepository.getSugars().indexOf(sugarRepository.getSugarByName(SugarKey.fromString(getArguments().getString(SELECTION_ID))));
+					mActivatedPosition = sugarRepository.getValues().indexOf(sugarRepository.getValueByKey(SugarKey.fromString(getArguments().getString(SELECTION_ID))));
+					break;
+				case YEAST:
+					mActivatedPosition = yeastRepository.getValues().indexOf(yeastRepository.getValueByKey(YeastKey.fromString(getArguments().getString(SELECTION_ID))));
 					break;
 				default:
 					break;
@@ -214,10 +230,14 @@ public class IngredientDetailFragment extends ListFragment {
 		if (ingredientType != null) {
 			switch (ingredientType) {
 			case HOPS:
-				callback.onHopSelected(hopRepository.getHops().get(position));
+				callback.onHopSelected(hopRepository.getValues().get(position));
 				break;
 			case SUGARS:
-				callback.onSugarSelected(sugarRepository.getSugars().get(position));
+				callback.onSugarSelected(sugarRepository.getValues().get(position));
+				break;
+			case YEAST:
+				callback.onYeastSelected(yeastRepository.getValues().get(position));
+				break;
 			default:
 				break;
 			}
@@ -239,6 +259,8 @@ public class IngredientDetailFragment extends ListFragment {
 		public void onHopSelected(Hop hop);
 
 		public void onSugarSelected(Sugar sugar);
+		
+		public void onYeastSelected(Yeast yeast);
 	}
 	
 	private ServiceConnection mConnection = new ServiceConnection() {

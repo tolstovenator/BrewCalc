@@ -23,11 +23,11 @@ public class Sugar {
 		}
 	}
 	
-	private String name;
-	private String origin;
-	private String supplier;
-	private String description;
-	private SugarType sugarType;
+	private String name = "";
+	private String origin = "";
+	private String supplier = "";
+	private String description = "";
+	private SugarType sugarType = SugarType.GRAIN;
 	private boolean mustMash;
 	
 	private int colour;

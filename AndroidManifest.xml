@@ -37,6 +37,13 @@
                 android:value=".IngredientDetailActivity" />
         </activity>
         <activity
+            android:name="com.tolstovenator.brewcalc.SugarDetailActivity"
+            android:label="@string/title_ingredient_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IngredientDetailActivity" />
+        </activity>
+        <activity
             android:name="com.tolstovenator.brewcalc.preferences.SettingsActivity"
             android:label="@string/title_ingredient_detail" >
         </activity>

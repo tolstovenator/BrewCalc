@@ -316,7 +316,7 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
 				}
 				changedHop.setHopUsage(hopUsage);
 				if (selectedItem == null || selectedItem.isEmpty()) {
-					hopRepository.add(changedHop);
+					hopRepository.add(changedHop.getName(), changedHop);
 				} else {
 					hopRepository.update(selectedItem, changedHop);
 				}
@@ -337,7 +337,7 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
 	private boolean validate() {
 		String hopName = hop_name.getText().toString().trim();
 		if (!selectedItem.equals(hopName)) {
-			if (hopRepository.getHopByName(hopName) != null) {
+			if (hopRepository.getValueByKey(hopName) != null) {
 				showError(getString(R.string.hop_already_exists, hopName));
 				return false;
 			}
@@ -363,7 +363,7 @@ public class HopDetailFragment extends Fragment implements TextWatcher, OnChecke
             mBound = true;
             hopRepository = ingredientService.getHopRepository();
             if (selectedItem != null) {
-            	Hop hop = hopRepository.getHopByName(selectedItem);
+            	Hop hop = hopRepository.getValueByKey(selectedItem);
             	setHop(hop);
             }
         }
