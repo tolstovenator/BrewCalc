@@ -1,6 +1,9 @@
 package com.tolstovenator.brewcalc;
 
+import com.tolstovenator.brewcalc.calc.CalculatorsListActivity;
+
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -26,12 +29,22 @@ public abstract class AbstractActionBarActivity extends FragmentActivity impleme
                                 getString(R.string.title_recipies),
                         }),
                 this);
+        
 	}
 	
 	@Override
     public boolean onNavigationItemSelected(int position, long id) {
         // When the given dropdown item is selected, show its contents in the
         // container view.
+		if (position == 0 && !(this instanceof IngredientListActivity)) {
+			Intent intent = new Intent(this,
+					IngredientListActivity.class);
+			startActivity(intent);
+		} else if (position == 1 && !(this instanceof CalculatorsListActivity)) {
+			Intent intent = new Intent(this,
+					CalculatorsListActivity.class);
+			startActivity(intent);
+		}
 //    	Fragment fragment;
 //    	if (position == 0) {
 //    		fragment = new HopListFragment();

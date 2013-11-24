@@ -20,6 +20,8 @@ import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Water;
+import com.tolstovenator.brewcalc.repository.WaterRepository;
 import com.tolstovenator.brewcalc.repository.Yeast;
 import com.tolstovenator.brewcalc.repository.Yeast.YeastKey;
 import com.tolstovenator.brewcalc.repository.YeastRepository;
@@ -27,6 +29,7 @@ import com.tolstovenator.brewcalc.repository.Sugar.SugarKey;
 import com.tolstovenator.brewcalc.repository.SugarRepository;
 import com.tolstovenator.brewcalc.ui.HopListAdapter;
 import com.tolstovenator.brewcalc.ui.SugarListAdapter;
+import com.tolstovenator.brewcalc.ui.WaterListAdapter;
 import com.tolstovenator.brewcalc.ui.YeastListAdapter;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
@@ -76,6 +79,11 @@ public class IngredientDetailFragment extends ListFragment {
 			
 		}
 		
+		@Override
+		public void onWaterSelected(Water water) {
+			
+		}
+		
 	};
 
 	public static final String SCROLL_Y = "SCROLL_Y";
@@ -88,6 +96,7 @@ public class IngredientDetailFragment extends ListFragment {
 	private HopRepository hopRepository;
 	private SugarRepository sugarRepository;
 	private YeastRepository yeastRepository;
+	private WaterRepository waterRepository;
 	
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
@@ -127,6 +136,7 @@ public class IngredientDetailFragment extends ListFragment {
 		hopRepository = ingredientService.getHopRepository();
 		sugarRepository = ingredientService.getSugarRepository();
 		yeastRepository = ingredientService.getYeastRepository();
+		waterRepository = ingredientService.getWaterRepository();
 		if (getArguments().containsKey(ARG_ITEM_ID)) {
 			// Load the dummy content specified by the fragment
 			// arguments. In a real-world scenario, use a Loader
@@ -145,6 +155,7 @@ public class IngredientDetailFragment extends ListFragment {
 				setListAdapter(new YeastListAdapter(getActivity(), yeastRepository.getValues()));
 				break;
 			case WATER:
+				setListAdapter(new WaterListAdapter(getActivity(), waterRepository.getValues()));
 				default:
 		
 			}
@@ -158,6 +169,9 @@ public class IngredientDetailFragment extends ListFragment {
 					break;
 				case YEAST:
 					mActivatedPosition = yeastRepository.getValues().indexOf(yeastRepository.getValueByKey(YeastKey.fromString(getArguments().getString(SELECTION_ID))));
+					break;
+				case WATER:
+					mActivatedPosition = waterRepository.getValues().indexOf(waterRepository.getValueByKey(getArguments().getString(SELECTION_ID)));
 					break;
 				default:
 					break;
@@ -238,6 +252,8 @@ public class IngredientDetailFragment extends ListFragment {
 			case YEAST:
 				callback.onYeastSelected(yeastRepository.getValues().get(position));
 				break;
+			case WATER:
+				callback.onWaterSelected(waterRepository.getValues().get(position));
 			default:
 				break;
 			}
@@ -261,6 +277,8 @@ public class IngredientDetailFragment extends ListFragment {
 		public void onSugarSelected(Sugar sugar);
 		
 		public void onYeastSelected(Yeast yeast);
+		
+		public void onWaterSelected(Water water);
 	}
 	
 	private ServiceConnection mConnection = new ServiceConnection() {
@@ -280,6 +298,9 @@ public class IngredientDetailFragment extends ListFragment {
             mBound = false;
             ingredientService = null;
             hopRepository = null;
+            waterRepository = null;
+            yeastRepository = null;
+            sugarRepository = null;
         }
     };
 	

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<waters>
+   <water>
+      <name>Antwerp, Belgium</name>
+      <bestBeer>Notable for De Koninck</bestBeer>
+      <bicarbonade>76.0000000</bicarbonade>
+      <calcium>90.0000000</calcium>
+      <chloride>57.0000000</chloride>
+      <magnesium>11.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>37.0000000</sodium>
+      <sulfate>84.0000000</sulfate>
+   </water>
+   <water>
+      <name>Atlanta, GA</name>
+      <bestBeer>Average Atlanta Water</bestBeer>
+      <bicarbonade>19.0000000</bicarbonade>
+      <calcium>6.0000000</calcium>
+      <chloride>0.0000000</chloride>
+      <magnesium>1.0000000</magnesium>
+      <ph>7.2000000</ph>
+      <sodium>3.0000000</sodium>
+      <sulfate>7.0000000</sulfate>
+   </water>
+   <water>
+      <name>Boston, MA</name>
+      <bestBeer>Average Boston Water</bestBeer>
+      <bicarbonade>10.0000000</bicarbonade>
+      <calcium>4.0000000</calcium>
+      <chloride>14.0000000</chloride>
+      <magnesium>1.0000000</magnesium>
+      <ph>7.9000000</ph>
+      <sodium>10.0000000</sodium>
+      <sulfate>8.0000000</sulfate>
+   </water>
+   <water>
+      <name>Burton On Trent, UK</name>
+      <bestBeer>Distinctive pale ales strongly hopped.  Very hard water accentuates the hops flavor.
+Example: Bass Ale</bestBeer>
+      <bicarbonade>300.0000000</bicarbonade>
+      <calcium>295.0000000</calcium>
+      <chloride>25.0000000</chloride>
+      <magnesium>45.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>55.0000000</sodium>
+      <sulfate>725.0000000</sulfate>
+   </water>
+   <water>
+      <name>Chicago, IL</name>
+      <bestBeer>Average Chicago Water</bestBeer>
+      <bicarbonade>106.0000000</bicarbonade>
+      <calcium>34.0000000</calcium>
+      <chloride>11.0000000</chloride>
+      <magnesium>11.0000000</magnesium>
+      <ph>8.1000000</ph>
+      <sodium>6.0000000</sodium>
+      <sulfate>25.0000000</sulfate>
+   </water>
+   <water>
+      <name>Dallas, TX</name>
+      <bestBeer>Average water for Dallas, Texas</bestBeer>
+      <bicarbonade>45.0000000</bicarbonade>
+      <calcium>24.0000000</calcium>
+      <chloride>34.0000000</chloride>
+      <magnesium>3.0000000</magnesium>
+      <ph>9.0000000</ph>
+      <sodium>17.0000000</sodium>
+      <sulfate>44.0000000</sulfate>
+   </water>
+   <water>
+      <name>Deer Park (R), Bottled Water</name>
+      <bestBeer>Deer Park is a registered trademark name.</bestBeer>
+      <bicarbonade>32.9000000</bicarbonade>
+      <calcium>3.8000000</calcium>
+      <chloride>0.5000000</chloride>
+      <magnesium>1.2000000</magnesium>
+      <ph>7.6000000</ph>
+      <sodium>2.8000000</sodium>
+      <sulfate>6.0000000</sulfate>
+   </water>
+   <water>
+      <name>Denver, Colorado</name>
+      <bestBeer>Denver Metro Area -- suburbs may vary.</bestBeer>
+      <bicarbonade>104.0000000</bicarbonade>
+      <calcium>31.5000000</calcium>
+      <chloride>23.5000000</chloride>
+      <magnesium>8.5000000</magnesium>
+      <ph>7.8000000</ph>
+      <sodium>21.4000000</sodium>
+      <sulfate>50.8000000</sulfate>
+   </water>
+   <water>
+      <name>Distilled Water</name>
+      <bestBeer>Neutral water, may be used as a base for creating desired water profile.</bestBeer>
+      <bicarbonade>0.0000000</bicarbonade>
+      <calcium>0.0000000</calcium>
+      <chloride>0.0000000</chloride>
+      <magnesium>0.0000000</magnesium>
+      <ph>7.0000000</ph>
+      <sodium>0.0000000</sodium>
+      <sulfate>0.0000000</sulfate>
+   </water>
+   <water>
+      <name>Dortmund, Germany</name>
+      <bestBeer>Hard water for strong, well hopped amber lagers.  Enhances malty flavor of beer.</bestBeer>
+      <bicarbonade>550.0000000</bicarbonade>
+      <calcium>250.0000000</calcium>
+      <chloride>100.0000000</chloride>
+      <magnesium>25.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>70.0000000</sodium>
+      <sulfate>280.0000000</sulfate>
+   </water>
+   <water>
+      <name>Dublin, Ireland</name>
+      <bestBeer>Irish ale water - used for dark, malty strong ales with medium bitterness.  Famous for dry stouts.</bestBeer>
+      <bicarbonade>200.0000000</bicarbonade>
+      <calcium>115.0000000</calcium>
+      <chloride>19.0000000</chloride>
+      <magnesium>4.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>12.0000000</sodium>
+      <sulfate>55.0000000</sulfate>
+   </water>
+   <water>
+      <name>Edinburg, Scotland</name>
+      <bestBeer>Used for dark, malty Brown ales with low bitterness.</bestBeer>
+      <bicarbonade>225.0000000</bicarbonade>
+      <calcium>120.0000000</calcium>
+      <chloride>20.0000000</chloride>
+      <magnesium>25.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>55.0000000</sodium>
+      <sulfate>140.0000000</sulfate>
+   </water>
+   <water>
+      <name>Latham (NY) Water District</name>
+      <bestBeer>Public Supply # 100198</bestBeer>
+      <bicarbonade>109.0000000</bicarbonade>
+      <calcium>39.0000000</calcium>
+      <chloride>37.5000000</chloride>
+      <magnesium>6.7000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>25.0000000</sodium>
+      <sulfate>40.0000000</sulfate>
+   </water>
+   <water>
+      <name>Latham, NY</name>
+      <bestBeer>Public Supply # 100198</bestBeer>
+      <bicarbonade>109.0000000</bicarbonade>
+      <calcium>39.0000000</calcium>
+      <chloride>37.5000000</chloride>
+      <magnesium>6.7000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>25.0000000</sodium>
+      <sulfate>40.0000000</sulfate>
+   </water>
+   <water>
+      <name>London, England</name>
+      <bestBeer>Profile encourages balanced, smooth, dark beers such as Porters, Browns and Milds.</bestBeer>
+      <bicarbonade>156.0000000</bicarbonade>
+      <calcium>52.0000000</calcium>
+      <chloride>60.0000000</chloride>
+      <magnesium>16.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>99.0000000</sodium>
+      <sulfate>77.0000000</sulfate>
+   </water>
+   <water>
+      <name>Los Angeles, CA (East)</name>
+      <bestBeer>East L.A.</bestBeer>
+      <bicarbonade>0.0000000</bicarbonade>
+      <calcium>63.0000000</calcium>
+      <chloride>99.0000000</chloride>
+      <magnesium>22.0000000</magnesium>
+      <ph>7.9000000</ph>
+      <sodium>84.0000000</sodium>
+      <sulfate>151.0000000</sulfate>
+   </water>
+   <water>
+      <name>Los Angeles, CA (West)</name>
+      <bestBeer>West L.A.</bestBeer>
+      <bicarbonade>105.0000000</bicarbonade>
+      <calcium>32.0000000</calcium>
+      <chloride>85.0000000</chloride>
+      <magnesium>14.0000000</magnesium>
+      <ph>7.8000000</ph>
+      <sodium>68.0000000</sodium>
+      <sulfate>75.0000000</sulfate>
+   </water>
+   <water>
+      <name>Milwaukee, WI</name>
+      <bestBeer>Famous for Pilsners and Lagers.</bestBeer>
+      <bicarbonade>107.0000000</bicarbonade>
+      <calcium>96.0000000</calcium>
+      <chloride>16.0000000</chloride>
+      <magnesium>47.0000000</magnesium>
+      <ph>7.5000000</ph>
+      <sodium>7.0000000</sodium>
+      <sulfate>26.0000000</sulfate>
+   </water>
+   <water>
+      <name>Munich, Germany</name>
+      <bestBeer>High carbonate levels accentuate low hopping rates and darker color found in Dunkels and Bocks.</bestBeer>
+      <bicarbonade>200.0000000</bicarbonade>
+      <calcium>75.0000000</calcium>
+      <chloride>2.0000000</chloride>
+      <magnesium>20.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>10.0000000</sodium>
+      <sulfate>10.0000000</sulfate>
+   </water>
+   <water>
+      <name>New York, NY</name>
+      <bestBeer>The Big Apple.  Obviously areas surrounding New York can vary widely depending on main water source.</bestBeer>
+      <bicarbonade>29.0000000</bicarbonade>
+      <calcium>13.0000000</calcium>
+      <chloride>21.0000000</chloride>
+      <magnesium>4.0000000</magnesium>
+      <ph>7.2000000</ph>
+      <sodium>11.0000000</sodium>
+      <sulfate>12.0000000</sulfate>
+   </water>
+   <water>
+      <name>Pilsen, Czech</name>
+      <bestBeer>Very soft water aids pale color and clean bitterness of Pilsner style.</bestBeer>
+      <bicarbonade>15.0000000</bicarbonade>
+      <calcium>7.0000000</calcium>
+      <chloride>5.0000000</chloride>
+      <magnesium>2.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>2.0000000</sodium>
+      <sulfate>5.0000000</sulfate>
+   </water>
+   <water>
+      <name>Poland Spring (R)</name>
+      <bestBeer>Poland Spring Bottled Water</bestBeer>
+      <bicarbonade>14.0000000</bicarbonade>
+      <calcium>5.3000000</calcium>
+      <chloride>5.3000000</chloride>
+      <magnesium>0.9000000</magnesium>
+      <ph>6.6000000</ph>
+      <sodium>2.1000000</sodium>
+      <sulfate>3.2000000</sulfate>
+   </water>
+   <water>
+      <name>Portland OR</name>
+      <bestBeer>Portland - very close to distilled water.  Good for Pilsners.</bestBeer>
+      <bicarbonade>9.0000000</bicarbonade>
+      <calcium>2.0000000</calcium>
+      <chloride>2.0000000</chloride>
+      <magnesium>1.0000000</magnesium>
+      <ph>6.7000000</ph>
+      <sodium>2.0000000</sodium>
+      <sulfate>0.0000000</sulfate>
+   </water>
+   <water>
+      <name>Salt Lake City, UT</name>
+      <bestBeer>Salt Lake average water.  High in bicarbonates, and moderately hard water.</bestBeer>
+      <bicarbonade>252.0000000</bicarbonade>
+      <calcium>30.0000000</calcium>
+      <chloride>7.0000000</chloride>
+      <magnesium>17.0000000</magnesium>
+      <ph>7.9000000</ph>
+      <sodium>5.0000000</sodium>
+      <sulfate>12.0000000</sulfate>
+   </water>
+   <water>
+      <name>Seattle, WA</name>
+      <bestBeer>Seattle.  Relatively soft water with low mineral content.</bestBeer>
+      <bicarbonade>18.0000000</bicarbonade>
+      <calcium>17.0000000</calcium>
+      <chloride>4.0000000</chloride>
+      <magnesium>1.0000000</magnesium>
+      <ph>7.8000000</ph>
+      <sodium>4.0000000</sodium>
+      <sulfate>2.0000000</sulfate>
+   </water>
+   <water>
+      <name>Vienna, Austria</name>
+      <bestBeer>High water hardness, but low sodium and chloride levels.  Amber malt-accentuated lagers.  Vienna style beers.</bestBeer>
+      <bicarbonade>120.0000000</bicarbonade>
+      <calcium>200.0000000</calcium>
+      <chloride>12.0000000</chloride>
+      <magnesium>60.0000000</magnesium>
+      <ph>8.0000000</ph>
+      <sodium>8.0000000</sodium>
+      <sulfate>125.0000000</sulfate>
+   </water>
+   <water>
+      <name>Washington, DC</name>
+      <bestBeer>Washington DC water profile from the Potomac River.  Suburbs may vary.</bestBeer>
+      <bicarbonade>10.0000000</bicarbonade>
+      <calcium>38.0000000</calcium>
+      <chloride>35.6000000</chloride>
+      <magnesium>9.4000000</magnesium>
+      <ph>7.5000000</ph>
+      <sodium>19.4000000</sodium>
+      <sulfate>32.7000000</sulfate>
+   </water>
+   <water>
+      <name>Waterford, NY</name>
+      <bestBeer>Local water profile</bestBeer>
+      <bicarbonade>0.0000000</bicarbonade>
+      <calcium>0.0000000</calcium>
+      <chloride>36.0000000</chloride>
+      <magnesium>0.0000000</magnesium>
+      <ph>7.6000000</ph>
+      <sodium>18.0000000</sodium>
+      <sulfate>0.0000000</sulfate>
+   </water>
+</waters>

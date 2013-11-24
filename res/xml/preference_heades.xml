@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header 
+        android:fragment="com.tolstovenator.brewcalc.preferences.SettingsFragment"
+        android:title="@string/preference_measurements"
+        android:summary="@string/preference_measurements_summary" >
+        <!-- key/value pairs can be included as arguments for the fragment. -->
+        <extra android:name="settings" android:value="measurements" />
+    </header>
+    <header 
+        android:fragment="com.tolstovenator.brewcalc.preferences.SettingsFragment"
+        android:title="@string/preference_brewhouse_efficiency"
+        android:summary="@string/preference_brewhouse_efficiency_summary" >
+    	<extra android:name="settings" android:value="efficiency" />
+   	</header>
+   	<header 
+        android:fragment="com.tolstovenator.brewcalc.preferences.SettingsFragment"
+        android:title="@string/preference_calibration"
+        android:summary="@string/preference_calibration_summary" >
+    	<extra android:name="settings" android:value="calibration" />
+   	</header>
+   	<header 
+        android:fragment="com.tolstovenator.brewcalc.preferences.SettingsFragment"
+        android:title="@string/preference_hops"
+        android:summary="@string/preference_hops_summary" >
+    	<extra android:name="settings" android:value="hops" />
+   	</header>
+    <header 
+        android:fragment="com.tolstovenator.brewcalc.preferences.SettingsFragment"
+        android:title="@string/preference_colours"
+        android:summary="@string/preference_colours_summary" >
+    	<extra android:name="settings" android:value="colours" />
+   	</header>
+</preference-headers>

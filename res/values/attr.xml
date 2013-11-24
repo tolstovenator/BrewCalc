@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <declare-styleable name="SpinBox">
+        <attr name="minValue" format="float" />
+        <attr name="maxValue" format="float" />
+        <attr name="step" format="float" />
+        <attr name="rounding" format="integer" />
+        <attr name="currentValue" format="float" />
+    </declare-styleable>
+ 
+</resources>

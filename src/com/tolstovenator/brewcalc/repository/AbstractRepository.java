@@ -62,6 +62,7 @@ public abstract class  AbstractRepository <K,V> {
 				}
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new RuntimeException("Unable to load yeast list", e);
 		}
 	}

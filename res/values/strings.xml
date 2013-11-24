@@ -32,22 +32,23 @@
     <string name="hop_already_exists">Hop %1$s already exists</string>
     <string name="error_dialog_title">Error</string>
     <string name="add_hop">Add Hop</string>
-    <string name="brewhouse_efficiency">Brewhouse Efficiency</string>
-    <string name="pref_default_efficiency">Default Efficiency</string>
+    <string name="add_yeast">Add Yeast</string>
+    <string name="add_sugar">Add Sugar</string>
+    <string name="add_water">Add Water</string>
     <string name="extract_potential">Extract Potential</string>
     <string-array name="pref_extract_potential">
         <item >SG</item>
         <item >Points</item>
         <item >Plato</item>
         <item >IOB / HWE</item>
-        <item >% Yield Fine Grind Dry Basis</item>
+        <item >Percent Yield Fine Grind Dry Basis</item>
     </string-array>
     <string-array name="pref_extract_potential_values">
         <item >0</item>
         <item >1</item>
         <item >2</item>
         <item >3</item>
-        <item >4settings_menusettings_menusettings_menu</item>
+        <item >4</item>
     </string-array>
     <string name="settings_menu">Settings</string>
     <string name="sugar">Sugar</string>
@@ -59,6 +60,8 @@
     <string name="mustMash">Must Mash</string>
     <string name="gravityPotentialName">Gravity Potential</string>
     <string name="colourName">Colour (SRM)</string>
+    <string name="colourNameEbc">Colour (EBC - Old)</string>
+    <string name="colourNameEbcNew">Colour (EBC - New)</string>
     <string name="moistureName">Moisture (%)</string>
     <string name="coarseFineDiffName">Coarse/Fine Diff</string>
     <string name="fineDryName">Yield Fine Dry</string>
@@ -71,4 +74,103 @@
     <string name="nitrogenName">Nitrogen (%)</string>
     <string name="hopsIbuName">Hops IBU</string>
     <string name="pHName">pH</string>
+    <string name="yeastName">Name</string>
+    <string name="catalogId">Product ID</string>
+    <string name="laboratory">Laboratory</string>
+    <string name="ale">Ale</string>
+    <string name="lager">Lager</string>
+    <string name="wine">Wine</string>
+    <string name="champagne">Champagne</string>
+    <string name="dry">Dry</string>
+    <string name="liquid">Liquid</string>
+    <string name="agar">Agar Slant</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="veryHigh">Very High</string>
+    <string name="useStarter">Use Starter</string>
+    <string name="addToSecondary">Add to Secondary</string>
+    <string name="maxReuse">Max Reuse</string>
+    <string name="minAttenuationName">Min Attenuation</string>
+    <string name="maxAttenuationName">Max Attenuation</string>
+    <string name="minTemperatureName">Min Temperature</string>
+    <string name="maxTemperatureName">Max Temperature</string>
+    <string name="flavour">Flavour</string>
+    <string name="yeastTypeName">Type</string>
+    <string name="yeastFormName">Form</string>
+    <string name="flocculationName">Flocculation</string>
+    <string-array name="maxReuseArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <!-- WATER FORM -->
+    <string name="waterName">Name</string>
+    <string name="bestBeer">Known for beer</string>
+    <string name="calciumName">Calcium (Ca)</string>
+    <string name="magnesiumName">Magnesium (Mg)</string>
+    <string name="sulfateName">Sulfates (SO4)</string>
+    <string name="sodiumName">Sodium (Na)</string>
+    <string name="bicarbonadeName">Bicarbonade (HCO3)</string>
+    <string name="chlorideName">Chloride (Cl)</string>
+    <string name="phName">pH</string>
+    
+    <string name="ogName">OG</string>
+    <string name="fgName">FG</string>
+    <string name="platoName">Plato</string>
+    <string name="abvName">Alcohol by Volume (ABV)</string>
+    <string name="abwName">Alcohol by Weight (ABW)</string>
+    <string name="rdfName">Attenuation (RDF)</string>
+    <string name="adfName">Attenuation (ADF)</string>
+    <string name="redidualSGName">Residual Extract (SG)</string>
+    <string name="residualPlatoName">Residual Extract (Plato)</string>
+    
+    
+    <string name="preference_measurements">Units</string>
+    <string name="preference_brewhouse_efficiency">Efficiency</string>
+    <string name="preference_calibration">Calibration</string>
+    <string name="preference_hops">Hops</string>
+    <string name="preference_colours">Colours</string>
+    <string name="preference_measurements_summary">Measures, Sizes, Presicions</string>
+    <string name="preference_brewhouse_efficiency_summary">Brewhouse Efficiency</string>
+    <string name="preference_calibration_summary">Instrument Calibration</string>
+    <string name="preference_hops_summary">Hop Utilisation, Calculations and Storage</string>
+    <string name="preference_colours_summary">Malt and Beer Colours</string>
+    
+    <string name="pref_default_efficiency">Default Efficiency, %</string>
+    <string name="pref_fluid_units">Fluid Units</string>
+    <string name="pref_grain_units">Grain Units</string>
+    <string name="pref_hops_units">Hops Units</string>
+    <string name="pref_pressure_units">Pressure (CO2) Units</string>
+    <string name="pref_temperature_units">Temperature Units</string>
+    <string name="pref_american">American</string>
+    <string name="pref_farenheit">Fahrenheit</string>
+    <string name="pref_metric">Metric</string>
+    <string name="pref_celsius">Celsius</string>
+    <string name="pref_metric_switch">Met</string>
+    <string name="pref_american_switch">Am</string>
+    <string name="pref_farenheit_switch">F</string>
+    <string name="pref_celsius_switch">C</string>
+    <string name="pref_units">Units</string>
+    <string name="pref_brewhouse_type">Brew System Settings</string>
+    <string name="pref_homepro_type">Brewhouse Type</string>
+    <string name="pref_home_switch">Home</string>
+    <string name="pref_home">Home Brewer</string>
+    <string name="pref_pro_switch">Pro</string>
+    <string name="pref_pro">Professional Brewer</string>
+    <string name="pref_batch_size_gal">Default Batch Size, Gal</string>
+    <string name="pref_batch_size_bbl">Default Batch Size, Bbl</string>
+    <string name="pref_batch_size_L">Default Batch Size, L</string>
+    <string name="pref_batch_size_hl">Default Batch Size, hl</string>
+    
+    <string name="settings">Settings</string>
+    
+    <string name="calcAlcohol">Alcohol %</string>
+    <string name="calcBoiloff">Boil Off</string>
+    <string name="calcCarbonation">Carbonation</string>
+    
 </resources>

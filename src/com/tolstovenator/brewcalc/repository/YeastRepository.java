@@ -41,8 +41,22 @@ public class YeastRepository extends AbstractRepository <YeastKey, Yeast>{
 	}
 
 	@Override
-	protected Element createElement(Document document, Yeast value) {
-		return null;
+	protected Element createElement(Document document, Yeast yeast) {
+		Element element = document.createElement("yeast");
+		appendProperty(document, element, "name", yeast.getName());
+		appendProperty(document, element, "lab", yeast.getLab());
+		appendProperty(document, element, "catalogId", yeast.getCatalogId());
+		appendProperty(document, element, "type", yeast.getYeastType().ordinal());
+		appendProperty(document, element, "form", yeast.getYeastMedium().ordinal());
+		appendProperty(document, element, "flocculation", yeast.getFlocculation().ordinal());
+		appendProperty(document, element, "minAttenuation", yeast.getLowAttenuation());
+		appendProperty(document, element, "maxAttenuation", yeast.getHighAttenuation());
+		appendProperty(document, element, "minTemp", yeast.getMinTemp());
+		appendProperty(document, element, "maxTemp", yeast.getMaxTemp());
+		appendProperty(document, element, "maxReuse", yeast.getMaxReuse());
+		appendProperty(document, element, "useStarter", yeast.isUseStarter() ? 1 : 0);
+		appendProperty(document, element, "addToSecondary", yeast.isAddToSecondary() ? 1 : 0);
+		return element;
 	}
 
 }

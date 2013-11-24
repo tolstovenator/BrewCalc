@@ -1,4 +1,4 @@
-<Yeast><Yeast><_MOD_>2011-03-06</_MOD_>
+<Yeasts><Yeast><_MOD_>2011-03-06</_MOD_>
 <F_Y_NAME>Abbey Ale</F_Y_NAME>
 <F_Y_LAB>White Labs</F_Y_LAB>
 <F_Y_PRODUCT_ID>WLP530</F_Y_PRODUCT_ID>
@@ -5630,4 +5630,4 @@ Alcohol Tolerance: 16%</F_Y_NOTES>
 <F_Y_BEST_FOR>European lagers</F_Y_BEST_FOR>
 <F_Y_NOTES>A famous yeast strain from Weihenstephan Germany used worldwide in brewing.  Their most popular strain for lagers.</F_Y_NOTES>
 </Yeast>
-</Yeast>
+</Yeasts>

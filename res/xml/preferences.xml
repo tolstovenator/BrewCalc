@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    <PreferenceScreen android:title="@string/brewhouse_efficiency">
-        <EditTextPreference android:key="pref_default_efficiency" android:title="@string/pref_default_efficiency"/>
-        <ListPreference android:title="@string/extract_potential" android:entries="@array/pref_extract_potential" android:entryValues="@array/pref_extract_potential_values" android:key="pref_extract_potential"/>
-    </PreferenceScreen>
-    
-
-</PreferenceScreen>

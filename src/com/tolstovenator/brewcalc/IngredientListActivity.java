@@ -5,6 +5,7 @@ import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Water;
 import com.tolstovenator.brewcalc.repository.Yeast;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
@@ -138,6 +139,8 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	            	detailedView = false;
 	            	hopDetailFragment = null;
 	            	sugarDetailFragment = null;
+	            	waterDetailFragment = null;
+	            	yeastDetailFragment = null;
 	            	listFragment = new IngredientListFragment();
 	    			FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 	    			fragmentTransaction.replace(R.id.ingredient_list_container, listFragment);
@@ -174,6 +177,8 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 	public void onHopSelected(Hop hop) {
 		if (mTwoPane) {
 			sugarDetailFragment = null;
+			yeastDetailFragment = null;
+			waterDetailFragment = null;
 			Bundle arguments = new Bundle();
 			arguments.putString(HopDetailFragment.ARG_ITEM_ID, hop.getName());
 			if (hopDetailFragment == null) {
@@ -235,11 +240,15 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
     };
 	private HopDetailFragment hopDetailFragment;
 	private SugarDetailFragment sugarDetailFragment;
+	private YeastDetailFragment yeastDetailFragment;
+	private WaterDetailFragment waterDetailFragment;
 
 	@Override
 	public void onSugarSelected(Sugar sugar) {
 		if (mTwoPane) {
 			hopDetailFragment = null;
+			yeastDetailFragment = null;
+			waterDetailFragment = null;
 			Bundle arguments = new Bundle();
 			arguments.putString(SugarDetailFragment.ARG_ITEM_ID, sugar.getSugarKey().toString());
 			if (sugarDetailFragment == null) {
@@ -277,7 +286,82 @@ public class IngredientListActivity extends AbstractActionBarActivity implements
 
 	@Override
 	public void onYeastSelected(Yeast yeast) {
-		// TODO Auto-generated method stub
+		if (mTwoPane) {
+			hopDetailFragment = null;
+			sugarDetailFragment = null;
+			waterDetailFragment = null;
+			Bundle arguments = new Bundle();
+			arguments.putString(SugarDetailFragment.ARG_ITEM_ID, yeast.getYeastKey().toString());
+			if (yeastDetailFragment == null) {
+				yeastDetailFragment = new YeastDetailFragment();
+				yeastDetailFragment.setArguments(arguments);
+				FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+				fragmentTransaction.replace(R.id.ingredient_detail_container, yeastDetailFragment);
+				if (!detailedView) {
+					arguments = new Bundle();
+					arguments.putInt(IngredientDetailFragment.ARG_ITEM_ID, IngredientType.YEAST.ordinal());
+					arguments.putString(IngredientDetailFragment.SELECTION_ID, yeast.getYeastKey().toString());
+					if (this.fragment != null) {
+						ListView currentView = this.fragment.getListView();
+						int position = currentView.getFirstVisiblePosition();
+						int scroll = currentView.getChildAt(0).getTop();
+						arguments.putInt(IngredientDetailFragment.SCROLL_Y, scroll);
+						arguments.putInt(IngredientDetailFragment.SCROLL_POSITION, position);
+					}
+					fragment = new IngredientDetailFragment();
+					fragment.setArguments(arguments);
+					fragmentTransaction.replace(R.id.ingredient_list_container, fragment);
+					detailedView = true;
+				}
+				fragmentTransaction.commit();
+			} else {
+				yeastDetailFragment.setYeast(yeast);
+			}
+			ActionBar actionBar = getActionBar();
+			actionBar.setDisplayHomeAsUpEnabled(true);
+		} else {
+			//TODO: implement
+		}
+	}
+	
+	@Override
+	public void onWaterSelected(Water water) {
+		if (mTwoPane) {
+			hopDetailFragment = null;
+			sugarDetailFragment = null;
+			yeastDetailFragment = null;
+			Bundle arguments = new Bundle();
+			arguments.putString(SugarDetailFragment.ARG_ITEM_ID, water.getName().toString());
+			if (waterDetailFragment == null) {
+				waterDetailFragment = new WaterDetailFragment();
+				waterDetailFragment.setArguments(arguments);
+				FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+				fragmentTransaction.replace(R.id.ingredient_detail_container, waterDetailFragment);
+				if (!detailedView) {
+					arguments = new Bundle();
+					arguments.putInt(IngredientDetailFragment.ARG_ITEM_ID, IngredientType.WATER.ordinal());
+					arguments.putString(IngredientDetailFragment.SELECTION_ID, water.getName().toString());
+					if (this.fragment != null) {
+						ListView currentView = this.fragment.getListView();
+						int position = currentView.getFirstVisiblePosition();
+						int scroll = currentView.getChildAt(0).getTop();
+						arguments.putInt(IngredientDetailFragment.SCROLL_Y, scroll);
+						arguments.putInt(IngredientDetailFragment.SCROLL_POSITION, position);
+					}
+					fragment = new IngredientDetailFragment();
+					fragment.setArguments(arguments);
+					fragmentTransaction.replace(R.id.ingredient_list_container, fragment);
+					detailedView = true;
+				}
+				fragmentTransaction.commit();
+			} else {
+				waterDetailFragment.setWater(water);
+			}
+			ActionBar actionBar = getActionBar();
+			actionBar.setDisplayHomeAsUpEnabled(true);
+		} else {
+			//TODO: implement
+		}
 	}
 	
 	

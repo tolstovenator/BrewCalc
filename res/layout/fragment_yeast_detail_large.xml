@@ -23,121 +23,197 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/laboratory" />
-    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/yeastTypeName"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="@string/yeastTypeName"
+        android:textAppearance="?android:attr/textAppearanceMedium"  />    
     <RadioGroup
-        android:id="@+id/sugarTypeGroup"
+        android:id="@+id/yeastTypeGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/grain"
+            android:id="@+id/ale"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="@string/grain" />
+            android:text="@string/ale" />
 
         <RadioButton
-            android:id="@+id/extract"
+            android:id="@+id/lager"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
-            android:text="@string/extract" />
+            android:text="@string/lager" />
 
         <RadioButton
-            android:id="@+id/sugar"
+            android:id="@+id/wine"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
-            android:text="@string/sugar" />
+            android:text="@string/wine" />
         
-         <RadioButton
-            android:id="@+id/adjunct"
+        <RadioButton
+            android:id="@+id/champagne"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
-            android:text="@string/adjunct" />
+            android:text="@string/champagne" />
+        
     </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/yeastFormName"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="@string/yeastFormName" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+    <RadioGroup
+        android:id="@+id/yeastFormGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/liquid"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/liquid" />
+
+        <RadioButton
+            android:id="@+id/dry"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dry" />
+
+        <RadioButton
+            android:id="@+id/agar"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/agar" />
+        
+    </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/flocculationName"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="@string/flocculationName" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+    
+    <RadioGroup
+        android:id="@+id/yeastFlocculationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/low"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/low" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/high"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+        
+        <RadioButton
+            android:id="@+id/veryHigh"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:text="@string/veryHigh" />
+        
+    </RadioGroup>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
     
     <CheckBox
-            android:id="@+id/mustMash"
+            android:id="@+id/useStarter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mustMash" />
+            android:text="@string/useStarter" />
     
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/gravityPotentialName"
+      <CheckBox
+            android:id="@+id/addToSecondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gravityPotentialName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:text="@string/addToSecondary" />
 
-        
-        <EditText
-            android:id="@+id/gravityPotentialText"
+    <TextView
+        android:id="@+id/maxReuseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/maxReuse"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <Spinner android:id="@+id/maxReuse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/gravityPotentialName"
-            android:inputType="numberDecimal" >
-        </EditText>
-
-        <TextView
-            android:id="@+id/colourName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/colourName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <EditText
-            android:id="@+id/colourText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/colourName"
-            android:inputType="numberDecimal" />
+            android:text="@string/maxReuse"
+            android:entries="@array/maxReuseArray"
+            android:spinnerMode="dropdown"/>
     </LinearLayout>
     
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/moistureName"
+            android:id="@+id/minAttenuationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/moistureName"
+            android:text="@string/minAttenuationName"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         
         <EditText
-            android:id="@+id/moistureText"
+            android:id="@+id/minAttenuationText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/moistureName"
+            android:hint="@string/minAttenuationName"
             android:inputType="numberDecimal" >
         </EditText>
 
         <TextView
-            android:id="@+id/coarseFineDiffName"
+            android:id="@+id/maxAttenuationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/coarseFineDiffName"
+            android:text="@string/maxAttenuationName"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/coarseFineDiffText"
+            android:id="@+id/maxAttenuationText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/coarseFineDiffName"
+            android:hint="@string/maxAttenuationName"
             android:inputType="numberDecimal" />
     </LinearLayout>
     
@@ -146,203 +222,58 @@
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/fineDryName"
+            android:id="@+id/minTemperatureName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fineDryName"
+            android:text="@string/minTemperatureName"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         
         <EditText
-            android:id="@+id/fineDryText"
+            android:id="@+id/minTemperatureText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/fineDryName"
+            android:hint="@string/minTemperatureName"
             android:inputType="numberDecimal" >
         </EditText>
 
         <TextView
-            android:id="@+id/coarseDryName"
+            android:id="@+id/maxTemperatureName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/coarseDryName"
+            android:text="@string/maxTemperatureName"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/coarseDryText"
+            android:id="@+id/maxTemperatureText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/coarseDryName"
+            android:hint="@string/maxTemperatureName"
             android:inputType="numberDecimal" />
     </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/fineAsIsName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fineAsIsName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        
-        <EditText
-            android:id="@+id/fineAsIsText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/fineAsIsName"
-            android:inputType="numberDecimal" >
-        </EditText>
-
-        <TextView
-            android:id="@+id/coarseAsIsName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/coarseAsIsName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <EditText
-            android:id="@+id/coarseAsIsText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/coarseAsIsName"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/maxInBatchName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/maxInBatchName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        
-        <EditText
-            android:id="@+id/maxInBatchText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/maxInBatchName"
-            android:inputType="numberDecimal" >
-        </EditText>
-
-        <TextView
-            android:id="@+id/diastaticName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/diastaticName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <EditText
-            android:id="@+id/diastaticText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/diastaticName"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/proteinName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/proteinName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        
-        <EditText
-            android:id="@+id/proteinText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/proteinName"
-            android:inputType="numberDecimal" >
-        </EditText>
-
-        <TextView
-            android:id="@+id/nitrogenName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nitrogenName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <EditText
-            android:id="@+id/nitrogenText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/nitrogenName"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/hopsIbuName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hopsIbuName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        
-        <EditText
-            android:id="@+id/hopsIbuText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/hopsIbuName"
-            android:inputType="numberDecimal" >
-        </EditText>
-
-        <TextView
-            android:id="@+id/pHName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pHName"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <EditText
-            android:id="@+id/pHText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/pHName"
-            android:inputType="numberDecimal" />
-    </LinearLayout>
-
-    
     
 
     <EditText
-        android:id="@+id/description"
+        android:id="@+id/flavour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textMultiLine" 
+        android:inputType="textMultiLine"
+        android:hint="@string/flavour" 
+        >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="@string/notes" 
         >
     </EditText>
 

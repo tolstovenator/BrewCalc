@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory 
+        android:title="@string/pref_brewhouse_type"
+        android:key="pref_brewhouse_type">
+        <SwitchPreference android:title="@string/pref_homepro_type" android:key="homepro_type" 
+	        android:switchTextOn="@string/pref_pro_switch" 
+	        android:switchTextOff="@string/pref_home_switch" 
+	        android:summaryOff="@string/pref_home"
+	        android:summaryOn="@string/pref_pro"/>
+        <EditTextPreference 
+            android:key="pref_batch_size" 
+            android:title="@string/pref_batch_size_gal" 
+            android:defaultValue="5"/>
+    </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/pref_units"
+        android:key="pref_units">
+	    <SwitchPreference android:title="@string/pref_fluid_units" android:key="fluid_units" 
+	        android:summaryOff="@string/pref_american" 
+	        android:switchTextOn="@string/pref_metric_switch" 
+	        android:switchTextOff="@string/pref_american_switch" 
+	        android:summaryOn="@string/pref_metric"/>
+	    <SwitchPreference android:title="@string/pref_grain_units" android:key="grain_units" 
+	        android:summaryOff="@string/pref_american" 
+	        android:switchTextOn="@string/pref_metric_switch" 
+	        android:switchTextOff="@string/pref_american_switch" 
+	        android:summaryOn="@string/pref_metric"/>
+	    <SwitchPreference android:title="@string/pref_hops_units" android:key="hop_units" 
+	        android:summaryOff="@string/pref_american" 
+	        android:switchTextOn="@string/pref_metric_switch" 
+	        android:switchTextOff="@string/pref_american_switch" 
+	        android:summaryOn="@string/pref_metric"/>
+	    <SwitchPreference android:title="@string/pref_pressure_units" android:key="pressure_units" 
+	        android:summaryOff="@string/pref_american" 
+	        android:switchTextOn="@string/pref_metric_switch" 
+	        android:switchTextOff="@string/pref_american_switch" 
+	        android:summaryOn="@string/pref_metric"/>
+	    <SwitchPreference android:title="@string/pref_temperature_units" android:key="temperature_units" 
+	        android:summaryOff="@string/pref_farenheit" 
+	        android:switchTextOn="@string/pref_celsius_switch" 
+	        android:switchTextOff="@string/pref_farenheit_switch" 
+	        android:summaryOn="@string/pref_celsius"/>
+	  </PreferenceCategory>
+  
+
+</PreferenceScreen>

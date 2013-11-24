@@ -1,7 +1,10 @@
 package com.tolstovenator.brewcalc;
 
 
-import com.tolstovenator.brewcalc.repository.Hop;
+import com.tolstovenator.brewcalc.preferences.Formatter;
+import com.tolstovenator.brewcalc.preferences.Settings;
+import com.tolstovenator.brewcalc.preferences.UnitsConverter;
+import com.tolstovenator.brewcalc.preferences.Settings.ColorMethod;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
 import com.tolstovenator.brewcalc.repository.Sugar.SugarKey;
@@ -16,9 +19,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -33,31 +33,16 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
-import android.widget.TextView.OnEditorActionListener;
 
-public class SugarDetailFragment extends Fragment implements OnFocusChangeListener, OnCheckedChangeListener, android.widget.CompoundButton.OnCheckedChangeListener {
+public class SugarDetailFragment extends AbstractDetailsFragment {
 	
-	private IngredientService ingredientService;
-	boolean mBound = false;
-	
-	
-	/**
-     * The fragment argument representing the item ID that this fragment
-     * represents.
-     */
-    public static final String ARG_ITEM_ID = "item_id";
-    private Sugar sugar;
+	private Sugar sugar;
     private Sugar editSugar;
     
     private SugarKey selectedItem;
     private SugarRepository sugarRepository;
     
-    private Menu menu;
-    private boolean changes = false;
-    
-	private boolean resetForm = true;
-	
-	private EditText name;
+    private EditText name;
 	private EditText origin;
 	private EditText supplier;
 	private EditText description;
@@ -81,6 +66,8 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 	private RadioButton sugarButton;
 	private RadioButton extractButton;
 	private RadioButton adjunctButton;
+	
+	private TextView colorName;
 	
 	private EditText[] allEdits; 
 	
@@ -123,6 +110,7 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
         supplier = (EditText) rootView.findViewById(R.id.supplier);
         potential = (EditText) rootView.findViewById(R.id.gravityPotentialText);
         colour = (EditText) rootView.findViewById(R.id.colourText);
+        colorName = (TextView) rootView.findViewById(R.id.colourName);
         moisture = (EditText) rootView.findViewById(R.id.moistureText);
         coarseFineDiff = (EditText) rootView.findViewById(R.id.coarseFineDiffText);
         fineDry = (EditText) rootView.findViewById(R.id.fineDryText);
@@ -175,16 +163,6 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 
 	}
 	
-	private void resetSaveMenu() {
-		changes = false;
-		
-		
-		if (menu != null) {
-			MenuItem menuItem = menu.findItem(R.id.save_menu);
-			menuItem.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-			menuItem.setEnabled(false);
-		}
-	}
 	
 	private void resetForm(Sugar sugar) {
 		selectedItem = sugar.getSugarKey();
@@ -196,8 +174,22 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 		origin.setText(sugar.getOrigin());
 		description.setText(sugar.getDescription());
 		supplier.setText(sugar.getSupplier());
-		potential.setText(formatDoubleValue(sugar.getPotential()));
+		potential.setText(Formatter.formatDoubleValueExtract(UnitsConverter.convertFromExtractPoints(sugar.getPotential(), getActivity()), getActivity()));
 		moisture.setText(formatDoubleValue(sugar.getMoisture()));
+		ColorMethod method = Settings.getColorMethod(getActivity());
+		switch (method) {
+		case SRM:
+			colorName.setText(R.string.colourName);
+			break;
+		case EBC:
+			colorName.setText(R.string.colourNameEbc);
+			break;
+		case EBC_NEW:
+			colorName.setText(R.string.colourNameEbcNew);
+			break;
+		default:
+			break;
+		}
 		colour.setText(formatDoubleValue((double)sugar.getColour()));
 		coarseFineDiff.setText(formatDoubleValue(sugar.getCoarseFineDiff()));
 		fineDry.setText(formatDoubleValue(sugar.getFgDry()));
@@ -248,6 +240,7 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 		return String.valueOf(Rounder.round(value, 2));
 	}
 	
+	
 	private ServiceConnection mConnection = new ServiceConnection() {
 
         @Override
@@ -293,7 +286,7 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 			} else if (v == colour) {
 				editSugar.setColour(readDouble(v).intValue());
 			} else if (v == potential) {
-				editSugar.setPotential(readDouble(v));
+				editSugar.setPotential(UnitsConverter.converToExtractPoints(readDouble(v), getActivity()));
 				resetForm(editSugar);
 			} else if (v == moisture) {
 				editSugar.setMoisture(readDouble(v));
@@ -349,28 +342,15 @@ public class SugarDetailFragment extends Fragment implements OnFocusChangeListen
 			resetSaveMenu();
 		} else if (item.getItemId() == R.id.add_menu) {
 			//TODO: check if edit is in progress
-			if (getActivity() instanceof HopDetailsActivity) {
-				getActivity().getActionBar().setTitle(R.string.add_hop);
+			if (getActivity() instanceof SugarDetailActivity) {
+				getActivity().getActionBar().setTitle(R.string.add_sugar);
 			}
 			setSugar(new Sugar());
 		}
 		return true;
 	}
 
-	private void markChanged() {
-		changes = true;
-		MenuItem menuItem = menu.findItem(R.id.save_menu);
-		menuItem.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-		menuItem.setEnabled(true);
-	}
 
-	private Double readDouble(View v) {
-		return Double.valueOf(((EditText)v).getText().toString().trim());
-	}
-	
-	private String readString(View v) {
-		return ((EditText)v).getText().toString().trim();
-	}
 
 
 	@Override

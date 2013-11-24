@@ -1,0 +1,188 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tolstovenator.brewcalc"
+    android:id="@+id/malt_details_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" 
+    >
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:baselineAligned="true">
+    
+    
+        <TextView
+            android:id="@+id/ogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ogName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+
+        <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/ogGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="1.044"
+            custom:minValue="0"
+            custom:rounding="3"
+            custom:step="0.001" 
+            />
+		<com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/platoGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            custom:currentValue="11"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.1" 
+            />
+        <TextView
+            android:id="@+id/platoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/platoName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+      </TableRow>
+      <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+      <TextView
+            android:id="@+id/fgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fgName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+
+        <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/fgGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="1.044"
+            custom:minValue="0"
+            custom:rounding="3"
+            custom:step="0.001" 
+            
+            />
+		<com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/platoFgGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            custom:currentValue="11"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.1" 
+            />
+        <TextView
+            android:id="@+id/platoFgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/platoName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    
+		    <TextView
+            android:id="@+id/abvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abvName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		    <EditText android:id="@+id/abvText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		    <EditText android:id="@+id/abwText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		     <TextView
+            android:id="@+id/abwName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abwName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+		
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    
+		    <TextView
+            android:id="@+id/adfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adfName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		    <EditText android:id="@+id/adfText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		    <EditText android:id="@+id/rdfText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		     <TextView
+            android:id="@+id/rdfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdfName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+		
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    
+		    <TextView
+            android:id="@+id/redidualSGName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redidualSGName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		    <EditText android:id="@+id/residualSgText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		    <EditText android:id="@+id/residualPlatoText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		     <TextView
+            android:id="@+id/residualPlatoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/residualPlatoName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+
+</TableLayout>

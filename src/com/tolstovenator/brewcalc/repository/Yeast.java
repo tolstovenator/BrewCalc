@@ -1,7 +1,5 @@
 package com.tolstovenator.brewcalc.repository;
 
-import com.tolstovenator.brewcalc.repository.Sugar.SugarKey;
-
 public class Yeast {
 	
 	public enum YeastType {
@@ -44,7 +42,29 @@ public class Yeast {
 	private String flavours = "";
 	private String notes = "";
 	
-	public static class YeastKey implements Comparable<Yeast>{
+	public Yeast() {
+	}
+	
+	public Yeast(Yeast other) {
+		super();
+		this.lab = other.lab;
+		this.name = other.name;
+		this.catalogId = other.catalogId;
+		this.yeastType = other.yeastType;
+		this.yeastMedium = other.yeastMedium;
+		this.flocculation = other.flocculation;
+		this.lowAttenuation = other.lowAttenuation;
+		this.highAttenuation = other.highAttenuation;
+		this.minTemp = other.minTemp;
+		this.maxTemp = other.maxTemp;
+		this.maxReuse = other.maxReuse;
+		this.useStarter = other.useStarter;
+		this.addToSecondary = other.addToSecondary;
+		this.flavours = other.flavours;
+		this.notes = other.notes;
+	}
+
+	public static class YeastKey implements Comparable<YeastKey>{
 		private final String lab;
 		private final String catalogId;
 		
@@ -99,7 +119,7 @@ public class Yeast {
 		}
 
 		@Override
-		public int compareTo(Yeast another) {
+		public int compareTo(YeastKey another) {
 			int result =  this.lab.compareTo(another.lab);
 			return result != 0 ? result : catalogId.compareTo(another.catalogId);
 		}

@@ -17,12 +17,14 @@ public class IngredientService extends Service{
 	public static final String HOPS_XML = "hops.xml";
 	public static final String SUGARS_XML = "sugars.xml";
 	public static final String YEAST_XML = "yeasts.xml";
+	public static final String WATER_XML = "waters.xml";
 
 	private final IBinder mBinder = new LocalBinder();
 	
 	private HopRepository hopRepository;
 	private SugarRepository sugarRepository;
 	private YeastRepository yeastRepository;
+	private WaterRepository waterRepository;
         /**
      * Class used for the client Binder.  Because we know this service always
      * runs in the same process as its clients, we don't need to deal with IPC.
@@ -76,6 +78,18 @@ public class IngredientService extends Service{
 					yeastRepository = new YeastRepository(this);
 				}
 			}
+			try {
+				localFile = openFileInput(WATER_XML);
+				waterRepository = new WaterRepository(localFile, this);
+				
+			} catch (FileNotFoundException e) {
+				try {
+					localFile = copyFileToLocal(WATER_XML);
+					waterRepository = new WaterRepository(localFile, this);
+				} catch (Exception e2) {
+					waterRepository = new WaterRepository(this);
+				}
+			}
 		}
         return mBinder;
     }
@@ -106,6 +120,12 @@ public class IngredientService extends Service{
 	public YeastRepository getYeastRepository() {
 		return yeastRepository;
 	}
+
+	public WaterRepository getWaterRepository() {
+		return waterRepository;
+	}
+	
+	
 	
 
 }

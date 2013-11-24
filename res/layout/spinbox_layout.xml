@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginRight="5dip"
+    android:baselineAligned="true" >
+
+        <ImageButton android:id="@+id/spinBoxMinus"
+            android:src="@drawable/nav_down"
+            android:contentDescription="-"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            />
+
+        <EditText
+            android:id="@+id/spinBoxEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" 
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <ImageButton android:id="@+id/spinBoxPlus"
+            android:src="@drawable/nav_up"
+            android:contentDescription="+"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            />
+</LinearLayout>

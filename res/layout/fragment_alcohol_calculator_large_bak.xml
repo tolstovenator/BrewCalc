@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tolstovenator.brewcalc"
+    android:id="@+id/malt_details_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" 
+    >
+
+    
+    
+    
+        <TextView
+            android:id="@+id/ogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ogName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/ogGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="1.044"
+            custom:minValue="0"
+            custom:rounding="3"
+            custom:step="0.001" 
+            android:layout_toRightOf="@id/ogName"
+            android:layout_alignBottom="@id/ogName"
+            android:layout_marginLeft="4dp"/>
+		<com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/platoGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            custom:currentValue="11"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.01" 
+            android:layout_toRightOf="@id/ogGravityText"
+            android:layout_alignBottom="@id/ogName"/>
+        <TextView
+            android:id="@+id/platoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/platoName"
+            android:layout_toRightOf="@id/platoGravityText"
+            android:layout_alignBottom="@id/ogName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+        
+      <TextView
+            android:id="@+id/fgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/fgName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_below="@id/ogName"
+            android:layout_alignRight="@id/ogName"/>
+
+        <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/fgGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="1.044"
+            custom:minValue="0"
+            custom:rounding="3"
+            custom:step="0.001" 
+            android:layout_toRightOf="@id/fgName"
+            android:layout_alignBottom="@id/fgName"
+            android:layout_alignLeft="@id/ogGravityText"
+            />
+		<com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/platoFgGravityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            custom:currentValue="11"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.01" 
+            android:layout_toRightOf="@id/fgGravityText"
+            android:layout_alignBottom="@id/fgName"
+            android:layout_alignLeft="@id/platoGravityText"/>
+        <TextView
+            android:id="@+id/platoFgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/platoName"
+            android:layout_toRightOf="@id/platoFgGravityText"
+            android:layout_alignBottom="@id/fgName"
+            android:layout_alignLeft="@id/platoName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

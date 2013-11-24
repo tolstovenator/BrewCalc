@@ -4,7 +4,7 @@ import com.tolstovenator.brewcalc.R;
 
 public class Sugar {
 	
-	private static final double MAXIMUM_POTENTIAL = 46.21;
+	public static final double MAXIMUM_POTENTIAL = 46.21;
 
 	public enum SugarType {
 		GRAIN(R.string.grain),

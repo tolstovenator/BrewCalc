@@ -4,6 +4,7 @@ import com.tolstovenator.brewcalc.repository.Hop;
 import com.tolstovenator.brewcalc.repository.HopRepository;
 import com.tolstovenator.brewcalc.repository.IngredientService;
 import com.tolstovenator.brewcalc.repository.Sugar;
+import com.tolstovenator.brewcalc.repository.Water;
 import com.tolstovenator.brewcalc.repository.Yeast;
 import com.tolstovenator.brewcalc.ui.ingredients.IngredientType;
 
@@ -141,4 +142,12 @@ public class IngredientDetailActivity extends FragmentActivity implements Ingred
 		
 	}
 	
+	@Override
+	public void onWaterSelected(Water water) {
+		Intent detailIntent = new Intent(this,
+				SugarDetailActivity.class);
+		detailIntent.putExtra(SugarDetailFragment.ARG_ITEM_ID, water.getName().toString());
+		startActivity(detailIntent);
+		
+	}
 }
