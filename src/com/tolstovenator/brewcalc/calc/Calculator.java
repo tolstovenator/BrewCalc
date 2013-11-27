@@ -4,7 +4,7 @@ import com.tolstovenator.brewcalc.R;
 
 public enum Calculator {
 	ALCOHOL(R.string.calcAlcohol, R.drawable.ic_launcher, "AlcoholCalculator"),
-	BOILOFF(R.string.calcBoiloff, R.drawable.ic_launcher, "BoiloffCalculator"),
+	BOILOFF(R.string.calcBoiloff, R.drawable.ic_launcher, "BoilOffCalculator"),
 	CARBONATION(R.string.calcCarbonation, R.drawable.ic_launcher, "CarbonationCalculator");
 	
 	

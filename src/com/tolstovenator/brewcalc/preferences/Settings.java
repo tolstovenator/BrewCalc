@@ -1,5 +1,7 @@
 package com.tolstovenator.brewcalc.preferences;
 
+import com.tolstovenator.brewcalc.R;
+
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -33,5 +35,27 @@ public class Settings {
 	
 	public static ColorMethod getColorMethod(Activity activity) {
 		return ColorMethod.SRM;
+	}
+	
+	public static double getDefaultBatch(Activity activity) {
+		try {
+			String size = PreferenceManager.getDefaultSharedPreferences(activity).getString("pref_batch_size", "0");
+			return Double.valueOf(size);
+		} catch (Exception e) {
+			return 0;
+		}
+	}
+	
+	public static boolean isAmericanLiquid(Activity activity) {
+		return PreferenceManager.getDefaultSharedPreferences(activity).getBoolean("pref_fluid_units", false);
+	}
+	
+	public static String getFluidUnits(Activity activity) {
+		boolean pro = isProBrewer(activity);
+		boolean american = isAmericanLiquid(activity);
+		if (pro && american) return activity.getString(R.string.Barrels);
+		if (!pro && american) return activity.getString(R.string.Gallons);
+		if (pro) return activity.getString(R.string.Hectoliters);
+		return activity.getString(R.string.Liters);
 	}
 }

@@ -1,0 +1,212 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tolstovenator.brewcalc"
+    android:id="@+id/malt_details_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" 
+    >
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:baselineAligned="true">
+    
+    
+        <TextView
+            android:id="@+id/startWaterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startWaterName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+
+        <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/startWaterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="10"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.1" 
+            />
+		
+    
+      </TableRow>
+      <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+      	<TextView
+            android:id="@+id/startSGName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startSGName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+
+        <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/startSGText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="1.044"
+            custom:minValue="0"
+            custom:rounding="3"
+            custom:step="0.001" 
+            
+            />
+		<com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/startPlatoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            custom:currentValue="11"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.1" 
+            />
+        <TextView
+            android:id="@+id/startPlatoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startPlatoName"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    
+		    <TextView
+		        android:id="@+id/boilLengthName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/boilLenghtName"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		    
+		    <com.tolstovenator.brewcalc.ui.SpinBox
+		        android:id="@+id/boilLengthText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        custom:currentValue="60"
+		        custom:minValue="0"
+		        custom:rounding="0"
+		        custom:step="1" />
+
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    <TextView
+            android:id="@+id/amountEvapouratedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amountEvapouratedName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+		    <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/amountEvapouratedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="0"
+            custom:minValue="0"
+            custom:rounding="2"
+            custom:step="0.1" 
+            />
+		    
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    <TextView
+            android:id="@+id/evapourationRatePercentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evapourationRatePercentName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+		    <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/evapourationRatePercentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="0"
+            custom:minValue="0"
+            custom:maxValue="100"
+            custom:rounding="1"
+            custom:step="1" 
+            />
+		    <com.tolstovenator.brewcalc.ui.SpinBox
+            android:id="@+id/evapourationRateAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            custom:currentValue="0"
+            custom:minValue="0"
+            custom:rounding="1"
+            custom:step="1" 
+            />
+		    
+		    <TextView
+            android:id="@+id/evapourationRateAmountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evapourationRateAmountName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+		 </TableRow>   
+		 
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    <TextView
+            android:id="@+id/volumeAfterBoilName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volumeAfterBoilName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+		    <EditText android:id="@+id/volumeAfterBoilText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		    
+		</TableRow>
+		
+		<TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+		    <TextView
+            android:id="@+id/finalSGName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finalSGName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+		    <EditText android:id="@+id/finalSGText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		    <EditText android:id="@+id/finalPlatoText"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="0"
+            	android:enabled="false"/>
+		    <TextView
+            android:id="@+id/finalPlatoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finalPlatoName"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+		    
+		</TableRow>
+		
+
+</TableLayout>

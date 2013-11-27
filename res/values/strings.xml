@@ -129,6 +129,17 @@
     <string name="redidualSGName">Residual Extract (SG)</string>
     <string name="residualPlatoName">Residual Extract (Plato)</string>
     
+    <string name="startWaterName">Before boil wort volume, </string>
+    <string name="startSGName">SG before boil</string>
+    <string name="startPlatoName">Plato before boil</string>
+    <string name="boilLenghtName">Boil lengh, min</string>
+    <string name="amountEvapouratedName">Volume evapourated, </string>
+    <string name="evapourationRatePercentName">Evapouration rate per hour, %</string>
+    <string name="evapourationRateAmountName">Evapouration rate per hour, </string>
+    <string name="volumeAfterBoilName">Volume after, </string>
+    <string name="finalSGName">SG after boil</string>
+    <string name="finalPlatoName">Plato after boil</string>
+    
     
     <string name="preference_measurements">Units</string>
     <string name="preference_brewhouse_efficiency">Efficiency</string>
@@ -166,6 +177,11 @@
     <string name="pref_batch_size_bbl">Default Batch Size, Bbl</string>
     <string name="pref_batch_size_L">Default Batch Size, L</string>
     <string name="pref_batch_size_hl">Default Batch Size, hl</string>
+
+    <string name="Barrels">Bbl</string>
+    <string name="Liters">L</string>
+    <string name="Gallons">Gal</string>
+    <string name="Hectoliters">hl</string>
     
     <string name="settings">Settings</string>
     

@@ -1,0 +1,132 @@
+﻿Version=1.50
+IconFile=
+FullScreen=False
+IncludeTitle=True
+NumberOfModules=1
+Module1=mNumericUpDown
+ModuleVisible1=1
+Package=fg.NumericUpDown
+Label=NumericUpDown
+VersionCode=1
+VersionString=1.00
+Orientation=unspecified
+CanInstallToExternalStorage=True
+NumberOfFiles=0
+NumberOfLibraries=1
+Library1=core
+@EndOfDesignText@
+'Activity module
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+
+End Sub
+
+Sub Globals
+	'---- Varablen für User-View "NumericUpDown" --------
+	'Damit können bis zu 10 Controls hinzugefügt werden
+	Dim pnlNumericUpDown As Panel
+	Dim btnMinus(10),btnPlus(10) As Button
+	Dim txtNumber(10) As EditText
+	Dim blnNumericUpDownAdd As Boolean
+	Dim timerNumericUpDown As Timer
+	Dim txtBox As EditText
+	'----------------------------------------------------
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Timer für Button-LongClick
+	'Es muss nur einmal initiallisiert werden
+ 	timerNumericUpDown.Initialize("timerNumericUpDown",100)
+	timerNumericUpDown.Enabled= False
+	
+	'1.View
+	mNumericUpDown.New(pnlNumericUpDown,btnMinus(0),btnPlus(0),txtNumber(0),0,10)
+ 	Activity.AddView(pnlNumericUpDown,0,50dip,160dip,50dip)
+
+	'2.View
+	mNumericUpDown.New(pnlNumericUpDown,btnMinus(1),btnPlus(1),txtNumber(1),0,100)
+ 	Activity.AddView(pnlNumericUpDown,0,150dip,160dip,50dip)
+
+	'3.View
+	mNumericUpDown.New(pnlNumericUpDown,btnMinus(2),btnPlus(2),txtNumber(2),-50,50)
+ 	Activity.AddView(pnlNumericUpDown,0,210dip,160dip,50dip)
+
+End Sub
+
+#Region "NumericUpDown"
+Sub btnUpDown_Click
+	Dim lst As List
+	Dim btn As Button
+	Dim n As Int
+	btn=Sender
+	txtBox=btn.Tag
+	
+	lst=txtBox.Tag
+	
+	n=txtBox.Text
+	
+	If btn.Text="+" AND n < lst.Get(1) Then
+		n=n + 1
+	Else If btn.Text="-" AND n > lst.Get(0) Then
+		n=n - 1
+	End If
+	txtBox.Text = n
+End Sub
+
+Sub btnUpDown_LongClick
+	Dim btn As Button
+	btn=Sender
+	txtBox=btn.Tag
+	If btn.Text="+" Then
+		blnNumericUpDownAdd=True
+	Else
+		blnNumericUpDownAdd=False
+	End If
+	timerNumericUpDown.Enabled = True
+End Sub
+
+Sub btnUpDown_Up
+	timerNumericUpDown.Enabled = False
+End Sub
+
+Sub txtNumber_TextChanged (Old As String, New As String)
+	Dim n As Int
+	Dim txtEdit1 As EditText
+	Dim lst As List
+	txtEdit1=Sender
+	lst=txtEdit1.Tag
+	If new ="" Then
+		n=0
+	Else
+		n = New
+	End If
+	If n < lst.Get(0) Then
+		txtEdit1.Text=Old
+	Else If n > lst.Get(1) Then
+		txtEdit1.Text=Old
+	End If	
+End Sub
+
+Sub timerNumericUpDown_Tick
+	Dim lst As List
+	Dim n As Int
+	n=txtBox.Text
+	
+	lst=txtBox.Tag
+	If blnNumericUpDownAdd Then
+		If n < lst.Get(1) Then n=n + 1
+	Else
+		If n > lst.Get(0) Then n=n - 1
+	End If
+	txtBox.Text = n
+End Sub
+#End Region
+
+Sub Activity_Resume
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+End Sub
+
+

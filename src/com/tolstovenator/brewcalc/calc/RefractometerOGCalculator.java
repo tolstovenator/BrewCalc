@@ -17,6 +17,7 @@ public class RefractometerOGCalculator {
 		this.brixCorrectionFactor = brixCorrectionFactor;
 		
 		brixReading = 5;
+		
 		recalcAll();
 	}
 
